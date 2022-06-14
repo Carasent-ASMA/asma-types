@@ -15,8 +15,12 @@ export interface IAdminJwtClaims extends IBaseJwtClaims {
 export interface IRecipientJwtClaims extends IBaseJwtClaims {
     access_level: 1 | 2 | 3 | 4
     name: string
+    related_customers: string
+    identity: string
+    selected_customer?: string
 }
 export interface ITherapistOrSuperUserJwtClaims extends IBaseJwtClaims {
+    name: string
     region: string
     customer_id: string
     services: IService
