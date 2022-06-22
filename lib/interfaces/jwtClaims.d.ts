@@ -19,13 +19,16 @@ export interface IRecipientJwtClaims extends IBaseJwtClaims {
 export interface ITherapistOrSuperUserJwtClaims extends IBaseJwtClaims {
     name: string;
     region: string;
-    name: string;
     customer_id: string;
     services: IService;
     features: feature_names_enum[];
+    srv_urls: ISrvUrls;
 }
 export interface IService {
     [key: string]: string[];
+}
+export interface ISrvUrls {
+    [key: string]: string;
 }
 export declare function isRecipientJwtClaims(claims: IBaseJwtClaims): claims is IRecipientJwtClaims;
 export declare function isTherapistJwtClaims(claims: IBaseJwtClaims): claims is ITherapistOrSuperUserJwtClaims;

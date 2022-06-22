@@ -25,9 +25,14 @@ export interface ITherapistOrSuperUserJwtClaims extends IBaseJwtClaims {
     customer_id: string
     services: IService
     features: feature_names_enum[]
+    srv_urls: ISrvUrls
 }
 export interface IService {
     [key: string]: string[]
+}
+
+export interface ISrvUrls {
+    [key: string]: string
 }
 
 export function isRecipientJwtClaims(claims: IBaseJwtClaims): claims is IRecipientJwtClaims {
