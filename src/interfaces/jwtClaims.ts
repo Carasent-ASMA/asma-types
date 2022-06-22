@@ -17,7 +17,7 @@ export interface IRecipientJwtClaims extends IBaseJwtClaims {
     name: string
     related_customers: string
     identity: string
-    selected_customer?: string
+    customer_id?: string
 }
 export interface ITherapistOrSuperUserJwtClaims extends IBaseJwtClaims {
     name: string
