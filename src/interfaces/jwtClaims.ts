@@ -1,4 +1,6 @@
-import type { feature_names_enum, roles_enum } from '../generated/directory/schema'
+type roles_enum = 'RECIPIENT' | 'SUPER_USER' | 'THERAPIST' | 'USER'
+type feature_names_enum = 'anonymousQnr' | 'autoImportableQnr' | 'dashboardTraceability' | 'ordersOverviewOnSelectedRecipientsForQnr' | 'predefinedUserForQnr' | 'rejectableQnr' | 'signByTherapistDocument' | 'test'
+
 export interface IBaseJwtClaims {
     user_id: string
     role: roles_enum
@@ -13,8 +15,12 @@ export interface IAdminJwtClaims extends IBaseJwtClaims {
 export interface IRecipientJwtClaims extends IBaseJwtClaims {
     access_level: 1 | 2 | 3 | 4
     name: string
+    related_customers: string
+    identity: string
+    customer_id?: string
 }
 export interface ITherapistOrSuperUserJwtClaims extends IBaseJwtClaims {
+    name: string
     region: string
     name: string
     customer_id: string

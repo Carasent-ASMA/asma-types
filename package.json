@@ -1,6 +1,6 @@
 {
   "name": "asma-types",
-  "version": "1.0.10",
+  "version": "1.1.2",
   "description": "shared ts asma types",
   "main": "lib/index.js",
   "type": "module",
@@ -8,8 +8,7 @@
   "author": "ie",
   "license": "MIT",
   "scripts": {
-    "build": "tsc -p .",
-    "genql": "genql --endpoint http://localhost:7001/v1/graphql --esm --output ./src/generated/directory -H \"x-hasura-admin-secret: srvdirectory\"",
+    "build": "tsc && tsc -p .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,6 +17,6 @@
   },
   "devDependencies": {
     "@genql/cli": "^2.6.0",
-    "typescript": "^4.2.3"
+    "typescript": "^4.4.4"
   }
 }
