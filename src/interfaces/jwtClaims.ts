@@ -16,6 +16,7 @@ export interface IRecipientJwtClaims extends IBaseJwtClaims {
 }
 export interface ITherapistOrSuperUserJwtClaims extends IBaseJwtClaims {
     region: string
+    name: string
     customer_id: string
     services: IService
     features: feature_names_enum[]
