@@ -204,3 +204,111 @@ export enum UsersMenuContext {
     Therapist = 'therapist',
     Actor_Involved = 'actor_involved',
 }
+
+
+export enum FileTypeEnum {
+    Doc = 'doc',
+    Qnr = 'questionnaire',
+}
+
+export enum SecurityLevelEnum {
+    Four = '4',
+    Three = '3',
+    Two = '2',
+    One = '1',
+}
+
+export enum SeenFilterStatusEnums {
+    seen = 'seen',
+    unseen = 'unseen',
+    show_all = 'show_all',
+}
+
+export enum OverviewScopeEnums {
+    Customer = 'CUSTOMER',
+    Patient = 'PATIENT',
+    Archived = 'archived',
+}
+
+/* export enum DocStatusEnums {
+    signed = 'signed',
+    waiting_for_signing = 'waiting_for_signing',
+    only_for_view = 'only_for_view',
+    /* download = 'download',
+    uploaded = 'uploaded'
+} */
+
+export enum SignedByTherapistEnum {
+    canceled = 'canceled',
+    complete = 'complete',
+    postponed = 'postponed',
+    waiting_for_signing = 'waiting_for_signing',
+    sent_for_signing = 'sent_for_signing',
+    not_set_for_signing = 'not_set_for_signing',
+}
+
+export enum TemplatesFilterOptionsEnum {
+    archived = 'archived',
+    withMyRole = 'withMyRole',
+}
+
+export enum TemplateFilterStatusTypes {
+    not_received = 'not_received',
+    active = 'active',
+    completed = 'completed',
+    inactive = 'inactive',
+}
+
+export const TemplateStatusIcon = {
+    [TemplateFilterStatusTypes.active]: 'fa-question-circle',
+    [TemplateFilterStatusTypes.completed]: 'fa-list-alt',
+    [TemplateFilterStatusTypes.not_received]: 'fa-times-circle',
+}
+
+export enum TDelivery {
+    send = 'send',
+    not_send = 'not_send',
+}
+
+export const TDeliveryColor = {
+    [TDelivery.send]: 'purple',
+    [TDelivery.not_send]: 'red',
+}
+
+export const TTemplateStatus = {
+    ...QueriesStatusTypes,
+    [TemplateFilterStatusTypes.not_received]: TemplateFilterStatusTypes.not_received,
+    [TemplateFilterStatusTypes.inactive]: TemplateFilterStatusTypes.inactive,
+}
+export const TemplateStatusColor = {
+    [TemplateFilterStatusTypes.completed]: 'blue',
+    [TemplateFilterStatusTypes.not_received]: 'gray',
+    [TemplateFilterStatusTypes.active]: 'green',
+    [TemplateFilterStatusTypes.inactive]: 'red',
+}
+
+export type TemplateStatusTypes = typeof TTemplateStatus[keyof typeof TTemplateStatus]
+
+export type TemplateStatusIconTypes = typeof TemplateFilterStatusTypes[keyof typeof TemplateStatusIcon]
+
+export enum PortalRoutesPaths {
+    Overview = 'overview',
+    Orders = 'orders',
+    TemplateQueryParam = 'template',
+}
+
+export enum ExpressionOperators {
+    Addition = '+',
+    Subtraction = '-',
+    Multiplication = '*',
+    Division = '/',
+    Mean = 'mean(  )',
+}
+
+export enum ExpressionPrefix {
+    'AtSign' = '@',
+    'Hashtag' = '#',
+}
+
+export type IExpressionOperators = typeof ExpressionOperators[keyof typeof ExpressionOperators]
+export type IExpressionPrefix = typeof ExpressionPrefix[keyof typeof ExpressionPrefix]

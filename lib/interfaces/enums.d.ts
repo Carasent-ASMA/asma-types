@@ -129,4 +129,92 @@ export declare enum UsersMenuContext {
     Therapist = "therapist",
     Actor_Involved = "actor_involved"
 }
+export declare enum FileTypeEnum {
+    Doc = "doc",
+    Qnr = "questionnaire"
+}
+export declare enum SecurityLevelEnum {
+    Four = "4",
+    Three = "3",
+    Two = "2",
+    One = "1"
+}
+export declare enum SeenFilterStatusEnums {
+    seen = "seen",
+    unseen = "unseen",
+    show_all = "show_all"
+}
+export declare enum OverviewScopeEnums {
+    Customer = "CUSTOMER",
+    Patient = "PATIENT",
+    Archived = "archived"
+}
+export declare enum SignedByTherapistEnum {
+    canceled = "canceled",
+    complete = "complete",
+    postponed = "postponed",
+    waiting_for_signing = "waiting_for_signing",
+    sent_for_signing = "sent_for_signing",
+    not_set_for_signing = "not_set_for_signing"
+}
+export declare enum TemplatesFilterOptionsEnum {
+    archived = "archived",
+    withMyRole = "withMyRole"
+}
+export declare enum TemplateFilterStatusTypes {
+    not_received = "not_received",
+    active = "active",
+    completed = "completed",
+    inactive = "inactive"
+}
+export declare const TemplateStatusIcon: {
+    active: string;
+    completed: string;
+    not_received: string;
+};
+export declare enum TDelivery {
+    send = "send",
+    not_send = "not_send"
+}
+export declare const TDeliveryColor: {
+    send: string;
+    not_send: string;
+};
+export declare const TTemplateStatus: {
+    not_received: TemplateFilterStatusTypes;
+    inactive: TemplateFilterStatusTypes;
+    InBound: QueriesStatusTypes.InBound;
+    InProgress: QueriesStatusTypes.InProgress;
+    AwaitingReply: QueriesStatusTypes.AwaitingReply;
+    Expired: QueriesStatusTypes.Expired;
+    Completed: QueriesStatusTypes.Completed;
+    Processed: QueriesStatusTypes.Processed;
+    Rejected: QueriesStatusTypes.Rejected;
+};
+export declare const TemplateStatusColor: {
+    completed: string;
+    not_received: string;
+    active: string;
+    inactive: string;
+};
+export declare type TemplateStatusTypes = typeof TTemplateStatus[keyof typeof TTemplateStatus];
+export declare type TemplateStatusIconTypes = typeof TemplateFilterStatusTypes[keyof typeof TemplateStatusIcon];
+export declare enum PortalRoutesPaths {
+    Overview = "overview",
+    Orders = "orders",
+    TemplateQueryParam = "template"
+}
+export declare enum ExpressionOperators {
+    Addition = "+",
+    Subtraction = "-",
+    Multiplication = "*",
+    Division = "/",
+    Mean = "mean(  )"
+}
+export declare enum ExpressionPrefix {
+    'AtSign' = "@",
+    'Hashtag' = "#"
+}
+export declare type IExpressionOperators = typeof ExpressionOperators[keyof typeof ExpressionOperators];
+export declare type IExpressionPrefix = typeof ExpressionPrefix[keyof typeof ExpressionPrefix];
 //# sourceMappingURL=enums.d.ts.map
