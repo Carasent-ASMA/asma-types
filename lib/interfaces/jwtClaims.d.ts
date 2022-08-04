@@ -1,5 +1,5 @@
 declare type roles_enum = 'RECIPIENT' | 'SUPER_USER' | 'THERAPIST' | 'USER';
-declare type feature_names_enum = 'anonymousQnr' | 'autoImportableQnr' | 'dashboardTraceability' | 'ordersOverviewOnSelectedRecipientsForQnr' | 'predefinedUserForQnr' | 'rejectableQnr' | 'signByTherapistDocument' | 'test';
+declare type feature_names_enum = 'autoImportableQnr' | 'dashboardTraceability' | 'ordersOverviewOnSelectedRecipientsForQnr' | 'predefinedUserForQnr' | 'rejectableQnr' | 'signByTherapistDocument' | 'test';
 export interface IBaseJwtClaims {
     user_id: string;
     role: roles_enum;
