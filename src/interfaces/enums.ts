@@ -82,6 +82,8 @@ export enum QueriesInitiatorTypes {
 export enum SmsTemplatesCategoryTypes {
     Info = 'INFO',
     Reject = 'REJECT',
+    NewChat = 'NEW_CHAT',
+    UnseenNotifications = 'UNSEEN_NOTIFICATIONS'
 }
 
 export enum TemplatesContextTypes {
