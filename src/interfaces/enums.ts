@@ -90,6 +90,9 @@ export enum TemplatesContextTypes {
     Advoca = 'ADVOCA',
     Portal = 'PORTAL',
     Outlook = 'OUTLOOK',
+    Start = 'START',
+    Research = 'RESEARCH',
+    Plan = 'PLAN'
 }
 
 export enum TemplatesAccessibleTypes {
