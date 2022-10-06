@@ -20,6 +20,8 @@ export interface ITherapistOrSuperUserJwtClaims extends IBaseJwtClaims {
     name: string;
     region: string;
     customer_id: string;
+    journal_user_id?: string;
+    brukerBrukerNavn?: string;
     services: IService;
     features: feature_names_enum[];
     srv_urls: ISrvUrls;
