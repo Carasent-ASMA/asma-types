@@ -76,7 +76,10 @@ export declare enum SmsTemplatesCategoryTypes {
 export declare enum TemplatesContextTypes {
     Advoca = "ADVOCA",
     Portal = "PORTAL",
-    Outlook = "OUTLOOK"
+    Outlook = "OUTLOOK",
+    Start = "START",
+    Research = "RESEARCH",
+    Plan = "PLAN"
 }
 export declare enum TemplatesAccessibleTypes {
     Patient = "PATIENT",

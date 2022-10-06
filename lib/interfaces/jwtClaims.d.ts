@@ -30,8 +30,8 @@ export interface IService {
 export interface ISrvUrls {
     [key: string]: string;
 }
-export declare function isRecipientJwtClaims(claims: IBaseJwtClaims): claims is IRecipientJwtClaims;
-export declare function isTherapistJwtClaims(claims: IBaseJwtClaims): claims is ITherapistOrSuperUserJwtClaims;
-export declare function isAdminJwtClaims(claims: IBaseJwtClaims): claims is IAdminJwtClaims;
+export declare function isRecipientJwtClaims(claims?: IBaseJwtClaims): claims is IRecipientJwtClaims;
+export declare function isTherapistJwtClaims(claims?: IBaseJwtClaims): claims is ITherapistOrSuperUserJwtClaims;
+export declare function isAdminJwtClaims(claims?: IBaseJwtClaims): claims is IAdminJwtClaims;
 export {};
 //# sourceMappingURL=jwtClaims.d.ts.map
