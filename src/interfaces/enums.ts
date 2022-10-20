@@ -10,10 +10,10 @@ export enum QnrContextTypes {
     Portal = 'portal',
     Outlook = 'outlook',
 }
-export enum  DocSignicatSignStatusTypes {
+export enum DocSignicatSignStatusTypes {
     Complteted = 'completed',
     Rejected = 'rejected',
-    Waiting = 'waiting'
+    Waiting = 'waiting',
 }
 
 export enum DocProxyStatusTypes {
@@ -40,7 +40,7 @@ export enum QuestionTypes {
     Readonly = 'Readonly',
     ExpressionQuestion = 'ExpressionQuestion',
     Chart = 'Chart',
-    Widget = 'Widget'
+    Widget = 'Widget',
 }
 
 export enum ActorTypes {
@@ -87,7 +87,7 @@ export enum SmsTemplatesCategoryTypes {
     Info = 'INFO',
     Reject = 'REJECT',
     NewChat = 'NEW_CHAT',
-    UnseenNotifications = 'UNSEEN_NOTIFICATIONS'
+    UnseenNotifications = 'UNSEEN_NOTIFICATIONS',
 }
 
 export enum TemplatesContextTypes {
@@ -96,15 +96,13 @@ export enum TemplatesContextTypes {
     Outlook = 'OUTLOOK',
     Start = 'START',
     Research = 'RESEARCH',
-    Plan = 'PLAN'
+    Plan = 'PLAN',
 }
 
 export enum TemplatesAccessibleTypes {
     Patient = 'PATIENT',
     Customer = 'CUSTOMER',
 }
-
-
 
 /* export enum InitiatorTypes {
     Customer = 'customer',
@@ -214,7 +212,6 @@ export enum UsersMenuContext {
     Actor_Involved = 'actor_involved',
 }
 
-
 export enum FileTypeEnum {
     Doc = 'doc',
     Qnr = 'questionnaire',
@@ -321,3 +318,8 @@ export enum ExpressionPrefix {
 
 export type IExpressionOperators = typeof ExpressionOperators[keyof typeof ExpressionOperators]
 export type IExpressionPrefix = typeof ExpressionPrefix[keyof typeof ExpressionPrefix]
+
+export enum Language {
+    EN = 'en',
+    NO = 'no',
+}

@@ -2,4 +2,5 @@ export type { IUploadedDocument } from './interfaces/api/advoca/IUploadedDocumen
 export type { IFeedBack, ISaveToDataBase } from './interfaces/api/advoca/ISaveToDataBase'
 export * from './interfaces/jwtClaims'
 export * from './interfaces/enums'
+export * from './interfaces/artifact_enums'
 

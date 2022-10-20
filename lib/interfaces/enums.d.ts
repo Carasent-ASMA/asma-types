@@ -226,4 +226,8 @@ export declare enum ExpressionPrefix {
 }
 export declare type IExpressionOperators = typeof ExpressionOperators[keyof typeof ExpressionOperators];
 export declare type IExpressionPrefix = typeof ExpressionPrefix[keyof typeof ExpressionPrefix];
+export declare enum Language {
+    EN = "en",
+    NO = "no"
+}
 //# sourceMappingURL=enums.d.ts.map
