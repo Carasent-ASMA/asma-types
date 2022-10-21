@@ -1,3 +1,8 @@
+export declare enum ArtifactPresenterTypes {
+    Qnr = "Questionnaire",
+    DocumentProxy = "DocumentProxy",
+    DocumentOutlook = "DocumentOutlook"
+}
 export declare enum FileExtension {
     ZIP = "zip",
     XLSX = "xlsx",
