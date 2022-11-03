@@ -83,7 +83,8 @@ export declare enum TemplatesContextTypes {
     Outlook = "OUTLOOK",
     Start = "START",
     Research = "RESEARCH",
-    Plan = "PLAN"
+    Plan = "PLAN",
+    Summary = "SUMMARY"
 }
 export declare enum TemplatesAccessibleTypes {
     Patient = "PATIENT",

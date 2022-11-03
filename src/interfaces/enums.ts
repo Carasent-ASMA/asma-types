@@ -97,6 +97,7 @@ export enum TemplatesContextTypes {
     Start = 'START',
     Research = 'RESEARCH',
     Plan = 'PLAN',
+    Summary = 'SUMMARY',
 }
 
 export enum TemplatesAccessibleTypes {
