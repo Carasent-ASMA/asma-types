@@ -1,6 +1,7 @@
 export declare enum ArtifactPresenterTypes {
     Qnr = "Questionnaire",
     DocumentProxy = "DocumentProxy",
+    DocumentConnector = "DocumentConnector",
     DocumentOutlook = "DocumentOutlook"
 }
 export declare enum FileExtension {

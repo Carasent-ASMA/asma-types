@@ -1,6 +1,7 @@
 export enum ArtifactPresenterTypes {
     Qnr = 'Questionnaire',
     DocumentProxy = 'DocumentProxy',
+    DocumentConnector = 'DocumentConnector',
     DocumentOutlook = 'DocumentOutlook',
 }
 
