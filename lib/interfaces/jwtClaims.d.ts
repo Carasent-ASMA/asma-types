@@ -1,5 +1,4 @@
-declare type roles_enum = 'RECIPIENT' | 'SUPER_USER' | 'THERAPIST' | 'USER';
-declare type feature_names_enum = 'autoImportableQnr' | 'dashboardTraceability' | 'ordersOverviewOnSelectedRecipientsForQnr' | 'predefinedUserForQnr' | 'rejectableQnr' | 'signByTherapistDocument' | 'test';
+import type { roles_enum, feature_names_enum } from "asma-genql-directory/lib";
 export interface IBaseJwtClaims {
     user_id: string;
     role: roles_enum;
@@ -35,5 +34,4 @@ export interface ISrvUrls {
 export declare function isRecipientJwtClaims(claims?: IBaseJwtClaims): claims is IRecipientJwtClaims;
 export declare function isTherapistJwtClaims(claims?: IBaseJwtClaims): claims is ITherapistOrSuperUserJwtClaims;
 export declare function isAdminJwtClaims(claims?: IBaseJwtClaims): claims is IAdminJwtClaims;
-export {};
 //# sourceMappingURL=jwtClaims.d.ts.map

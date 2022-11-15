@@ -1,12 +1,14 @@
-type roles_enum = 'RECIPIENT' | 'SUPER_USER' | 'THERAPIST' | 'USER'
-type feature_names_enum =
-    | 'autoImportableQnr'
-    | 'dashboardTraceability'
-    | 'ordersOverviewOnSelectedRecipientsForQnr'
-    | 'predefinedUserForQnr'
-    | 'rejectableQnr'
-    | 'signByTherapistDocument'
-    | 'test'
+import type { roles_enum, feature_names_enum } from "asma-genql-directory/lib"
+
+//type roles_enum = 'RECIPIENT' | 'SUPER_USER' | 'THERAPIST' | 'USER'
+// type feature_names_enum =
+//     | 'autoImportableQnr'
+//     | 'dashboardTraceability'
+//     | 'ordersOverviewOnSelectedRecipientsForQnr'
+//     | 'predefinedUserForQnr'
+//     | 'rejectableQnr'
+//     | 'signByTherapistDocument'
+//     | 'test'
 
 export interface IBaseJwtClaims {
     user_id: string
