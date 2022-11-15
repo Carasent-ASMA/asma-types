@@ -1,6 +1,6 @@
 {
   "name": "asma-types",
-  "version": "1.1.20",
+  "version": "1.1.21",
   "description": "shared ts asma types",
   "main": "lib/index.js",
   "type": "module",
@@ -15,8 +15,11 @@
     "type": "git",
     "url": "https://avanssoma@dev.azure.com/avanssoma/Arbeidoginkludering/_git/asma-types"
   },
+  "dependencies": {
+    "@genql/runtime": "^2.10.0",
+    "asma-genql-directory": "^1.0.66"
+  },
   "devDependencies": {
-    "@genql/cli": "^2.6.0",
-    "typescript": "^4.4.4"
+    "typescript": "^4.7.4"
   }
 }
