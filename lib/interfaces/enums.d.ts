@@ -231,4 +231,8 @@ export declare enum Language {
     EN = "en",
     NO = "no"
 }
+export declare enum SearchParams {
+    SelectedUserId = "selected_patient_id",
+    SelectedQnrId = "selected_query_id"
+}
 //# sourceMappingURL=enums.d.ts.map

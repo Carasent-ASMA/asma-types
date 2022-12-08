@@ -324,3 +324,8 @@ export enum Language {
     EN = 'en',
     NO = 'no',
 }
+
+export enum SearchParams {
+    SelectedUserId = 'selected_patient_id',
+    SelectedQnrId = 'selected_query_id',
+}
