@@ -1,10 +1,16 @@
 // deprecated, replaced with QueriesInitiator
+/**
+ * @deprecated replaced with QueriesInitiator
+ */
 export enum InitiatorTypes {
     Customer = 'customer',
     Patient = 'patient',
     SelfCompletable = 'self-completable',
 }
 // deprecated, replaced with TemplatesContext
+/**
+ * @deprecated replaced with TemplatesContext
+ */
 export enum QnrContextTypes {
     Advoca = 'advoca',
     Portal = 'portal',
@@ -22,6 +28,16 @@ export enum DocProxyStatusTypes {
     OnlyForView = 'only_for_view',
     /* download = 'download',
     uploaded = 'uploaded' */
+}
+
+export enum AsyncChatArtifactExtension {
+    DOC = 'doc',
+    DOCX = 'docx',
+    JPEG = 'jpeg',
+    JPG = 'jpg',
+    PDF = 'pdf',
+    PNG = 'png',
+    UNKNOWN = 'unknown',
 }
 export enum QuestionTypes {
     BooleanQuestion = 'BooleanQuestion',
