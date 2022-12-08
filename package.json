@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "@genql/runtime": "^2.10.0",
-    "asma-genql-directory": "^1.0.66"
+    "asma-genql-directory": "^1.0.72"
   },
   "devDependencies": {
     "typescript": "^4.7.4"
