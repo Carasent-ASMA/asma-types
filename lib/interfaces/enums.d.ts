@@ -1,8 +1,14 @@
+/**
+ * @deprecated replaced with QueriesInitiator
+ */
 export declare enum InitiatorTypes {
     Customer = "customer",
     Patient = "patient",
     SelfCompletable = "self-completable"
 }
+/**
+ * @deprecated replaced with TemplatesContext
+ */
 export declare enum QnrContextTypes {
     Advoca = "advoca",
     Portal = "portal",
@@ -17,6 +23,15 @@ export declare enum DocProxyStatusTypes {
     Signed = "signed",
     WaitingForSigning = "waiting_for_signing",
     OnlyForView = "only_for_view"
+}
+export declare enum AsyncChatArtifactExtension {
+    DOC = "doc",
+    DOCX = "docx",
+    JPEG = "jpeg",
+    JPG = "jpg",
+    PDF = "pdf",
+    PNG = "png",
+    UNKNOWN = "unknown"
 }
 export declare enum QuestionTypes {
     BooleanQuestion = "BooleanQuestion",

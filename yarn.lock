@@ -177,6 +177,28 @@ asma-genql-directory@^1.0.72:
     asma-app-lib-helpers "^2.2.0"
     graphql "^16.6.0"
 
+asma-genql-directory@^1.0.73:
+  version "1.0.73"
+  resolved "https://registry.yarnpkg.com/asma-genql-directory/-/asma-genql-directory-1.0.73.tgz#6e30c0d810b882314a0873758fe8a0d495b0c23c"
+  integrity sha512-i03LrN5jY2J2QNkCCgBkbyTeeemBFUZE48/sBhAVvKvOrPuvG4bbAHgyF/vHVlQrrMOITV6wcD+ogQew3gV/ww==
+  dependencies:
+    "@genql/runtime" "^2.10.0"
+    asma-helpers "^0.2.10"
+    graphql "^16.6.0"
+
+asma-helpers@^0.2.10:
+  version "0.2.10"
+  resolved "https://registry.yarnpkg.com/asma-helpers/-/asma-helpers-0.2.10.tgz#0b056d43500e6453e6e9de38368cdc7d507a2baa"
+  integrity sha512-uTCL1BOTOclL0fsBHuStRPcTAJt/+KURJBQcEKp/gP1S6DLSWRCY9NjMpFWcZ9c9zg1VS/1MLclb1vSPtnDfFQ==
+  dependencies:
+    "@genql/runtime" "^2.10.0"
+    asma-genql-directory "^1.0.72"
+    axios "^0.27.2"
+    history "^5.3.0"
+    idb-keyval "^6.2.0"
+    mobx "^6.6.1"
+    mobx-state-tree "^5.1.5"
+
 async-limiter@~1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/async-limiter/-/async-limiter-1.0.1.tgz#dd379e94f0db8310b08291f9d64c3209766617fd"
@@ -278,7 +300,7 @@ graphql@^16.6.0:
   resolved "https://registry.yarnpkg.com/graphql/-/graphql-16.6.0.tgz#c2dcffa4649db149f6282af726c8c83f1c7c5fdb"
   integrity sha512-KPIBPDlW7NxrbT/eh4qPXz5FiFdL5UbaA0XUNz2Rp3Z3hqBSkbj0GVjwFDztsWVauZUWsbKHgMg++sk8UX0bkw==
 
-history@^5.0.0:
+history@^5.0.0, history@^5.3.0:
   version "5.3.0"
   resolved "https://registry.yarnpkg.com/history/-/history-5.3.0.tgz#1548abaa245ba47992f063a0783db91ef201c73b"
   integrity sha512-ZqaKwjjrAYUYfLG+htGaIIZ4nioX2L70ZUMIFysS3xvBsSG4x/n1V6TXV3N8ZYNuFGlDirFg32T7B6WOUPDYcQ==
