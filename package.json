@@ -1,6 +1,6 @@
 {
   "name": "asma-types",
-  "version": "1.1.24",
+  "version": "1.1.25",
   "description": "shared ts asma types",
   "main": "lib/index.js",
   "type": "module",
@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "@genql/runtime": "^2.10.0",
-    "asma-genql-directory": "^1.0.72"
+    "asma-genql-directory": "^1.0.73"
   },
   "devDependencies": {
     "typescript": "^4.7.4"
