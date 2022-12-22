@@ -1,4 +1,4 @@
-import type { roles_enum, feature_names_enum } from "asma-genql-directory/lib";
+import type { roles_enum, feature_names_enum } from "asma-genql-directory/src/generated";
 export interface IBaseJwtClaims {
     user_id: string;
     role: roles_enum;

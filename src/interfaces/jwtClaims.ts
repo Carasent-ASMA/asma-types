@@ -1,4 +1,4 @@
-import type { roles_enum, feature_names_enum } from "asma-genql-directory/lib"
+import type { roles_enum, feature_names_enum } from "asma-genql-directory/src/generated"
 
 //type roles_enum = 'RECIPIENT' | 'SUPER_USER' | 'THERAPIST' | 'USER'
 // type feature_names_enum =
