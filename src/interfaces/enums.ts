@@ -321,7 +321,7 @@ export enum PortalRoutesPaths {
 }
 
 export enum ProtectedRoutesPaths {
-    login = '/login',
+    login = 'login',
     homeIndex = '/',
     home = 'home',
     customer = 'customer',
@@ -330,14 +330,15 @@ export enum ProtectedRoutesPaths {
     shortcuts = 'shortcuts',
     qnrCompleted = 'completed-schemas',
     chat = 'chat',
+    chatParamId = '/chat?chat=',
     tasks = 'tasks',
     calendar = 'calendar',
     overview = 'overview',
     tiltak = 'information-on-tiltak',
     candidatProfile = 'candidat-profile',
-    jobsearch = '/job-search',
-    jobseeker = '/patient-profile',
-    directory = '/directory',
+    jobsearch = 'job-search',
+    jobseeker = 'patient-profile',
+    directory = 'directory',
     //
     plans = 'plans',
     research = 'research',
@@ -348,7 +349,7 @@ export enum ProtectedRoutesPaths {
     plansQnrView = 'plans/qnr-view',
     summaryQnrView = 'summary/qnr-view',
     //
-    artifactPresenter = '/artifact-presenter',
+    artifactPresenter = 'artifact-presenter',
 }
 
 export enum ExpressionOperators {
