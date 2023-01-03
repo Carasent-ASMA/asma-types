@@ -248,6 +248,7 @@ export declare enum ProtectedRoutesPaths {
     jobsearch = "job-search",
     jobseeker = "patient-profile",
     directory = "directory",
+    reports = "reports",
     plans = "plans",
     research = "research",
     summary = "summary",

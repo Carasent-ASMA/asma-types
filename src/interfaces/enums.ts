@@ -339,6 +339,7 @@ export enum ProtectedRoutesPaths {
     jobsearch = 'job-search',
     jobseeker = 'patient-profile',
     directory = 'directory',
+    reports = 'reports',
     //
     plans = 'plans',
     research = 'research',
