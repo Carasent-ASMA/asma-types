@@ -1,4 +1,4 @@
-import type { roles_enum, feature_names_enum } from "asma-genql-directory/lib"
+//import type { roles_enum, feature_names_enum } from "asma-genql-directory/lib"
 
 //type roles_enum = 'RECIPIENT' | 'SUPER_USER' | 'THERAPIST' | 'USER'
 // type feature_names_enum =
@@ -9,33 +9,42 @@ import type { roles_enum, feature_names_enum } from "asma-genql-directory/lib"
 //     | 'rejectableQnr'
 //     | 'signByTherapistDocument'
 //     | 'test'
-
-export interface IBaseJwtClaims {
+//
+/**
+ * R roles_enum
+ */
+export interface IBaseJwtClaims<R extends string> {
     user_id: string
-    role: roles_enum
+    role: R
     vt?: number
     exp?: number
 }
 
-export interface IAdminJwtClaims extends IBaseJwtClaims {
+export interface IAdminJwtClaims<R extends string> extends IBaseJwtClaims<R> {
     name?: string
 }
-
-export interface IRecipientJwtClaims extends IBaseJwtClaims {
+/**
+ * R roles_enum
+ */
+export interface IRecipientJwtClaims<R extends string> extends IBaseJwtClaims<R> {
     access_level: 1 | 2 | 3 | 4
     name: string
     related_customers: string
     identity: string
     customer_id?: string
 }
-export interface ITherapistOrSuperUserJwtClaims extends IBaseJwtClaims {
+/**
+ * R roles_enum
+ * F feature_names_enum
+ */
+export interface ITherapistOrSuperUserJwtClaims<R extends string,F extends string> extends IBaseJwtClaims<R> {
     name: string
     region: string
     customer_id: string
     journal_user_id?: string
     brukerBrukerNavn?: string
     services: IService
-    features: feature_names_enum[]
+    features: F[]
     srv_urls: ISrvUrls
 }
 export interface IService {
@@ -45,14 +54,26 @@ export interface IService {
 export interface ISrvUrls {
     [key: string]: string
 }
-
-export function isRecipientJwtClaims(claims?: IBaseJwtClaims): claims is IRecipientJwtClaims {
+/**
+ *  R roles_enum 
+ */
+export function isRecipientJwtClaims<R extends string>(claims?: IBaseJwtClaims<R>): claims is IRecipientJwtClaims<R> {
     return claims?.role.toUpperCase() === 'RECIPIENT'
 }
-export function isTherapistJwtClaims(claims?: IBaseJwtClaims): claims is ITherapistOrSuperUserJwtClaims {
+/**
+ * 
+ * @param claims R roles_enum
+ * F feature_names_enum
+ * @returns 
+ */
+export function isTherapistJwtClaims<R extends string, F extends string>(claims?: IBaseJwtClaims<R>): claims is ITherapistOrSuperUserJwtClaims<R,F> {
     return claims?.role.toUpperCase() === 'THERAPIST' || claims?.role?.toUpperCase() === 'SUPER_USER'
 }
-
-export function isAdminJwtClaims(claims?: IBaseJwtClaims): claims is IAdminJwtClaims {
-    return claims?.role.toUpperCase() === ('ADMIN' as roles_enum)
+/**
+ * 
+ * @param claims R roles_enum
+ * @returns 
+ */
+export function isAdminJwtClaims<R extends string>(claims?: IBaseJwtClaims<R>): claims is IAdminJwtClaims<R> {
+    return claims?.role.toUpperCase() === 'ADMIN'
 }
