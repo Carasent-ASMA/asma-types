@@ -320,6 +320,39 @@ export enum PortalRoutesPaths {
     TemplateQueryParam = 'template',
 }
 
+export enum ProtectedRoutesPaths {
+    login = 'login',
+    homeIndex = '/',
+    home = 'home',
+    customer = 'customer',
+    documents = 'customer/documents',
+    consents = 'consents',
+    shortcuts = 'shortcuts',
+    qnrCompleted = 'completed-schemas',
+    chat = 'chat',
+    chatParamId = '/chat?chat=',
+    tasks = 'tasks',
+    calendar = 'calendar',
+    overview = 'overview',
+    tiltak = 'information-on-tiltak',
+    candidatProfile = 'candidat-profile',
+    jobsearch = 'job-search',
+    jobseeker = 'patient-profile',
+    directory = 'directory',
+    reports = 'reports',
+    //
+    plans = 'plans',
+    research = 'research',
+    summary = 'summary',
+    //
+    qnrview = 'qnr-view',
+    researchQnrView = 'research/qnr-view',
+    plansQnrView = 'plans/qnr-view',
+    summaryQnrView = 'summary/qnr-view',
+    //
+    artifactPresenter = 'artifact-presenter',
+}
+
 export enum ExpressionOperators {
     Addition = '+',
     Subtraction = '-',
