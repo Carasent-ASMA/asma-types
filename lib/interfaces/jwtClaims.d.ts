@@ -6,6 +6,7 @@ export interface IBaseJwtClaims<R extends string> {
     role: R;
     vt?: number;
     exp?: number;
+    customer_id: string;
 }
 export interface IAdminJwtClaims<R extends string> extends IBaseJwtClaims<R> {
     name?: string;
@@ -18,7 +19,6 @@ export interface IRecipientJwtClaims<R extends string> extends IBaseJwtClaims<R>
     name: string;
     related_customers: string;
     identity: string;
-    customer_id: string;
     srv_urls: ISrvUrls;
 }
 /**
@@ -28,7 +28,6 @@ export interface IRecipientJwtClaims<R extends string> extends IBaseJwtClaims<R>
 export interface ITherapistOrSuperUserJwtClaims<R extends string, F extends string> extends IBaseJwtClaims<R> {
     name: string;
     region: string;
-    customer_id: string;
     journal_user_id?: string;
     brukerBrukerNavn?: string;
     services: IService;
