@@ -1,6 +1,6 @@
 {
   "name": "asma-types",
-  "version": "1.1.34",
+  "version": "1.1.35",
   "description": "shared ts asma types",
   "main": "lib/index.js",
   "type": "module",
