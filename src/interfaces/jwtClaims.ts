@@ -85,3 +85,7 @@ export function isTherapistJwtClaims<R extends string, F extends string>(claims?
 export function isAdminJwtClaims<R extends string>(claims?: IBaseJwtClaims<R>): claims is IAdminJwtClaims<R> {
     return claims?.role.toUpperCase() === 'ADMIN'
 }
+
+export function isAiLearningJwtClaims<R extends string>(claims?: IBaseJwtClaims<R>): claims is IAdminJwtClaims<R> {
+    return claims?.role.toUpperCase() === 'AI_LEARNING'
+}
