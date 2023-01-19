@@ -64,5 +64,5 @@ export declare function isTherapistJwtClaims<R extends string, F extends string>
  * @returns
  */
 export declare function isAdminJwtClaims<R extends string>(claims?: IBaseJwtClaims<R>): claims is IAdminJwtClaims<R>;
-export declare function isAiLearningJwtClaims<R extends string>(claims?: IBaseJwtClaims<R>): claims is IAdminJwtClaims<R>;
+export declare function isAiLearningJwtClaims<R extends string>(claims?: IBaseJwtClaims<R>): claims is IRecipientJwtClaims<R>;
 //# sourceMappingURL=jwtClaims.d.ts.map

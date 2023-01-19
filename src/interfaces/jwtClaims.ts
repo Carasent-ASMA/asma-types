@@ -86,6 +86,6 @@ export function isAdminJwtClaims<R extends string>(claims?: IBaseJwtClaims<R>): 
     return claims?.role.toUpperCase() === 'ADMIN'
 }
 
-export function isAiLearningJwtClaims<R extends string>(claims?: IBaseJwtClaims<R>): claims is IAdminJwtClaims<R> {
+export function isAiLearningJwtClaims<R extends string>(claims?: IBaseJwtClaims<R>): claims is IRecipientJwtClaims<R> {
     return claims?.role.toUpperCase() === 'AI_LEARNING'
 }
