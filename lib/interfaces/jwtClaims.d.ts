@@ -18,7 +18,7 @@ export interface IRecipientJwtClaims<R extends string> extends IBaseJwtClaims<R>
     name: string;
     related_customers: string;
     identity: string;
-    customer_id?: string;
+    customer_id: string;
 }
 /**
  * R roles_enum
