@@ -32,6 +32,7 @@ export interface IRecipientJwtClaims<R extends string> extends IBaseJwtClaims<R>
     related_customers: string
     identity: string
     customer_id: string
+    srv_urls: ISrvUrls
 }
 /**
  * R roles_enum
@@ -53,6 +54,13 @@ export interface IService {
 
 export interface ISrvUrls {
     [key: string]: string
+}
+
+export interface IAiLearningJwtClaims<R extends string> extends IBaseJwtClaims<R> {
+    region: string
+    name: string
+    customer_id: string
+    password?: string
 }
 /**
  *  R roles_enum 
