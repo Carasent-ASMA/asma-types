@@ -351,6 +351,12 @@ export enum ProtectedRoutesPaths {
     summaryQnrView = 'summary/qnr-view',
     //
     artifactPresenter = 'artifact-presenter',
+    //portal routes
+    portalOverview = 'portal-advoca/overview',
+    portalQnrModule = 'qnr-module',
+    portalMicrosoftOffice = 'microsoft-office/onedrive',
+    portalDesigner = 'designer',
+    portalDashboard = 'dashboard/services',
 }
 
 export enum ExpressionOperators {

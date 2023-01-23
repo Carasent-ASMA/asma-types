@@ -256,7 +256,12 @@ export declare enum ProtectedRoutesPaths {
     researchQnrView = "research/qnr-view",
     plansQnrView = "plans/qnr-view",
     summaryQnrView = "summary/qnr-view",
-    artifactPresenter = "artifact-presenter"
+    artifactPresenter = "artifact-presenter",
+    portalOverview = "portal-advoca/overview",
+    portalQnrModule = "qnr-module",
+    portalMicrosoftOffice = "microsoft-office/onedrive",
+    portalDesigner = "designer",
+    portalDashboard = "dashboard/services"
 }
 export declare enum ExpressionOperators {
     Addition = "+",
