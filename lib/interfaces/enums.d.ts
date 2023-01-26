@@ -222,8 +222,8 @@ export declare const TemplateStatusColor: {
     active: string;
     inactive: string;
 };
-export type TemplateStatusTypes = typeof TTemplateStatus[keyof typeof TTemplateStatus];
-export type TemplateStatusIconTypes = typeof TemplateFilterStatusTypes[keyof typeof TemplateStatusIcon];
+export declare type TemplateStatusTypes = typeof TTemplateStatus[keyof typeof TTemplateStatus];
+export declare type TemplateStatusIconTypes = typeof TemplateFilterStatusTypes[keyof typeof TemplateStatusIcon];
 export declare enum PortalRoutesPaths {
     Overview = "overview",
     Orders = "orders",
@@ -274,8 +274,8 @@ export declare enum ExpressionPrefix {
     'AtSign' = "@",
     'Hashtag' = "#"
 }
-export type IExpressionOperators = typeof ExpressionOperators[keyof typeof ExpressionOperators];
-export type IExpressionPrefix = typeof ExpressionPrefix[keyof typeof ExpressionPrefix];
+export declare type IExpressionOperators = typeof ExpressionOperators[keyof typeof ExpressionOperators];
+export declare type IExpressionPrefix = typeof ExpressionPrefix[keyof typeof ExpressionPrefix];
 export declare enum Language {
     EN = "en",
     NO = "no"

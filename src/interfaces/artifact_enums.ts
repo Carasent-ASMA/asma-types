@@ -24,5 +24,6 @@ export enum FileExtension {
     DOCX = 'docx',
     DOC = 'doc',
     APP = 'app',
+    RTF = 'rtf',
     UNKNOWN = 'unknown',
 }
