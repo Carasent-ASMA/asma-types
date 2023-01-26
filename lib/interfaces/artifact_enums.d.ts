@@ -23,6 +23,7 @@ export declare enum FileExtension {
     DOCX = "docx",
     DOC = "doc",
     APP = "app",
+    RTF = "rtf",
     UNKNOWN = "unknown"
 }
 //# sourceMappingURL=artifact_enums.d.ts.map
