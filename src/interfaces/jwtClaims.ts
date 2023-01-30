@@ -18,7 +18,7 @@ export interface IBaseJwtClaims<R extends string> {
     role: R
     vt?: number
     exp?: number
-    customer_id: string
+    customer_id?: string
 }
 
 export interface IAdminJwtClaims<R extends string> extends IBaseJwtClaims<R> {
