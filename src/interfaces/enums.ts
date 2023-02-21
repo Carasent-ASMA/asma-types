@@ -357,6 +357,8 @@ export enum ProtectedRoutesPaths {
     portalMicrosoftOffice = 'microsoft-office/onedrive',
     portalDesigner = 'designer',
     portalDashboard = 'dashboard/services',
+    //
+    anonymousSchema = 'anonymous-schema',
 }
 
 export enum ExpressionOperators {

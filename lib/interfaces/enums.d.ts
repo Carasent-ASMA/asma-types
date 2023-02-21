@@ -261,7 +261,8 @@ export declare enum ProtectedRoutesPaths {
     portalQnrModule = "qnr-module",
     portalMicrosoftOffice = "microsoft-office/onedrive",
     portalDesigner = "designer",
-    portalDashboard = "dashboard/services"
+    portalDashboard = "dashboard/services",
+    anonymousSchema = "anonymous-schema"
 }
 export declare enum ExpressionOperators {
     Addition = "+",
