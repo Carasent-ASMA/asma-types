@@ -30,6 +30,7 @@ export interface IAdminJwtClaims<R extends string> extends IBaseJwtClaims<R> {
 export interface IRecipientJwtClaims<R extends string> extends IBaseJwtClaims<R> {
     access_level: 1 | 2 | 3 | 4
     name: string
+    journal_user_id?: string
     related_customers: string
     identity: string
     srv_urls: ISrvUrls
