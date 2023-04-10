@@ -17,7 +17,7 @@ export enum QnrContextTypes {
     Outlook = 'outlook',
 }
 export enum DocSignicatSignStatusTypes {
-    Complteted = 'completed',
+    Completed = 'completed',
     Rejected = 'rejected',
     Waiting = 'waiting',
 }
@@ -133,7 +133,6 @@ export enum DocumentTypes {
 }
 
 /* export enum EprTypes {
-    ADVITAM = 'ADVITAM',
     ADOPUS = 'ADOPUS',
 } */
 
@@ -168,7 +167,7 @@ export enum QuestionStateTypes {
 
 export enum DROPDOWN {
     Ordinary = 'ORDINARY',
-    PostCodeWithSity = 'REGION_POST_CODE',
+    PostCodeWithCity = 'REGION_POST_CODE',
     Country = 'COUNTRY',
 }
 
@@ -189,7 +188,7 @@ export enum NumberTypes {
 export enum ConsentGroup {
     General = 'GENERAL',
     Query = 'QUERY',
-    Communication = 'COMMINICATION',
+    Communication = 'COMMUNICATION',
 } */
 
 export enum DocStatusTypes {
@@ -335,9 +334,9 @@ export enum ProtectedRoutesPaths {
     calendar = 'calendar',
     overview = 'overview',
     tiltak = 'information-on-tiltak',
-    candidatProfile = 'candidat-profile',
-    jobsearch = 'job-search',
-    jobseeker = 'patient-profile',
+    candidateProfile = 'candidate-profile',
+    jobSearch = 'job-search',
+    jobSeeker = 'patient-profile',
     directory = 'directory',
     reports = 'reports',
     //
@@ -352,7 +351,7 @@ export enum ProtectedRoutesPaths {
     smsPainter = 'research/sms-painter',
     anonymousForms = 'research/anonymous-forms',
     //
-    qnrview = 'qnr-view',
+    qnrView = 'qnr-view',
     researchQnrView = 'research/qnr-view',
     plansQnrView = 'plans/qnr-view',
     summaryQnrView = 'summary/qnr-view',
