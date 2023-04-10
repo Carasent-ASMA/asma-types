@@ -15,7 +15,7 @@ export declare enum QnrContextTypes {
     Outlook = "outlook"
 }
 export declare enum DocSignicatSignStatusTypes {
-    Complteted = "completed",
+    Completed = "completed",
     Rejected = "rejected",
     Waiting = "waiting"
 }
@@ -114,7 +114,7 @@ export declare enum QuestionStateTypes {
 }
 export declare enum DROPDOWN {
     Ordinary = "ORDINARY",
-    PostCodeWithSity = "REGION_POST_CODE",
+    PostCodeWithCity = "REGION_POST_CODE",
     Country = "COUNTRY"
 }
 export declare enum NumberTypes {
@@ -244,15 +244,21 @@ export declare enum ProtectedRoutesPaths {
     calendar = "calendar",
     overview = "overview",
     tiltak = "information-on-tiltak",
-    candidatProfile = "candidat-profile",
-    jobsearch = "job-search",
-    jobseeker = "patient-profile",
+    candidateProfile = "candidate-profile",
+    jobSearch = "job-search",
+    jobSeeker = "patient-profile",
     directory = "directory",
     reports = "reports",
     plans = "plans",
     research = "research",
     summary = "summary",
-    qnrview = "qnr-view",
+    inboxOutbox = "research/inbox-outbox",
+    allQnrsAndFiles = "research/all-qnrs-and-files",
+    manageQnrs = "research/manage-qnrs",
+    manageParcels = "research/manage-parcels",
+    smsPainter = "research/sms-painter",
+    anonymousQnrs = "research/anonymous-qnrs",
+    qnrView = "qnr-view",
     researchQnrView = "research/qnr-view",
     plansQnrView = "plans/qnr-view",
     summaryQnrView = "summary/qnr-view",
