@@ -257,6 +257,8 @@ export declare enum ProtectedRoutesPaths {
     manageQnrs = "research/manage-qnrs",
     manageParcels = "research/manage-parcels",
     smsPainter = "research/sms-painter",
+    anonymousForms = "research/anonymous-forms",
+    sendOrders = "research/send-orders",
     anonymousQnrs = "research/anonymous-qnrs",
     qnrView = "qnr-view",
     researchQnrView = "research/qnr-view",

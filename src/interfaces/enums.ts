@@ -343,12 +343,14 @@ export enum ProtectedRoutesPaths {
     plans = 'plans',
     research = 'research',
     summary = 'summary',
-    //
+    //    
     inboxOutbox = 'research/inbox-outbox',
     allQnrsAndFiles = 'research/all-qnrs-and-files',
     manageQnrs = 'research/manage-qnrs',
     manageParcels = 'research/manage-parcels',
     smsPainter = 'research/sms-painter',
+    anonymousForms = 'research/anonymous-forms',
+    sendOrders = 'research/send-orders',
     anonymousQnrs = 'research/anonymous-qnrs',
     //
     qnrView = 'qnr-view',
