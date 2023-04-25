@@ -346,7 +346,8 @@ export const ProtectedRoutesPaths = {
     reports : 'reports',
     //
     plans : 'plans',
-    research: 'research',
+    research: 'qnr-module',
+    qnrs:'qnrs',
     summary: 'summary',
     //
     inboxOutbox : 'qnrs/inbox-outbox',
