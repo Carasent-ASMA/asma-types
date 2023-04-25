@@ -229,47 +229,48 @@ export declare enum PortalRoutesPaths {
     Orders = "orders",
     TemplateQueryParam = "template"
 }
-export declare enum ProtectedRoutesPaths {
-    login = "login",
-    homeIndex = "/",
-    home = "home",
-    customer = "customer",
-    documents = "customer/documents",
-    consents = "consents",
-    shortcuts = "shortcuts",
-    qnrCompleted = "completed-schemas",
-    chat = "chat",
-    chatParamId = "/chat?chat=",
-    tasks = "tasks",
-    calendar = "calendar",
-    overview = "overview",
-    tiltak = "information-on-tiltak",
-    candidateProfile = "candidate-profile",
-    jobSearch = "job-search",
-    jobSeeker = "patient-profile",
-    directory = "directory",
-    reports = "reports",
-    plans = "plans",
-    research = "research",
-    summary = "summary",
-    inboxOutbox = "research/inbox-outbox",
-    allQnrsAndFiles = "research/all-qnrs-and-files",
-    manageQnrs = "research/manage-qnrs",
-    manageParcels = "research/manage-parcels",
-    smsPainter = "research/sms-painter",
-    anonymousQnrs = "research/anonymous-qnrs",
-    qnrView = "qnr-view",
-    researchQnrView = "research/qnr-view",
-    plansQnrView = "plans/qnr-view",
-    summaryQnrView = "summary/qnr-view",
-    artifactPresenter = "artifact-presenter",
-    portalOverview = "portal-advoca/overview",
-    portalQnrModule = "qnr-module",
-    portalMicrosoftOffice = "microsoft-office/onedrive",
-    portalDesigner = "designer",
-    portalDashboard = "dashboard/services",
-    anonymousSchema = "anonymous-schema"
-}
+export declare const ProtectedRoutesPaths: {
+    readonly login: "login";
+    readonly homeIndex: "/";
+    readonly home: "home";
+    readonly customer: "customer";
+    readonly documents: "customer/documents";
+    readonly consents: "consents";
+    readonly shortcuts: "shortcuts";
+    readonly 'completed-schemas': "completed-schemas";
+    readonly chat: "chat";
+    readonly '/chat?chat=': "/chat?chat=";
+    readonly tasks: "tasks";
+    readonly calendar: "calendar";
+    readonly overview: "overview";
+    readonly tiltak: "information-on-tiltak";
+    readonly 'candidate-profile': "candidate-profile";
+    readonly 'job-search': "job-search";
+    readonly 'patient-profile': "patient-profile";
+    readonly directory: "directory";
+    readonly reports: "reports";
+    readonly plans: "plans";
+    readonly research: "research";
+    readonly summary: "summary";
+    readonly inboxOutbox: "qnrs/inbox-outbox";
+    readonly allQnrsAndFiles: "qnrs/all-qnrs-and-files";
+    readonly manageQnrs: "qnrs/manage-qnrs";
+    readonly manageParcels: "qnrs/manage-parcels";
+    readonly smsPainter: "qnrs/sms-painter";
+    readonly anonymousQnrs: "qnrs/anonymous-qnrs";
+    readonly qnrView: "qnr-view";
+    readonly researchQnrView: "research/qnr-view";
+    readonly plansQnrView: "plans/qnr-view";
+    readonly summaryQnrView: "summary/qnr-view";
+    readonly artifactPresenter: "artifact-presenter";
+    readonly portalOverview: "portal-advoca/overview";
+    readonly portalQnrModule: "qnr-module";
+    readonly portalMicrosoftOffice: "microsoft-office/onedrive";
+    readonly portalDesigner: "designer";
+    readonly portalDashboard: "dashboard/services";
+    readonly anonymousSchema: "anonymous-schema";
+};
+export type IProtectedRoutesPaths = typeof ProtectedRoutesPaths[keyof typeof ProtectedRoutesPaths];
 export declare enum ExpressionOperators {
     Addition = "+",
     Subtraction = "-",
