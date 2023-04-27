@@ -346,7 +346,7 @@ export const ProtectedRoutesPaths = {
     reports : 'reports',
     //
     plans : 'plans',
-    research: 'qnr-module',
+    qnrModule: 'qnr-module',
     qnrs:'qnrs',
     summary: 'summary',
     //
@@ -360,7 +360,7 @@ export const ProtectedRoutesPaths = {
     anonymousQnrs : 'qnrs/anonymous-qnrs',
     //
     qnrView : 'qnr-view',
-    researchQnrView : 'research/qnr-view',
+    qnrModuleQnrView : 'qnr-module/qnr-view',
     plansQnrView : 'plans/qnr-view',
     summaryQnrView : 'summary/qnr-view',
     //

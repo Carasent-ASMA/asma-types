@@ -255,7 +255,7 @@ export declare const ProtectedRoutesPaths: {
     readonly directory: "directory";
     readonly reports: "reports";
     readonly plans: "plans";
-    readonly research: "qnr-module";
+    readonly qnrModule: "qnr-module";
     readonly qnrs: "qnrs";
     readonly summary: "summary";
     readonly inboxOutbox: "qnrs/inbox-outbox";
@@ -267,7 +267,7 @@ export declare const ProtectedRoutesPaths: {
     readonly sendOrders: "qnrs/send-orders";
     readonly anonymousQnrs: "qnrs/anonymous-qnrs";
     readonly qnrView: "qnr-view";
-    readonly researchQnrView: "research/qnr-view";
+    readonly qnrModuleQnrView: "qnr-module/qnr-view";
     readonly plansQnrView: "plans/qnr-view";
     readonly summaryQnrView: "summary/qnr-view";
     readonly artifactPresenter: "artifact-presenter";
