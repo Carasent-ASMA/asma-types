@@ -347,7 +347,7 @@ export const ProtectedRoutesPaths = {
     //
     plans : 'plans',
     qnrModule: 'qnr-module',
-    qnrs:'qnrs',
+    allQnrs:'all-qnrs',
     summary: 'summary',
     //
     inboxOutbox : 'qnrs/inbox-outbox',
