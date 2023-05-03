@@ -175,7 +175,7 @@ export enum NumberTypes {
     PersonalNumber = 'PERSONAL_NUMBER',
     NorwegianPhoneNr = 'NORWEGIAN_PHONE_NR',
     Customizable = 'CUSTOMIZABLE',
-    CurrencyNok = 'CURENCY_NOK',
+    CurrencyNok = 'CURRENCY_NOK',
     Ordinary = 'ORDINARY',
     Years = 'YEARS',
 }
@@ -191,30 +191,32 @@ export enum ConsentGroup {
     Communication = 'COMMUNICATION',
 } */
 
-export enum DocStatusTypes {
-    Signed = 'signed',
-    WaitingForSigning = 'waiting_for_signing',
-    OnlyForView = 'only_for_view',
-    Rejected = 'rejected',
+export const DocStatus =  {
+    Signed: 'signed',
+    WaitingForSigning:'waiting_for_signing',
+    OnlyForView: 'only_for_view',
+    Rejected: 'rejected',
     /* download = 'download',
     uploaded = 'uploaded' */
-}
+} as const
+
+export type DocStatusTypes = typeof DocStatus[keyof typeof DocStatus];
 
 export enum DocPickerTypes {
-    dokklad = 'Dokklad',
+    dokkladd = 'Dokkladd',
     postJournal = 'PostJournal',
 }
 
 export enum UploadSource {
     Local = 'local',
     Adopus = 'adopus',
-    Dokklad = 'dokklad',
+    Dokkladd = 'dokkladd',
     Outlook = 'outlook',
 }
 
 export enum SourceDocType {
     Adopus = 'adopus_doc_id',
-    Dokklad = 'dokklad_doc_id',
+    Dokkladd = 'dokkladd_doc_id',
 }
 
 export enum MenuContextTypes {

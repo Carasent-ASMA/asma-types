@@ -121,29 +121,30 @@ export declare enum NumberTypes {
     PersonalNumber = "PERSONAL_NUMBER",
     NorwegianPhoneNr = "NORWEGIAN_PHONE_NR",
     Customizable = "CUSTOMIZABLE",
-    CurrencyNok = "CURENCY_NOK",
+    CurrencyNok = "CURRENCY_NOK",
     Ordinary = "ORDINARY",
     Years = "YEARS"
 }
-export declare enum DocStatusTypes {
-    Signed = "signed",
-    WaitingForSigning = "waiting_for_signing",
-    OnlyForView = "only_for_view",
-    Rejected = "rejected"
-}
+export declare const DocStatus: {
+    readonly Signed: "signed";
+    readonly WaitingForSigning: "waiting_for_signing";
+    readonly OnlyForView: "only_for_view";
+    readonly Rejected: "rejected";
+};
+export type DocStatusTypes = typeof DocStatus[keyof typeof DocStatus];
 export declare enum DocPickerTypes {
-    dokklad = "Dokklad",
+    dokkladd = "Dokkladd",
     postJournal = "PostJournal"
 }
 export declare enum UploadSource {
     Local = "local",
     Adopus = "adopus",
-    Dokklad = "dokklad",
+    Dokkladd = "dokkladd",
     Outlook = "outlook"
 }
 export declare enum SourceDocType {
     Adopus = "adopus_doc_id",
-    Dokklad = "dokklad_doc_id"
+    Dokkladd = "dokkladd_doc_id"
 }
 export declare enum MenuContextTypes {
     Chat = "chat",
