@@ -344,6 +344,7 @@ export const ProtectedRoutesPaths = {
     jobSeeker : 'patient-profile',
     directory : 'directory',
     reports : 'reports',
+    myParticipants: "my-participants",
     //
     plans : 'plans',
     qnrModule: 'qnr-module',

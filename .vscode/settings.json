@@ -1,14 +1,6 @@
 {
     "files.autoSave": "afterDelay",
     "files.autoSaveDelay": 1000,
-    "cSpell.words": [
-        "adopus",
-        "advoca",
-        "dokklad",
-        "onedrive",
-        "qnrs",
-        "SELFCOMPLETABLE",
-        "Signicat",
-        "tiltak"
-    ]
+    "cSpell.words": ["adopus", "advoca", "dokklad", "onedrive", "qnrs", "SELFCOMPLETABLE", "Signicat", "tiltak"],
+    "typescript.tsdk": "node_modules/typescript/lib"
 }
