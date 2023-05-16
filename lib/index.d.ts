@@ -2,5 +2,6 @@ export type { IUploadedDocument } from './interfaces/api/advoca/IUploadedDocumen
 export type { IFeedBack, ISaveToDataBase } from './interfaces/api/advoca/ISaveToDataBase';
 export * from './interfaces/jwtClaims';
 export * from './interfaces/enums';
-export * from './interfaces/artifact_enums';
+export * from './interfaces/artifactEnums';
+export * from './utilities/index';
 //# sourceMappingURL=index.d.ts.map
