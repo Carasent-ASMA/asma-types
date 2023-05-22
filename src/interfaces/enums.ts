@@ -405,3 +405,9 @@ export enum SearchParams {
     SelectedUserId = 'selected_patient_id',
     SelectedQnrId = 'selected_query_id',
 }
+export const UserContext = {
+    ME: 'ME',
+    RECIPIENT: 'RECIPIENT',
+} as const
+
+export type IUserContext = typeof UserContext[keyof typeof UserContext]

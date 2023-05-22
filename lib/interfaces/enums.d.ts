@@ -302,4 +302,9 @@ export declare enum SearchParams {
     SelectedUserId = "selected_patient_id",
     SelectedQnrId = "selected_query_id"
 }
+export declare const UserContext: {
+    readonly ME: "ME";
+    readonly RECIPIENT: "RECIPIENT";
+};
+export type IUserContext = typeof UserContext[keyof typeof UserContext];
 //# sourceMappingURL=enums.d.ts.map
