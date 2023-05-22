@@ -1,3 +1,5 @@
+import type { ValueOf } from '../utilities/valueof.type'
+
 export enum ArtifactPresenterTypes {
     Qnr = 'Questionnaire',
     DocumentProxy = 'DocumentProxy',
@@ -27,3 +29,11 @@ export enum FileExtension {
     RTF = 'rtf',
     UNKNOWN = 'unknown',
 }
+
+export const ScheduleFormat = {
+    ONE_TIME: 'one_time',
+    DAILY: 'daily',
+    WEEKLY: 'weekly',
+} as const
+
+export type ScheduleFormatType = ValueOf<typeof ScheduleFormat>
