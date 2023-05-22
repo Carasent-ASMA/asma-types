@@ -294,14 +294,16 @@ export declare enum ExpressionPrefix {
 }
 export type IExpressionOperators = typeof ExpressionOperators[keyof typeof ExpressionOperators];
 export type IExpressionPrefix = typeof ExpressionPrefix[keyof typeof ExpressionPrefix];
-export declare enum Language {
-    EN = "en",
-    NO = "no"
-}
-export declare enum SearchParams {
-    SelectedUserId = "selected_patient_id",
-    SelectedQnrId = "selected_query_id"
-}
+export declare const Language: {
+    readonly EN: "en";
+    readonly NO: "no";
+};
+export type ILanguage = typeof Language[keyof typeof Language];
+export declare const SearchParams: {
+    readonly SelectedUserId: "selected_patient_id";
+    readonly SelectedQnrId: "selected_query_id";
+};
+export type ISearchParams = typeof SearchParams[keyof typeof SearchParams];
 export declare const UserContext: {
     readonly ME: "ME";
     readonly RECIPIENT: "RECIPIENT";

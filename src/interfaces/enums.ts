@@ -396,15 +396,17 @@ export enum ExpressionPrefix {
 export type IExpressionOperators = typeof ExpressionOperators[keyof typeof ExpressionOperators]
 export type IExpressionPrefix = typeof ExpressionPrefix[keyof typeof ExpressionPrefix]
 
-export enum Language {
-    EN = 'en',
-    NO = 'no',
-}
+export const Language =  {
+    EN : 'en',
+    NO : 'no',
+} as const
+export type ILanguage = typeof Language[keyof typeof Language]
 
-export enum SearchParams {
-    SelectedUserId = 'selected_patient_id',
-    SelectedQnrId = 'selected_query_id',
-}
+export const SearchParams ={
+    SelectedUserId : 'selected_patient_id',
+    SelectedQnrId : 'selected_query_id',
+} as const
+export type ISearchParams = typeof SearchParams[keyof typeof SearchParams]
 export const UserContext = {
     ME: 'ME',
     RECIPIENT: 'RECIPIENT',
