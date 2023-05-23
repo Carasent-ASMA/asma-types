@@ -408,6 +408,13 @@ export const SearchParams ={
     UserContext : 'user_context',
 } as const
 export type ISearchParams = typeof SearchParams[keyof typeof SearchParams]
+
+export const SearchParamWithValues = {
+    'selected_patient_id' : '' as string,
+    'selected_query_id' : '' as string,
+    'user_context' : '' as IUserContext,
+}  as const
+
 export const UserContext = {
     ME: 'ME',
     RECIPIENT: 'RECIPIENT',

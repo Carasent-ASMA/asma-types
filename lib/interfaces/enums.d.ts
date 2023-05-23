@@ -305,6 +305,11 @@ export declare const SearchParams: {
     readonly UserContext: "user_context";
 };
 export type ISearchParams = typeof SearchParams[keyof typeof SearchParams];
+export declare const SearchParamWithValues: {
+    readonly selected_patient_id: string;
+    readonly selected_query_id: string;
+    readonly user_context: IUserContext;
+};
 export declare const UserContext: {
     readonly ME: "ME";
     readonly RECIPIENT: "RECIPIENT";
