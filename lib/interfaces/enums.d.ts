@@ -279,6 +279,9 @@ export declare const ProtectedRoutesPaths: {
     readonly portalDesigner: "designer";
     readonly portalDashboard: "dashboard/services";
     readonly anonymousSchema: "anonymous-schema";
+    readonly devextreme: "devextreme";
+    readonly devextremeRichEdit: "devextreme/rich-edit";
+    readonly devextremeReports: "devextreme/reports";
 };
 export type IProtectedRoutesPaths = typeof ProtectedRoutesPaths[keyof typeof ProtectedRoutesPaths];
 export declare enum ExpressionOperators {

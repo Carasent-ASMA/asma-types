@@ -376,6 +376,11 @@ export const ProtectedRoutesPaths = {
     portalDashboard: 'dashboard/services',
     //
     anonymousSchema: 'anonymous-schema',
+    
+    //devextreme
+    devextreme: 'devextreme',
+    devextremeRichEdit: 'devextreme/rich-edit',
+    devextremeReports: 'devextreme/reports',
 } as const
 
 export type IProtectedRoutesPaths = typeof ProtectedRoutesPaths[keyof typeof ProtectedRoutesPaths]
