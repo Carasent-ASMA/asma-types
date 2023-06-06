@@ -357,7 +357,7 @@ export const ProtectedRoutesPaths = {
     allQnrsAndFiles : 'qnrs/all-qnrs-and-files',
     manageQnrs : 'qnrs/manage-qnrs',
     manageParcels : 'qnrs/manage-parcels',
-    smsPainter : 'qnrs/sms-painter',
+    smsTemplates : 'qnrs/sms-templates',
     anonymousForms : 'qnrs/anonymous-forms',
     sendOrders : 'qnrs/send-orders',
     anonymousQnrs : 'qnrs/anonymous-qnrs',

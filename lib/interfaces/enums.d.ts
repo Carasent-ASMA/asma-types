@@ -264,7 +264,7 @@ export declare const ProtectedRoutesPaths: {
     readonly allQnrsAndFiles: "qnrs/all-qnrs-and-files";
     readonly manageQnrs: "qnrs/manage-qnrs";
     readonly manageParcels: "qnrs/manage-parcels";
-    readonly smsPainter: "qnrs/sms-painter";
+    readonly smsTemplates: "qnrs/sms-templates";
     readonly anonymousForms: "qnrs/anonymous-forms";
     readonly sendOrders: "qnrs/send-orders";
     readonly anonymousQnrs: "qnrs/anonymous-qnrs";
