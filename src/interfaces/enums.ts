@@ -347,6 +347,7 @@ export const ProtectedRoutesPaths = {
     directory : 'directory',
     reports : 'reports',
     myParticipants: "my-participants",
+    smsPainter: "sms-painter",
     //
     plans : 'plans',
     qnrModule: 'qnr-module',
