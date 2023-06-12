@@ -260,6 +260,8 @@ export declare const ProtectedRoutesPaths: {
     readonly plans: "plans";
     readonly qnrModule: "qnr-module";
     readonly allQnrs: "all-qnrs";
+    readonly qnrTemplates: "qnr-templates";
+    readonly qnrTemplatesList: "qnr-templates-list";
     readonly summary: "summary";
     readonly inboxOutbox: "qnrs/inbox-outbox";
     readonly allQnrsAndFiles: "qnrs/all-qnrs-and-files";
