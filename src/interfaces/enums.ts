@@ -191,16 +191,16 @@ export enum ConsentGroup {
     Communication = 'COMMUNICATION',
 } */
 
-export const DocStatus =  {
+export const DocStatus = {
     Signed: 'signed',
-    WaitingForSigning:'waiting_for_signing',
+    WaitingForSigning: 'waiting_for_signing',
     OnlyForView: 'only_for_view',
     Rejected: 'rejected',
     /* download = 'download',
     uploaded = 'uploaded' */
 } as const
 
-export type DocStatusTypes = typeof DocStatus[keyof typeof DocStatus];
+export type DocStatusTypes = (typeof DocStatus)[keyof typeof DocStatus]
 
 export enum DocPickerTypes {
     dokkladd = 'Dokkladd',
@@ -311,9 +311,9 @@ export const TemplateStatusColor = {
     [TemplateFilterStatusTypes.inactive]: 'red',
 }
 
-export type TemplateStatusTypes = typeof TTemplateStatus[keyof typeof TTemplateStatus]
+export type TemplateStatusTypes = (typeof TTemplateStatus)[keyof typeof TTemplateStatus]
 
-export type TemplateStatusIconTypes = typeof TemplateFilterStatusTypes[keyof typeof TemplateStatusIcon]
+export type TemplateStatusIconTypes = (typeof TemplateFilterStatusTypes)[keyof typeof TemplateStatusIcon]
 
 export enum PortalRoutesPaths {
     Overview = 'overview',
@@ -328,47 +328,48 @@ export const ProtectedRoutesPaths = {
     customer: 'customer',
     documents: 'customer/documents',
     documentsGenerate: 'customer/documents/generate',
-    documentsPostJournal : 'customer/documents/post-journal',
-    documentsDrafts : 'customer/documents/drafts',
-    documentsShared : 'customer/documents/shared',
-    documentsArchived : 'customer/documents/archived',
-    consents :'consents',
-    shortcuts :'shortcuts',
-    qnrCompleted :'completed-schemas',
-    chat :'chat',
-    chatParamId : '/chat?chat=',
-    tasks : 'tasks',
-    calendar : 'calendar',
-    overview : 'overview',
-    tiltak : 'information-on-tiltak',
-    candidateProfile : 'candidate-profile',
-    jobSearch : 'job-search',
-    jobSeeker : 'patient-profile',
-    directory : 'directory',
-    reports : 'reports',
-    myParticipants: "my-participants",
-    smsPainter: "sms-painter",
+    documentsPostJournal: 'customer/documents/post-journal',
+    documentsDrafts: 'customer/documents/drafts',
+    documentsShared: 'customer/documents/shared',
+    documentsArchived: 'customer/documents/archived',
+    consents: 'consents',
+    consentsEditor: 'consents-editor',
+    shortcuts: 'shortcuts',
+    qnrCompleted: 'completed-schemas',
+    chat: 'chat',
+    chatParamId: '/chat?chat=',
+    tasks: 'tasks',
+    calendar: 'calendar',
+    overview: 'overview',
+    tiltak: 'information-on-tiltak',
+    candidateProfile: 'candidate-profile',
+    jobSearch: 'job-search',
+    jobSeeker: 'patient-profile',
+    directory: 'directory',
+    reports: 'reports',
+    myParticipants: 'my-participants',
+    smsPainter: 'sms-painter',
     //
-    plans : 'plans',
+    plans: 'plans',
     qnrModule: 'qnr-module',
-    allQnrs:'all-qnrs',
-    qnrTemplates : 'qnr-templates',
-    qnrTemplatesList : 'qnr-templates-list',
+    allQnrs: 'all-qnrs',
+    qnrTemplates: 'qnr-templates',
+    qnrTemplatesList: 'qnr-templates-list',
     summary: 'summary',
     //
-    inboxOutbox : 'qnrs/inbox-outbox',
-    allQnrsAndFiles : 'qnrs/all-qnrs-and-files',
-    manageQnrs : 'qnrs/manage-qnrs',
-    manageParcels : 'qnrs/manage-parcels',
-    smsTemplates : 'qnrs/sms-templates',
-    anonymousForms : 'qnrs/anonymous-forms',
-    sendOrders : 'qnrs/send-orders',
-    anonymousQnrs : 'qnrs/anonymous-qnrs',
+    inboxOutbox: 'qnrs/inbox-outbox',
+    allQnrsAndFiles: 'qnrs/all-qnrs-and-files',
+    manageQnrs: 'qnrs/manage-qnrs',
+    manageParcels: 'qnrs/manage-parcels',
+    smsTemplates: 'qnrs/sms-templates',
+    anonymousForms: 'qnrs/anonymous-forms',
+    sendOrders: 'qnrs/send-orders',
+    anonymousQnrs: 'qnrs/anonymous-qnrs',
     //
-    qnrView : 'qnr-view',
-    qnrModuleQnrView : 'qnr-module/qnr-view',
-    plansQnrView : 'plans/qnr-view',
-    summaryQnrView : 'summary/qnr-view',
+    qnrView: 'qnr-view',
+    qnrModuleQnrView: 'qnr-module/qnr-view',
+    plansQnrView: 'plans/qnr-view',
+    summaryQnrView: 'summary/qnr-view',
     //
     artifactPresenter: 'artifact-presenter',
     //portal routes
@@ -379,14 +380,14 @@ export const ProtectedRoutesPaths = {
     portalDashboard: 'dashboard/services',
     //
     anonymousSchema: 'anonymous-schema',
-    
+
     //devextreme
     devextreme: 'devextreme',
     devextremeRichEdit: 'devextreme/rich-edit',
     devextremeReports: 'devextreme/reports',
 } as const
 
-export type IProtectedRoutesPaths = typeof ProtectedRoutesPaths[keyof typeof ProtectedRoutesPaths]
+export type IProtectedRoutesPaths = (typeof ProtectedRoutesPaths)[keyof typeof ProtectedRoutesPaths]
 
 export enum ExpressionOperators {
     Addition = '+',
@@ -401,31 +402,31 @@ export enum ExpressionPrefix {
     'Hashtag' = '#',
 }
 
-export type IExpressionOperators = typeof ExpressionOperators[keyof typeof ExpressionOperators]
-export type IExpressionPrefix = typeof ExpressionPrefix[keyof typeof ExpressionPrefix]
+export type IExpressionOperators = (typeof ExpressionOperators)[keyof typeof ExpressionOperators]
+export type IExpressionPrefix = (typeof ExpressionPrefix)[keyof typeof ExpressionPrefix]
 
-export const Language =  {
-    EN : 'en',
-    NO : 'no',
+export const Language = {
+    EN: 'en',
+    NO: 'no',
 } as const
-export type ILanguage = typeof Language[keyof typeof Language]
+export type ILanguage = (typeof Language)[keyof typeof Language]
 
-export const SearchParams ={
-    SelectedUserId : 'selected_patient_id',
-    SelectedQnrId : 'selected_query_id',
-    UserContext : 'user_context',
+export const SearchParams = {
+    SelectedUserId: 'selected_patient_id',
+    SelectedQnrId: 'selected_query_id',
+    UserContext: 'user_context',
 } as const
-export type ISearchParams = typeof SearchParams[keyof typeof SearchParams]
+export type ISearchParams = (typeof SearchParams)[keyof typeof SearchParams]
 
 export const SearchParamWithValues = {
-    'selected_patient_id' : '' as string,
-    'selected_query_id' : '' as string,
-    'user_context' : '' as IUserContext,
-}  as const
+    selected_patient_id: '' as string,
+    selected_query_id: '' as string,
+    user_context: '' as IUserContext,
+} as const
 
 export const UserContext = {
     ME: 'ME',
     RECIPIENT: 'RECIPIENT',
 } as const
 
-export type IUserContext = typeof UserContext[keyof typeof UserContext]
+export type IUserContext = (typeof UserContext)[keyof typeof UserContext]
