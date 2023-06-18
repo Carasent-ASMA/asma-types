@@ -131,7 +131,7 @@ export declare const DocStatus: {
     readonly OnlyForView: "only_for_view";
     readonly Rejected: "rejected";
 };
-export type DocStatusTypes = typeof DocStatus[keyof typeof DocStatus];
+export type DocStatusTypes = (typeof DocStatus)[keyof typeof DocStatus];
 export declare enum DocPickerTypes {
     dokkladd = "Dokkladd",
     postJournal = "PostJournal"
@@ -223,8 +223,8 @@ export declare const TemplateStatusColor: {
     active: string;
     inactive: string;
 };
-export type TemplateStatusTypes = typeof TTemplateStatus[keyof typeof TTemplateStatus];
-export type TemplateStatusIconTypes = typeof TemplateFilterStatusTypes[keyof typeof TemplateStatusIcon];
+export type TemplateStatusTypes = (typeof TTemplateStatus)[keyof typeof TTemplateStatus];
+export type TemplateStatusIconTypes = (typeof TemplateFilterStatusTypes)[keyof typeof TemplateStatusIcon];
 export declare enum PortalRoutesPaths {
     Overview = "overview",
     Orders = "orders",
@@ -242,6 +242,7 @@ export declare const ProtectedRoutesPaths: {
     readonly documentsShared: "customer/documents/shared";
     readonly documentsArchived: "customer/documents/archived";
     readonly consents: "consents";
+    readonly consentsEditor: "consents-editor";
     readonly shortcuts: "shortcuts";
     readonly qnrCompleted: "completed-schemas";
     readonly chat: "chat";
@@ -286,7 +287,7 @@ export declare const ProtectedRoutesPaths: {
     readonly devextremeRichEdit: "devextreme/rich-edit";
     readonly devextremeReports: "devextreme/reports";
 };
-export type IProtectedRoutesPaths = typeof ProtectedRoutesPaths[keyof typeof ProtectedRoutesPaths];
+export type IProtectedRoutesPaths = (typeof ProtectedRoutesPaths)[keyof typeof ProtectedRoutesPaths];
 export declare enum ExpressionOperators {
     Addition = "+",
     Subtraction = "-",
@@ -298,19 +299,19 @@ export declare enum ExpressionPrefix {
     'AtSign' = "@",
     'Hashtag' = "#"
 }
-export type IExpressionOperators = typeof ExpressionOperators[keyof typeof ExpressionOperators];
-export type IExpressionPrefix = typeof ExpressionPrefix[keyof typeof ExpressionPrefix];
+export type IExpressionOperators = (typeof ExpressionOperators)[keyof typeof ExpressionOperators];
+export type IExpressionPrefix = (typeof ExpressionPrefix)[keyof typeof ExpressionPrefix];
 export declare const Language: {
     readonly EN: "en";
     readonly NO: "no";
 };
-export type ILanguage = typeof Language[keyof typeof Language];
+export type ILanguage = (typeof Language)[keyof typeof Language];
 export declare const SearchParams: {
     readonly SelectedUserId: "selected_patient_id";
     readonly SelectedQnrId: "selected_query_id";
     readonly UserContext: "user_context";
 };
-export type ISearchParams = typeof SearchParams[keyof typeof SearchParams];
+export type ISearchParams = (typeof SearchParams)[keyof typeof SearchParams];
 export declare const SearchParamWithValues: {
     readonly selected_patient_id: string;
     readonly selected_query_id: string;
@@ -320,5 +321,5 @@ export declare const UserContext: {
     readonly ME: "ME";
     readonly RECIPIENT: "RECIPIENT";
 };
-export type IUserContext = typeof UserContext[keyof typeof UserContext];
+export type IUserContext = (typeof UserContext)[keyof typeof UserContext];
 //# sourceMappingURL=enums.d.ts.map
