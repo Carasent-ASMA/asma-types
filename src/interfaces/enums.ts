@@ -334,6 +334,7 @@ export const ProtectedRoutesPaths = {
     documentsArchived: 'customer/documents/archived',
     consents: 'consents',
     consentsEditor: 'consents-editor',
+    pendingConsents: 'pending-consents',
     shortcuts: 'shortcuts',
     qnrCompleted: 'completed-schemas',
     chat: 'chat',
