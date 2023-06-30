@@ -243,6 +243,7 @@ export declare const ProtectedRoutesPaths: {
     readonly documentsArchived: "customer/documents/archived";
     readonly consents: "consents";
     readonly consentsEditor: "consents-editor";
+    readonly pendingConsents: "pending-consents";
     readonly shortcuts: "shortcuts";
     readonly qnrCompleted: "completed-schemas";
     readonly chat: "chat";
