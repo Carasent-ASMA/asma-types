@@ -3,7 +3,8 @@ export declare enum ArtifactPresenterTypes {
     Qnr = "Questionnaire",
     DocumentProxy = "DocumentProxy",
     DocumentConnector = "DocumentConnector",
-    DocumentOutlook = "DocumentOutlook"
+    DocumentOutlook = "DocumentOutlook",
+    ArtifactPackage = "ArtifactPackage"
 }
 export declare enum FileExtension {
     ZIP = "zip",

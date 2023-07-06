@@ -5,6 +5,7 @@ export enum ArtifactPresenterTypes {
     DocumentProxy = 'DocumentProxy',
     DocumentConnector = 'DocumentConnector',
     DocumentOutlook = 'DocumentOutlook',
+    ArtifactPackage = 'ArtifactPackage',
 }
 
 export enum FileExtension {
