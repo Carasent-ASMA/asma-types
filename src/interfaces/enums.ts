@@ -336,6 +336,7 @@ export const ProtectedRoutesPaths = {
     consentsEditor: 'consents-editor',
     pendingConsents: 'pending-consents',
     shortcuts: 'shortcuts',
+    shortcutsSettings: 'shortcuts-settings',
     qnrCompleted: 'completed-schemas',
     chat: 'chat',
     chatParamId: '/chat?chat=',
