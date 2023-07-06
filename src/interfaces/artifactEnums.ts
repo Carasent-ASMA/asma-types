@@ -38,3 +38,11 @@ export const ScheduleFormat = {
 } as const
 
 export type ScheduleFormatType = ValueOf<typeof ScheduleFormat>
+
+export const ArtifactPackageStatus = {
+    ACTIVE: 'active',
+    CANCELED: 'canceled',
+    FINISHED: 'finished',
+} as const
+
+export type IArtifactPackageStatus = ValueOf<typeof ArtifactPackageStatus>

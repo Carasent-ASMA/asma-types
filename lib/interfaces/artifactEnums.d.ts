@@ -34,4 +34,10 @@ export declare const ScheduleFormat: {
     readonly WEEKLY: "weekly";
 };
 export type ScheduleFormatType = ValueOf<typeof ScheduleFormat>;
+export declare const ArtifactPackageStatus: {
+    readonly ACTIVE: "active";
+    readonly CANCELED: "canceled";
+    readonly FINISHED: "finished";
+};
+export type IArtifactPackageStatus = ValueOf<typeof ArtifactPackageStatus>;
 //# sourceMappingURL=artifactEnums.d.ts.map
