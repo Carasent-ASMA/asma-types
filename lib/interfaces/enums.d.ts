@@ -249,6 +249,7 @@ export declare const ProtectedRoutesPaths: {
     readonly qnrCompleted: "completed-schemas";
     readonly chat: "chat";
     readonly chatParamId: "/chat?chat=";
+    readonly contextMeChat: "context-me-chat";
     readonly tasks: "tasks";
     readonly calendar: "calendar";
     readonly overview: "overview";

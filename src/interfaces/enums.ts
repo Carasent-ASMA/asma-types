@@ -340,6 +340,7 @@ export const ProtectedRoutesPaths = {
     qnrCompleted: 'completed-schemas',
     chat: 'chat',
     chatParamId: '/chat?chat=',
+    contextMeChat: 'context-me-chat',
     tasks: 'tasks',
     calendar: 'calendar',
     overview: 'overview',
