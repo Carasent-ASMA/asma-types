@@ -32,6 +32,7 @@ export declare const ScheduleFormat: {
     readonly ONE_TIME: "one_time";
     readonly DAILY: "daily";
     readonly WEEKLY: "weekly";
+    readonly MONTHLY: "monthly";
 };
 export type ScheduleFormatType = ValueOf<typeof ScheduleFormat>;
 export declare const ArtifactPackageStatus: {

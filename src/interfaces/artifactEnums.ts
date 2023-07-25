@@ -35,6 +35,7 @@ export const ScheduleFormat = {
     ONE_TIME: 'one_time',
     DAILY: 'daily',
     WEEKLY: 'weekly',
+    MONTHLY: 'monthly',
 } as const
 
 export type ScheduleFormatType = ValueOf<typeof ScheduleFormat>
