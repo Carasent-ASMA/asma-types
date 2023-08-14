@@ -61,7 +61,6 @@ export interface IAiLearningJwtClaims<R extends string> extends IBaseJwtClaims<R
     region: string
     name: string
     customer_id: string
-    password?: string
 }
 /**
  *  R roles_enum 
