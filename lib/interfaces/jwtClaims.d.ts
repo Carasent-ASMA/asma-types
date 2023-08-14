@@ -1,9 +1,10 @@
 /**
  * R roles_enum
  */
-export interface IBaseJwtClaims<R extends string> {
+export interface IBaseJwtClaims<R extends string, J extends string = 'ADCURIS' | 'ADOPUS' | 'UNKNOWN'> {
     user_id: string;
     role: R;
+    journal: J;
     vt?: number;
     exp?: number;
     customer_id?: string;
