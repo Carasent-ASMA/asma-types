@@ -310,6 +310,7 @@ export declare const Language: {
 };
 export type ILanguage = (typeof Language)[keyof typeof Language];
 export declare const SearchParams: {
+    readonly Action: "action";
     readonly ActivityId: "activity_id";
     readonly Hide: "hide";
     readonly SelectedPatientId: "selected_patient_id";
@@ -318,6 +319,7 @@ export declare const SearchParams: {
 };
 export type ISearchParams = (typeof SearchParams)[keyof typeof SearchParams];
 export declare const SearchParamWithValues: {
+    readonly action: string;
     readonly activity_id: string;
     readonly hide: string[];
     readonly selected_patient_id: string;

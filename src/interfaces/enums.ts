@@ -415,6 +415,7 @@ export const Language = {
 export type ILanguage = (typeof Language)[keyof typeof Language]
 
 export const SearchParams = {
+    Action: 'action',
     ActivityId: 'activity_id',
     Hide: 'hide',
     SelectedPatientId: 'selected_patient_id',
@@ -424,6 +425,7 @@ export const SearchParams = {
 export type ISearchParams = (typeof SearchParams)[keyof typeof SearchParams]
 
 export const SearchParamWithValues = {
+    action: '' as string,
     activity_id: '' as string,
     hide: [] as string[],
     selected_patient_id: '' as string,
