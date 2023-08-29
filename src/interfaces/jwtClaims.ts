@@ -17,6 +17,7 @@ export interface IBaseJwtClaims<R extends string,J extends string = 'ADCURIS'|'A
     user_id: string
     role: R
     journal: J
+    subdomain: string
     vt?: number
     exp?: number
     customer_id?: string
