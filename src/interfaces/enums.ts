@@ -419,7 +419,7 @@ export const SearchParams = {
     ActivityId: 'activity_id',
     Hide: 'hide',
     SelectedPatientId: 'selected_patient_id',
-    SelectedQnrId: 'selected_query_id',
+    SelectedQnrId: 'selected_qnr_id',
     UserContext: 'user_context',
 } as const
 export type ISearchParams = (typeof SearchParams)[keyof typeof SearchParams]
@@ -429,7 +429,7 @@ export const SearchParamWithValues = {
     activity_id: '' as string,
     hide: [] as string[],
     selected_patient_id: '' as string,
-    selected_query_id: '' as string,
+    selected_qnr_id: '' as string,
     user_context: '' as IUserContext,
 } as const
 
