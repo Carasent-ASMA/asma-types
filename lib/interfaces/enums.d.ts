@@ -313,6 +313,7 @@ export declare const SearchParams: {
     readonly Action: "action";
     readonly ActivityId: "activity_id";
     readonly Hide: "hide";
+    readonly SelectedArtifact: "selected_artifact";
     readonly SelectedPatientId: "selected_patient_id";
     readonly SelectedQnrId: "selected_qnr_id";
     readonly UserContext: "user_context";
@@ -322,6 +323,7 @@ export declare const SearchParamWithValues: {
     readonly action: string;
     readonly activity_id: string;
     readonly hide: string[];
+    readonly selected_artifact: string;
     readonly selected_patient_id: string;
     readonly selected_qnr_id: string;
     readonly user_context: IUserContext;

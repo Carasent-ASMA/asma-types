@@ -1,4 +1,5 @@
 // deprecated, replaced with QueriesInitiator
+
 /**
  * @deprecated replaced with QueriesInitiator
  */
@@ -418,6 +419,7 @@ export const SearchParams = {
     Action: 'action',
     ActivityId: 'activity_id',
     Hide: 'hide',
+    SelectedArtifact: 'selected_artifact',
     SelectedPatientId: 'selected_patient_id',
     SelectedQnrId: 'selected_qnr_id',
     UserContext: 'user_context',
@@ -428,6 +430,7 @@ export const SearchParamWithValues = {
     action: '' as string,
     activity_id: '' as string,
     hide: [] as string[],
+    selected_artifact: '' as string,
     selected_patient_id: '' as string,
     selected_qnr_id: '' as string,
     user_context: '' as IUserContext,
