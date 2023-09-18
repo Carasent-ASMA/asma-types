@@ -47,3 +47,5 @@ export const ArtifactPackageStatus = {
 } as const
 
 export type IArtifactPackageStatus = ValueOf<typeof ArtifactPackageStatus>
+
+export type SelectedArtifact = `id:${string}.type:${'doc' | 'qnr'}.patient_id:${string}`

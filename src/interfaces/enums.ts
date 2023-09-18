@@ -1,5 +1,7 @@
 // deprecated, replaced with QueriesInitiator
 
+import type { SelectedArtifact } from './artifactEnums'
+
 /**
  * @deprecated replaced with QueriesInitiator
  */
@@ -430,7 +432,7 @@ export const SearchParamWithValues = {
     action: '' as string,
     activity_id: '' as string,
     hide: [] as string[],
-    selected_artifact: '' as string,
+    selected_artifact: '' as SelectedArtifact,
     selected_patient_id: '' as string,
     selected_qnr_id: '' as string,
     user_context: '' as IUserContext,
