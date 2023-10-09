@@ -60,6 +60,7 @@ export enum QuestionTypes {
     ExpressionQuestion = 'ExpressionQuestion',
     Chart = 'Chart',
     Widget = 'Widget',
+    Space = 'Space',
 }
 
 export enum ActorTypes {
