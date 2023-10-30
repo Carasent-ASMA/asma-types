@@ -41,5 +41,5 @@ export declare const ArtifactPackageStatus: {
     readonly FINISHED: "finished";
 };
 export type IArtifactPackageStatus = ValueOf<typeof ArtifactPackageStatus>;
-export type SelectedArtifact = `id:${string}.type:${'doc' | 'qnr'}.patient_id:${string}`;
+export type SelectedArtifact = `id:${string}.type:${'doc' | 'doc_connector' | 'qnr'}.patient_id:${string}`;
 //# sourceMappingURL=artifactEnums.d.ts.map

@@ -324,7 +324,7 @@ export declare const SearchParamWithValues: {
     readonly action: string;
     readonly activity_id: string;
     readonly hide: string[];
-    readonly selected_artifact: `id:${string}.type:doc.patient_id:${string}` | `id:${string}.type:qnr.patient_id:${string}`;
+    readonly selected_artifact: `id:${string}.type:doc.patient_id:${string}` | `id:${string}.type:doc_connector.patient_id:${string}` | `id:${string}.type:qnr.patient_id:${string}`;
     readonly selected_patient_id: string;
     readonly selected_qnr_id: string;
     readonly user_context: IUserContext;
