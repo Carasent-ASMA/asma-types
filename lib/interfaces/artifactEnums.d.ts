@@ -42,4 +42,10 @@ export declare const ArtifactPackageStatus: {
 };
 export type IArtifactPackageStatus = ValueOf<typeof ArtifactPackageStatus>;
 export type SelectedArtifact = `id:${string}.type:${'doc' | 'doc_connector' | 'qnr'}.patient_id:${string}`;
+export declare enum AnonymousQnrInvitationTypes {
+    CODE = "#CODE#",
+    URL = "#URL#",
+    NAME = "#NAME#",
+    ACTIVITY_ID = "#ACTIVITY_ID#"
+}
 //# sourceMappingURL=artifactEnums.d.ts.map
