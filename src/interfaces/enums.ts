@@ -433,6 +433,7 @@ export const SearchParamWithValues = {
     action: '' as string,
     activity_id: '' as string,
     hide: [] as string[],
+    qnr_version: '' as string,
     selected_artifact: '' as SelectedArtifact,
     selected_patient_id: '' as string,
     selected_qnr_id: '' as string,
