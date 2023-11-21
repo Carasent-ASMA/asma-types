@@ -314,6 +314,7 @@ export declare const SearchParams: {
     readonly Action: "action";
     readonly ActivityId: "activity_id";
     readonly Hide: "hide";
+    readonly QnrVersion: "qnr_version";
     readonly SelectedArtifact: "selected_artifact";
     readonly SelectedPatientId: "selected_patient_id";
     readonly SelectedQnrId: "selected_qnr_id";

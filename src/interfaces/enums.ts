@@ -422,6 +422,7 @@ export const SearchParams = {
     Action: 'action',
     ActivityId: 'activity_id',
     Hide: 'hide',
+    QnrVersion: 'qnr_version',
     SelectedArtifact: 'selected_artifact',
     SelectedPatientId: 'selected_patient_id',
     SelectedQnrId: 'selected_qnr_id',
