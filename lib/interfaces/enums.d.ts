@@ -290,6 +290,7 @@ export declare const ProtectedRoutesPaths: {
     readonly devextreme: "devextreme";
     readonly devextremeRichEdit: "devextreme/rich-edit";
     readonly devextremeReports: "devextreme/reports";
+    readonly privacyStatement: "privacy-statement";
 };
 export type IProtectedRoutesPaths = (typeof ProtectedRoutesPaths)[keyof typeof ProtectedRoutesPaths];
 export declare enum ExpressionOperators {

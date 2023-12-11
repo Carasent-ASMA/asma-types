@@ -392,6 +392,7 @@ export const ProtectedRoutesPaths = {
     devextreme: 'devextreme',
     devextremeRichEdit: 'devextreme/rich-edit',
     devextremeReports: 'devextreme/reports',
+    privacyStatement: 'privacy-statement'
 } as const
 
 export type IProtectedRoutesPaths = (typeof ProtectedRoutesPaths)[keyof typeof ProtectedRoutesPaths]
