@@ -320,6 +320,7 @@ export declare const SearchParams: {
     readonly SelectedPatientId: "selected_patient_id";
     readonly SelectedQnrId: "selected_qnr_id";
     readonly UserContext: "user_context";
+    readonly QnrContext: "qnr_context";
 };
 export type ISearchParams = (typeof SearchParams)[keyof typeof SearchParams];
 export declare const SearchParamWithValues: {

@@ -428,6 +428,7 @@ export const SearchParams = {
     SelectedPatientId: 'selected_patient_id',
     SelectedQnrId: 'selected_qnr_id',
     UserContext: 'user_context',
+    QnrContext: 'qnr_context',
 } as const
 export type ISearchParams = (typeof SearchParams)[keyof typeof SearchParams]
 
