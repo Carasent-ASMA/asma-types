@@ -321,6 +321,7 @@ export declare const SearchParams: {
     readonly SelectedQnrId: "selected_qnr_id";
     readonly UserContext: "user_context";
     readonly QnrContext: "qnr_context";
+    readonly Device: "device";
 };
 export type ISearchParams = (typeof SearchParams)[keyof typeof SearchParams];
 export declare const SearchParamWithValues: {
@@ -332,10 +333,16 @@ export declare const SearchParamWithValues: {
     readonly selected_patient_id: string;
     readonly selected_qnr_id: string;
     readonly user_context: IUserContext;
+    readonly device: string;
 };
 export declare const UserContext: {
     readonly ME: "ME";
     readonly RECIPIENT: "RECIPIENT";
 };
+export declare const Device: {
+    TRUSTED: string;
+    UNTRUSTED: string;
+};
+export type IDevice = (typeof Device)[keyof typeof Device];
 export type IUserContext = (typeof UserContext)[keyof typeof UserContext];
 //# sourceMappingURL=enums.d.ts.map

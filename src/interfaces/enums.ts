@@ -392,7 +392,7 @@ export const ProtectedRoutesPaths = {
     devextreme: 'devextreme',
     devextremeRichEdit: 'devextreme/rich-edit',
     devextremeReports: 'devextreme/reports',
-    privacyStatement: 'privacy-statement'
+    privacyStatement: 'privacy-statement',
 } as const
 
 export type IProtectedRoutesPaths = (typeof ProtectedRoutesPaths)[keyof typeof ProtectedRoutesPaths]
@@ -429,6 +429,7 @@ export const SearchParams = {
     SelectedQnrId: 'selected_qnr_id',
     UserContext: 'user_context',
     QnrContext: 'qnr_context',
+    Device: 'device',
 } as const
 export type ISearchParams = (typeof SearchParams)[keyof typeof SearchParams]
 
@@ -441,11 +442,19 @@ export const SearchParamWithValues = {
     selected_patient_id: '' as string,
     selected_qnr_id: '' as string,
     user_context: '' as IUserContext,
+    device: '' as IDevice,
 } as const
 
 export const UserContext = {
     ME: 'ME',
     RECIPIENT: 'RECIPIENT',
 } as const
+
+export const Device = {
+    TRUSTED: 'trusted',
+    UNTRUSTED: 'untrusted',
+}
+
+export type IDevice = (typeof Device)[keyof typeof Device]
 
 export type IUserContext = (typeof UserContext)[keyof typeof UserContext]
