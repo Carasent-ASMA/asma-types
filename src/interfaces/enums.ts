@@ -451,8 +451,8 @@ export const UserContext = {
 } as const
 
 export const Device = {
-    TRUSTED: 'trusted',
-    UNTRUSTED: 'untrusted',
+    TRUSTED: 'TRUSTED',
+    UNTRUSTED: 'UNTRUSTED',
 }
 
 export type IDevice = (typeof Device)[keyof typeof Device]
