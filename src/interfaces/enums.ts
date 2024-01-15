@@ -430,6 +430,7 @@ export const SearchParams = {
     UserContext: 'user_context',
     QnrContext: 'qnr_context',
     Device: 'device',
+    ShowHighlightedQnr: 'show_highlighted_qnr'
 } as const
 export type ISearchParams = (typeof SearchParams)[keyof typeof SearchParams]
 
