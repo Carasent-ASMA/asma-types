@@ -247,6 +247,7 @@ export declare const ProtectedRoutesPaths: {
     readonly pendingConsents: "pending-consents";
     readonly shortcuts: "shortcuts";
     readonly shortcutsSettings: "shortcuts-settings";
+    readonly selectVersions: "select-versions";
     readonly qnrCompleted: "completed-schemas";
     readonly chat: "chat";
     readonly chatParamId: "/chat?chat=";
