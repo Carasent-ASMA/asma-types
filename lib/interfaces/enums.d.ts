@@ -320,6 +320,7 @@ export declare const SearchParams: {
     readonly SelectedArtifact: "selected_artifact";
     readonly SelectedPatientId: "selected_patient_id";
     readonly SelectedQnrId: "selected_qnr_id";
+    readonly SelectedGroupId: "selected_group_id";
     readonly UserContext: "user_context";
     readonly QnrContext: "qnr_context";
     readonly Device: "device";
@@ -333,10 +334,12 @@ export declare const SearchParamWithValues: {
     readonly qnr_version: string;
     readonly selected_artifact: `id:${string}.type:doc.patient_id:${string}` | `id:${string}.type:doc_connector.patient_id:${string}` | `id:${string}.type:qnr.patient_id:${string}`;
     readonly selected_patient_id: string;
+    readonly selected_group_id: string;
     readonly selected_qnr_id: string;
     readonly user_context: IUserContext;
     readonly device: string;
 };
+export type ISearchParamWithValues = (typeof SearchParamWithValues)[keyof typeof SearchParamWithValues];
 export declare const UserContext: {
     readonly ME: "ME";
     readonly RECIPIENT: "RECIPIENT";

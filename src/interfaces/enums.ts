@@ -428,10 +428,11 @@ export const SearchParams = {
     SelectedArtifact: 'selected_artifact',
     SelectedPatientId: 'selected_patient_id',
     SelectedQnrId: 'selected_qnr_id',
+    SelectedGroupId: 'selected_group_id',
     UserContext: 'user_context',
     QnrContext: 'qnr_context',
     Device: 'device',
-    ShowHighlightedQnr: 'show_highlighted_qnr'
+    ShowHighlightedQnr: 'show_highlighted_qnr',
 } as const
 export type ISearchParams = (typeof SearchParams)[keyof typeof SearchParams]
 
@@ -442,10 +443,14 @@ export const SearchParamWithValues = {
     qnr_version: '' as string,
     selected_artifact: '' as SelectedArtifact,
     selected_patient_id: '' as string,
+    selected_group_id: '' as string,
     selected_qnr_id: '' as string,
     user_context: '' as IUserContext,
     device: '' as IDevice,
 } as const
+
+
+export type ISearchParamWithValues = (typeof SearchParamWithValues)[keyof typeof SearchParamWithValues]
 
 export const UserContext = {
     ME: 'ME',
