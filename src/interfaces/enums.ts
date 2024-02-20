@@ -449,7 +449,6 @@ export const SearchParamWithValues = {
     selected_qnr_id: '' as string,
     user_context: '' as IUserContext,
     device: '' as IDevice,
-    group_id: '' as string,
 } as const
 
 
