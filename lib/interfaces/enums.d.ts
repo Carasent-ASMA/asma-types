@@ -325,6 +325,8 @@ export declare const SearchParams: {
     readonly QnrContext: "qnr_context";
     readonly Device: "device";
     readonly ShowHighlightedQnr: "show_highlighted_qnr";
+    readonly GroupView: "group_view";
+    readonly GroupId: "group_id";
 };
 export type ISearchParams = (typeof SearchParams)[keyof typeof SearchParams];
 export declare const SearchParamWithValues: {
@@ -338,6 +340,7 @@ export declare const SearchParamWithValues: {
     readonly selected_qnr_id: string;
     readonly user_context: IUserContext;
     readonly device: string;
+    readonly group_id: string;
 };
 export type ISearchParamWithValues = (typeof SearchParamWithValues)[keyof typeof SearchParamWithValues];
 export declare const UserContext: {
