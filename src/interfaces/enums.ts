@@ -433,7 +433,6 @@ export const SearchParams = {
     QnrContext: 'qnr_context',
     Device: 'device',
     ShowHighlightedQnr: 'show_highlighted_qnr',
-    GroupView: 'group_view',
     GroupId: 'group_id',
 } as const
 export type ISearchParams = (typeof SearchParams)[keyof typeof SearchParams]
@@ -448,7 +447,10 @@ export const SearchParamWithValues = {
     selected_group_id: '' as string,
     selected_qnr_id: '' as string,
     user_context: '' as IUserContext,
+    qnr_context: '' as string,
     device: '' as IDevice,
+    show_highlighted_qnr: '' as string,
+    group_id: '' as string
 } as const
 
 
