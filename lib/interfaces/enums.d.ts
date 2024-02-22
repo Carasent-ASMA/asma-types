@@ -31,6 +31,7 @@ export declare enum AsyncChatArtifactExtension {
     JPG = "jpg",
     PDF = "pdf",
     PNG = "png",
+    WEBP = "webp",
     UNKNOWN = "unknown"
 }
 export declare enum QuestionTypes {
