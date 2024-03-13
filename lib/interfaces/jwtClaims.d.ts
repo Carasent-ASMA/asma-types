@@ -10,8 +10,8 @@ export interface IBaseJwtClaims<R extends string, J extends string = 'ADCURIS' |
     exp?: number;
     customer_id?: string;
 }
-export interface IAdminJwtClaims<R extends string> extends IBaseJwtClaims<R> {
-    name?: string;
+export interface IAdminJwtClaims<R extends string, F extends string> extends ITherapistOrSuperUserJwtClaims<R, F> {
+    name: string;
 }
 /**
  * R roles_enum
@@ -28,7 +28,7 @@ export interface IRecipientJwtClaims<R extends string> extends IBaseJwtClaims<R>
  * R roles_enum
  * F feature_names_enum
  */
-export interface ITherapistOrSuperUserJwtClaims<R extends string, F extends string> extends IBaseJwtClaims<R> {
+export interface ITherapistOrSuperUserJwtClaims<R extends string, F extends string = any> extends IBaseJwtClaims<R> {
     name: string;
     region: string;
     journal_user_id?: string;
@@ -64,6 +64,6 @@ export declare function isTherapistJwtClaims<R extends string, F extends string>
  * @param claims R roles_enum
  * @returns
  */
-export declare function isAdminJwtClaims<R extends string>(claims?: IBaseJwtClaims<R>): claims is IAdminJwtClaims<R>;
+export declare function isAdminJwtClaims<R extends string, F extends string = any>(claims?: IBaseJwtClaims<R>): claims is IAdminJwtClaims<R, F>;
 export declare function isAiLearningJwtClaims<R extends string>(claims?: IBaseJwtClaims<R>): claims is IRecipientJwtClaims<R>;
 //# sourceMappingURL=jwtClaims.d.ts.map

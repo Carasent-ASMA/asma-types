@@ -23,8 +23,8 @@ export interface IBaseJwtClaims<R extends string,J extends string = 'ADCURIS'|'A
     customer_id?: string
 }
 
-export interface IAdminJwtClaims<R extends string> extends IBaseJwtClaims<R> {
-    name?: string
+export interface IAdminJwtClaims<R extends string,F extends string> extends ITherapistOrSuperUserJwtClaims<R, F> {
+    name: string
 }
 /**
  * R roles_enum
@@ -41,7 +41,7 @@ export interface IRecipientJwtClaims<R extends string> extends IBaseJwtClaims<R>
  * R roles_enum
  * F feature_names_enum
  */
-export interface ITherapistOrSuperUserJwtClaims<R extends string,F extends string> extends IBaseJwtClaims<R> {
+export interface ITherapistOrSuperUserJwtClaims<R extends string,F extends string = any> extends IBaseJwtClaims<R> {
     name: string
     region: string
     journal_user_id?: string
@@ -83,7 +83,7 @@ export function isTherapistJwtClaims<R extends string, F extends string>(claims?
  * @param claims R roles_enum
  * @returns 
  */
-export function isAdminJwtClaims<R extends string>(claims?: IBaseJwtClaims<R>): claims is IAdminJwtClaims<R> {
+export function isAdminJwtClaims<R extends string,F extends string = any>(claims?: IBaseJwtClaims<R>): claims is IAdminJwtClaims<R,F> {
     return claims?.role.toUpperCase() === 'ADMIN'
 }
 
