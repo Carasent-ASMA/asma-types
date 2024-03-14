@@ -13,13 +13,14 @@
 /**
  * R roles_enum
  */
+export type IUUID = `${string}-${string}-${string}-${string}-${string}`
 export interface IBaseJwtClaims<R extends string,J extends string = 'ADCURIS'|'ADOPUS'|'UNKNOWN'> {
-    user_id: string
+    user_id: IUUID
     role: R
     journal: J
     subdomain: string
     genesis_set: string
-    customer_id: string
+    customer_id: IUUID
     name: string
     journal_user_id?: string
     journal_role: string|null
