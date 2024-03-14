@@ -10,6 +10,8 @@ export interface IBaseJwtClaims<R extends string, J extends string = 'ADCURIS' |
     customer_id: string;
     name: string;
     journal_user_id?: string;
+    journal_role: string | null;
+    brukerBrukerNavn: string | null;
     vt?: number;
     exp?: number;
 }
@@ -30,8 +32,8 @@ export interface IRecipientJwtClaims<R extends string> extends IBaseJwtClaims<R>
  */
 export interface ITherapistOrSuperUserJwtClaims<R extends string, F extends string = any> extends IBaseJwtClaims<R> {
     region: string;
-    brukerBrukerNavn?: string;
     services: IService;
+    brukerBrukerNavn: string;
     features: F[];
     srv_urls: ISrvUrls;
 }
