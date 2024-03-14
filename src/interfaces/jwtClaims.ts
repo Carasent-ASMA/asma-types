@@ -19,21 +19,19 @@ export interface IBaseJwtClaims<R extends string,J extends string = 'ADCURIS'|'A
     journal: J
     subdomain: string
     genesis_set: string
+    customer_id: string
+    name: string
+    journal_user_id?: string
     vt?: number
     exp?: number
-    customer_id?: string
 }
 
-export interface IAdminJwtClaims<R extends string,F extends string> extends ITherapistOrSuperUserJwtClaims<R, F> {
-    name: string
-}
+export interface IAdminJwtClaims<R extends string,F extends string> extends ITherapistOrSuperUserJwtClaims<R, F> {}
 /**
  * R roles_enum
  */
 export interface IRecipientJwtClaims<R extends string> extends IBaseJwtClaims<R> {
     access_level: 1 | 2 | 3 | 4
-    name: string
-    journal_user_id?: string
     related_customers: string
     identity: string
     srv_urls: ISrvUrls
@@ -43,9 +41,7 @@ export interface IRecipientJwtClaims<R extends string> extends IBaseJwtClaims<R>
  * F feature_names_enum
  */
 export interface ITherapistOrSuperUserJwtClaims<R extends string,F extends string = any> extends IBaseJwtClaims<R> {
-    name: string
     region: string
-    journal_user_id?: string
     brukerBrukerNavn?: string
     services: IService
     features: F[]
@@ -61,8 +57,6 @@ export interface ISrvUrls {
 
 export interface IAiLearningJwtClaims<R extends string> extends IBaseJwtClaims<R> {
     region: string
-    name: string
-    customer_id: string
 }
 /**
  *  R roles_enum 
