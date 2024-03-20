@@ -264,6 +264,7 @@ export declare const ProtectedRoutesPaths: {
     readonly reports: "reports";
     readonly myParticipants: "my-participants";
     readonly smsPainter: "sms-painter";
+    readonly adjustTemplates: "adjust-templates";
     readonly plans: "plans";
     readonly qnrModule: "qnr-module";
     readonly allQnrs: "all-qnrs";
