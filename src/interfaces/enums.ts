@@ -363,18 +363,18 @@ export const ProtectedRoutesPaths = {
     plans: 'plans',
     qnrModule: 'qnr-module',
     allQnrs: 'all-qnrs',
-    qnrTemplates: 'qnr-templates',
-    qnrTemplatesList: 'qnr-templates-list',
     summary: 'summary',
-    //
     inboxOutbox: 'qnrs/inbox-outbox',
-    allQnrsAndFiles: 'qnrs/all-qnrs-and-files',
-    manageQnrs: 'qnrs/manage-qnrs',
-    manageParcels: 'qnrs/manage-parcels',
-    smsTemplates: 'qnrs/sms-templates',
-    anonymousForms: 'qnrs/anonymous-forms',
-    sendOrders: 'qnrs/send-orders',
-    anonymousQnrs: 'qnrs/anonymous-qnrs',
+    //
+    qnrTemplates: 'all-qnrs/qnr-templates',
+    qnrTemplatesList: 'all-qnrs/qnr-templates-list',
+    allQnrsAndFiles: 'all-qnrs/all-qnrs-and-files',
+    manageQnrs: 'all-qnrs/manage-qnrs',
+    manageParcels: 'all-qnrs/manage-parcels',
+    smsTemplates: 'all-qnrs/sms-templates',
+    anonymousForms: 'all-qnrs/anonymous-forms',
+    sendOrders: 'all-qnrs/send-orders',
+    anonymousQnrs: 'all-qnrs/anonymous-qnrs',
     //
     qnrView: 'qnr-view',
     qnrModuleQnrView: 'qnr-module/qnr-view',
@@ -453,9 +453,8 @@ export const SearchParamWithValues = {
     qnr_context: '' as string,
     device: '' as IDevice,
     show_highlighted_qnr: '' as string,
-    group_id: '' as string
+    group_id: '' as string,
 } as const
-
 
 export type ISearchParamWithValues = (typeof SearchParamWithValues)[keyof typeof SearchParamWithValues]
 
