@@ -22,7 +22,7 @@ export interface IBaseJwtClaims<R extends string,J extends string = 'ADCURIS'|'A
     genesis_set: string
     customer_id: IUUID
     name: string
-    journal_role: string|null
+    journal_role: string
     brukerBrukerNavn: string
     region: string
     srv_urls: ISrvUrls
@@ -45,7 +45,7 @@ export interface IRecipientJwtClaims<R extends string> extends IBaseJwtClaims<R>
  * F feature_names_enum
  */
 export interface ITherapistOrSuperUserJwtClaims<R extends string> extends IBaseJwtClaims<R> {
-    services: IService
+    //services: IService
 }
 export interface IService {
     [key: string]: string[]

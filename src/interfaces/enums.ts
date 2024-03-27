@@ -343,6 +343,7 @@ export const ProtectedRoutesPaths = {
     shortcuts: 'shortcuts',
     shortcutsSettings: 'shortcuts-settings',
     selectVersions: 'select-versions',
+    selectFeatures: 'select-features',
     qnrCompleted: 'completed-schemas',
     chat: 'chat',
     chatParamId: '/chat?chat=',
