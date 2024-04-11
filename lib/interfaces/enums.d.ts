@@ -296,6 +296,9 @@ export declare const ProtectedRoutesPaths: {
     readonly devextremeReports: "devextreme/reports";
     readonly privacyStatement: "privacy-statement";
     readonly meetingSessionRoom: "meeting-session/:roomSession";
+    readonly administrationOrganizations: "administration/organizations";
+    readonly administrationOrganizationsNew: "administration/organizations/new";
+    readonly administrationOrganizationsEdit: "administration/organizations/edit";
 };
 export type IProtectedRoutesPaths = (typeof ProtectedRoutesPaths)[keyof typeof ProtectedRoutesPaths];
 export declare enum ExpressionOperators {
