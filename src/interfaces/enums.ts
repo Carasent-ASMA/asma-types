@@ -403,6 +403,9 @@ export const ProtectedRoutesPaths = {
     administrationOrganizations: 'administration/organizations',
     administrationOrganizationsNew: 'administration/organizations/new',
     administrationOrganizationsEdit: 'administration/organizations/edit',
+
+    //time tracking
+    timeTrackingList: 'time-tracking-list',
 } as const
 
 export type IProtectedRoutesPaths = (typeof ProtectedRoutesPaths)[keyof typeof ProtectedRoutesPaths]

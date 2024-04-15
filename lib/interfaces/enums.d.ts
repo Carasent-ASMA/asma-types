@@ -299,6 +299,7 @@ export declare const ProtectedRoutesPaths: {
     readonly administrationOrganizations: "administration/organizations";
     readonly administrationOrganizationsNew: "administration/organizations/new";
     readonly administrationOrganizationsEdit: "administration/organizations/edit";
+    readonly timeTrackingList: "time-tracking-list";
 };
 export type IProtectedRoutesPaths = (typeof ProtectedRoutesPaths)[keyof typeof ProtectedRoutesPaths];
 export declare enum ExpressionOperators {
