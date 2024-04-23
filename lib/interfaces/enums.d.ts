@@ -262,7 +262,6 @@ export declare const ProtectedRoutesPaths: {
     readonly jobSearch: "job-search";
     readonly jobSeeker: "patient-profile";
     readonly directory: "directory";
-    readonly reports: "reports";
     readonly myParticipants: "my-participants";
     readonly smsPainter: "sms-painter";
     readonly adjustTemplates: "adjust-templates";
@@ -299,7 +298,8 @@ export declare const ProtectedRoutesPaths: {
     readonly administrationOrganizations: "administration/organizations";
     readonly administrationOrganizationsNew: "administration/organizations/new";
     readonly administrationOrganizationsEdit: "administration/organizations/edit";
-    readonly timeTrackingList: "time-tracking-list";
+    readonly timeTrackingList: "reports/time-tracking-list";
+    readonly reports: "reports/reports";
 };
 export type IProtectedRoutesPaths = (typeof ProtectedRoutesPaths)[keyof typeof ProtectedRoutesPaths];
 export declare enum ExpressionOperators {

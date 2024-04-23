@@ -356,7 +356,6 @@ export const ProtectedRoutesPaths = {
     jobSearch: 'job-search',
     jobSeeker: 'patient-profile',
     directory: 'directory',
-    reports: 'reports',
     myParticipants: 'my-participants',
     smsPainter: 'sms-painter',
     adjustTemplates: 'adjust-templates',
@@ -404,8 +403,9 @@ export const ProtectedRoutesPaths = {
     administrationOrganizationsNew: 'administration/organizations/new',
     administrationOrganizationsEdit: 'administration/organizations/edit',
 
-    //time tracking
-    timeTrackingList: 'time-tracking-list',
+    //reports
+    timeTrackingList: 'reports/time-tracking-list',
+    reports: 'reports/reports',
 } as const
 
 export type IProtectedRoutesPaths = (typeof ProtectedRoutesPaths)[keyof typeof ProtectedRoutesPaths]
