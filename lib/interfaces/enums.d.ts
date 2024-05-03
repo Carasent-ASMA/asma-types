@@ -334,6 +334,11 @@ export declare const SearchParams: {
     readonly Device: "device";
     readonly ShowHighlightedQnr: "show_highlighted_qnr";
     readonly GroupId: "group_id";
+    readonly Status: "status";
+    readonly DocId: "doc_id";
+    readonly RequestId: "requestId";
+    readonly TaskId: "taskId";
+    readonly Subdomain: "subdomain";
 };
 export type ISearchParams = (typeof SearchParams)[keyof typeof SearchParams];
 export declare const SearchParamWithValues: {

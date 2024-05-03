@@ -446,6 +446,11 @@ export const SearchParams = {
     Device: 'device',
     ShowHighlightedQnr: 'show_highlighted_qnr',
     GroupId: 'group_id',
+    Status: 'status',
+    DocId: 'doc_id',
+    RequestId: 'requestId',
+    TaskId: 'taskId',
+    Subdomain: 'subdomain',
 } as const
 export type ISearchParams = (typeof SearchParams)[keyof typeof SearchParams]
 
