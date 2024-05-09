@@ -8,12 +8,12 @@ export interface IBaseJwtClaims<R extends string, J extends string = 'ADCURIS' |
     journal: J;
     subdomain: string;
     genesis_set: string;
-    customer_id: IUUID;
     name: string;
     journal_role: string;
-    brukerBrukerNavn: string;
     region: string;
     srv_urls: ISrvUrls;
+    customer_id?: IUUID;
+    brukerBrukerNavn?: string;
     journal_user_id?: string;
     vt?: number;
     exp?: number;
@@ -41,7 +41,6 @@ export interface ISrvUrls {
     [key: string]: string;
 }
 export interface IAiLearningJwtClaims<R extends string> extends IBaseJwtClaims<R> {
-    region: string;
 }
 /**
  *  R roles_enum
