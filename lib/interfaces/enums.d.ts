@@ -297,9 +297,9 @@ export declare const ProtectedRoutesPaths: {
     readonly devextremeReports: "devextreme/reports";
     readonly privacyStatement: "privacy-statement";
     readonly meetingSessionRoom: "meeting-session/:roomSession";
-    readonly administrationOrganizations: "administration/organizations";
-    readonly administrationOrganizationsNew: "administration/organizations/new";
-    readonly administrationOrganizationsEdit: "administration/organizations/edit";
+    readonly settingsAdministration: "settings/administration";
+    readonly settingsAdministrationOrganizationsNew: "settings/administration/organizations/new";
+    readonly settingsAdministrationOrganizationsEdit: "settings/administration/organizations/edit";
     readonly timeTrackingList: "reports/time-tracking-list";
     readonly reports: "reports/reports";
 };

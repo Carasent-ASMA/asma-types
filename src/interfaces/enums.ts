@@ -401,9 +401,9 @@ export const ProtectedRoutesPaths = {
     meetingSessionRoom: 'meeting-session/:roomSession',
 
     //administration
-    administrationOrganizations: 'administration/organizations',
-    administrationOrganizationsNew: 'administration/organizations/new',
-    administrationOrganizationsEdit: 'administration/organizations/edit',
+    settingsAdministration: 'settings/administration',
+    settingsAdministrationOrganizationsNew: 'settings/administration/organizations/new',
+    settingsAdministrationOrganizationsEdit: 'settings/administration/organizations/edit',
 
     //reports
     timeTrackingList: 'reports/time-tracking-list',
