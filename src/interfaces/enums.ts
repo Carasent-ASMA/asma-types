@@ -408,6 +408,7 @@ export const ProtectedRoutesPaths = {
     //reports
     timeTrackingList: 'reports/time-tracking-list',
     reports: 'reports/reports',
+    timeTrackingTeamLeaderList: 'reports/time-tracking-team-leader-list',
 } as const
 
 export type IProtectedRoutesPaths = (typeof ProtectedRoutesPaths)[keyof typeof ProtectedRoutesPaths]

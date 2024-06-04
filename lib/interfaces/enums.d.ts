@@ -302,6 +302,7 @@ export declare const ProtectedRoutesPaths: {
     readonly settingsAdministrationOrganizationsEdit: "settings/administration/organizations/edit";
     readonly timeTrackingList: "reports/time-tracking-list";
     readonly reports: "reports/reports";
+    readonly timeTrackingTeamLeaderList: "reports/time-tracking-team-leader-list";
 };
 export type IProtectedRoutesPaths = (typeof ProtectedRoutesPaths)[keyof typeof ProtectedRoutesPaths];
 export declare enum ExpressionOperators {
