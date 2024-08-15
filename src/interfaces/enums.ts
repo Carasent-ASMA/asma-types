@@ -338,12 +338,8 @@ export const ProtectedRoutesPaths = {
     documentsShared: 'customer/documents/shared',
     documentsArchived: 'customer/documents/archived',
     consents: 'consents',
-    consentsEditor: 'consents-editor',
     pendingConsents: 'pending-consents',
     shortcuts: 'shortcuts',
-    shortcutsSettings: 'shortcuts-settings',
-    selectVersions: 'select-versions',
-    selectFeatures: 'select-features',
     qnrCompleted: 'completed-schemas',
     chat: 'chat',
     chatParamId: '/chat?chat=',
@@ -358,7 +354,6 @@ export const ProtectedRoutesPaths = {
     directory: 'directory',
     myParticipants: 'my-participants',
     smsPainter: 'sms-painter',
-    adjustTemplates: 'adjust-templates',
     //
     plans: 'plans',
     qnrModule: 'qnr-module',
@@ -400,10 +395,15 @@ export const ProtectedRoutesPaths = {
     privacyStatement: 'privacy-statement',
     meetingSessionRoom: 'meeting-session/:roomSession',
 
-    //administration
+    //settings
     settingsAdministration: 'settings/administration',
     settingsAdministrationOrganizationsNew: 'settings/administration/organizations/new',
     settingsAdministrationOrganizationsEdit: 'settings/administration/organizations/edit',
+    shortcutsSettings: 'settings/shortcuts-settings',
+    consentsEditor: 'settings/consents-editor',
+    selectFeatures: 'settings/select-features',
+    selectVersions: 'settings/select-versions',
+    adjustTemplates: 'settings/adjust-templates',
 
     //reports
     timeTrackingList: 'reports/time-tracking-list',

@@ -244,12 +244,8 @@ export declare const ProtectedRoutesPaths: {
     readonly documentsShared: "customer/documents/shared";
     readonly documentsArchived: "customer/documents/archived";
     readonly consents: "consents";
-    readonly consentsEditor: "consents-editor";
     readonly pendingConsents: "pending-consents";
     readonly shortcuts: "shortcuts";
-    readonly shortcutsSettings: "shortcuts-settings";
-    readonly selectVersions: "select-versions";
-    readonly selectFeatures: "select-features";
     readonly qnrCompleted: "completed-schemas";
     readonly chat: "chat";
     readonly chatParamId: "/chat?chat=";
@@ -264,7 +260,6 @@ export declare const ProtectedRoutesPaths: {
     readonly directory: "directory";
     readonly myParticipants: "my-participants";
     readonly smsPainter: "sms-painter";
-    readonly adjustTemplates: "adjust-templates";
     readonly plans: "plans";
     readonly qnrModule: "qnr-module";
     readonly allQnrs: "all-qnrs";
@@ -300,6 +295,11 @@ export declare const ProtectedRoutesPaths: {
     readonly settingsAdministration: "settings/administration";
     readonly settingsAdministrationOrganizationsNew: "settings/administration/organizations/new";
     readonly settingsAdministrationOrganizationsEdit: "settings/administration/organizations/edit";
+    readonly shortcutsSettings: "settings/shortcuts-settings";
+    readonly consentsEditor: "settings/consents-editor";
+    readonly selectFeatures: "settings/select-features";
+    readonly selectVersions: "settings/select-versions";
+    readonly adjustTemplates: "settings/adjust-templates";
     readonly timeTrackingList: "reports/time-tracking-list";
     readonly reports: "reports/reports";
     readonly timeTrackingTeamLeaderList: "reports/time-tracking-team-leader-list";
