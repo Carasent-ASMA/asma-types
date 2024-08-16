@@ -299,7 +299,7 @@ export declare const ProtectedRoutesPaths: {
     readonly selectFeatures: "settings/select-features";
     readonly selectVersions: "settings/select-versions";
     readonly adjustTemplates: "settings/adjust-templates";
-    readonly qnrTemplates: "settings/qnr-templates";
+    readonly qnrTemplates: "settings/adjust-templates/qnr-templates";
     readonly timeTrackingList: "reports/time-tracking-list";
     readonly reports: "reports/reports";
     readonly timeTrackingTeamLeaderList: "reports/time-tracking-team-leader-list";

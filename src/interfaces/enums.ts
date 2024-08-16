@@ -403,7 +403,7 @@ export const ProtectedRoutesPaths = {
     selectFeatures: 'settings/select-features',
     selectVersions: 'settings/select-versions',
     adjustTemplates: 'settings/adjust-templates',
-    qnrTemplates: 'settings/qnr-templates',
+    qnrTemplates: 'settings/adjust-templates/qnr-templates',
 
     //reports
     timeTrackingList: 'reports/time-tracking-list',
