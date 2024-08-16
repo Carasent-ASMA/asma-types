@@ -267,7 +267,6 @@ export declare const ProtectedRoutesPaths: {
     readonly inboxOutbox: "qnrs/inbox-outbox";
     readonly inbox: "qnrs/inbox";
     readonly outbox: "qnrs/outbox";
-    readonly qnrTemplates: "all-qnrs/qnr-templates";
     readonly qnrTemplatesList: "all-qnrs/qnr-templates-list";
     readonly allQnrsAndFiles: "all-qnrs/all-qnrs-and-files";
     readonly manageQnrs: "all-qnrs/manage-qnrs";
@@ -300,6 +299,7 @@ export declare const ProtectedRoutesPaths: {
     readonly selectFeatures: "settings/select-features";
     readonly selectVersions: "settings/select-versions";
     readonly adjustTemplates: "settings/adjust-templates";
+    readonly qnrTemplates: "settings/qnr-templates";
     readonly timeTrackingList: "reports/time-tracking-list";
     readonly reports: "reports/reports";
     readonly timeTrackingTeamLeaderList: "reports/time-tracking-team-leader-list";

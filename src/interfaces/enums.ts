@@ -363,7 +363,6 @@ export const ProtectedRoutesPaths = {
     inbox: 'qnrs/inbox',
     outbox: 'qnrs/outbox',
     //
-    qnrTemplates: 'all-qnrs/qnr-templates',
     qnrTemplatesList: 'all-qnrs/qnr-templates-list',
     allQnrsAndFiles: 'all-qnrs/all-qnrs-and-files',
     manageQnrs: 'all-qnrs/manage-qnrs',
@@ -404,6 +403,7 @@ export const ProtectedRoutesPaths = {
     selectFeatures: 'settings/select-features',
     selectVersions: 'settings/select-versions',
     adjustTemplates: 'settings/adjust-templates',
+    qnrTemplates: 'settings/qnr-templates',
 
     //reports
     timeTrackingList: 'reports/time-tracking-list',
