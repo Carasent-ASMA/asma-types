@@ -404,6 +404,7 @@ export const ProtectedRoutesPaths = {
     selectVersions: 'settings/select-versions',
     adjustTemplates: 'settings/adjust-templates',
     qnrTemplates: 'settings/adjust-templates/qnr-templates',
+    designerOverview: 'settings/designer-overview',
 
     //reports
     timeTrackingList: 'reports/time-tracking-list',
