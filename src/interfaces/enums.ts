@@ -357,6 +357,7 @@ export const ProtectedRoutesPaths = {
     myParticipantsAccepted: 'accepted',
     myParticipantsWaiting: 'waiting',
     myParticipantsToBeDeleted: 'to-be-deleted',
+    myParticipantsAll: 'all-participants',
     smsPainter: 'sms-painter',
     //
     plans: 'plans',
