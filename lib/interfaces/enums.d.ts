@@ -259,10 +259,10 @@ export declare const ProtectedRoutesPaths: {
     readonly jobSeeker: "patient-profile";
     readonly directory: "directory";
     readonly myParticipants: "my-participants";
-    readonly myParticipantsGroups: "my-participants/groups";
-    readonly myParticipantsAccepted: "my-participants/accepted";
-    readonly myParticipantsWaiting: "my-participants/waiting";
-    readonly myParticipantsToBeDeleted: "my-participants/to-be-deleted";
+    readonly myParticipantsGroups: "groups";
+    readonly myParticipantsAccepted: "accepted";
+    readonly myParticipantsWaiting: "waiting";
+    readonly myParticipantsToBeDeleted: "to-be-deleted";
     readonly smsPainter: "sms-painter";
     readonly plans: "plans";
     readonly qnrModule: "qnr-module";
