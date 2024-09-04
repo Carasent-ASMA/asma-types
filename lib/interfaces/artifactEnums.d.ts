@@ -26,6 +26,7 @@ export declare enum FileExtension {
     DOC = "doc",
     APP = "app",
     RTF = "rtf",
+    HTML = "html",
     UNKNOWN = "unknown"
 }
 export declare const ScheduleFormat: {
