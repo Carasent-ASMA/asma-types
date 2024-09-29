@@ -374,6 +374,26 @@ export declare const Device: {
     TRUSTED: string;
     UNTRUSTED: string;
 };
+export declare const OverviewCalendarTaskVariations: {
+    readonly DEFAULT: "DEFAULT";
+    readonly THERAPIST: "THERAPIST";
+};
+export declare const OverviewCalendarEventVariations: {
+    readonly DEFAULT: "DEFAULT";
+    readonly THERAPIST: "THERAPIST";
+};
+export declare const OverviewWidgetsVariationMap: {
+    readonly CALENDAR_EVENT: {
+        readonly DEFAULT: "DEFAULT";
+        readonly THERAPIST: "THERAPIST";
+    };
+    readonly CALENDAR_TASK: {
+        readonly DEFAULT: "DEFAULT";
+        readonly THERAPIST: "THERAPIST";
+    };
+};
 export type IDevice = (typeof Device)[keyof typeof Device];
 export type IUserContext = (typeof UserContext)[keyof typeof UserContext];
+export type IOverviewCalendarTaskVariations = (typeof OverviewCalendarTaskVariations)[keyof typeof OverviewCalendarTaskVariations];
+export type IOverviewCalendarEventVariations = (typeof OverviewCalendarEventVariations)[keyof typeof OverviewCalendarEventVariations];
 //# sourceMappingURL=enums.d.ts.map
