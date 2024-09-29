@@ -396,4 +396,6 @@ export type IDevice = (typeof Device)[keyof typeof Device];
 export type IUserContext = (typeof UserContext)[keyof typeof UserContext];
 export type IOverviewCalendarTaskVariations = (typeof OverviewCalendarTaskVariations)[keyof typeof OverviewCalendarTaskVariations];
 export type IOverviewCalendarEventVariations = (typeof OverviewCalendarEventVariations)[keyof typeof OverviewCalendarEventVariations];
+export type IOverviewWidgetsVariationMapKey = keyof typeof OverviewWidgetsVariationMap;
+export type IOverviewWidgetsVariationMap = (typeof OverviewWidgetsVariationMap)[keyof typeof OverviewWidgetsVariationMap];
 //# sourceMappingURL=enums.d.ts.map

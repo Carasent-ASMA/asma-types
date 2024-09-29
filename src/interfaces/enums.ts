@@ -514,3 +514,7 @@ export type IOverviewCalendarTaskVariations =
     (typeof OverviewCalendarTaskVariations)[keyof typeof OverviewCalendarTaskVariations]
 export type IOverviewCalendarEventVariations =
     (typeof OverviewCalendarEventVariations)[keyof typeof OverviewCalendarEventVariations]
+
+export type IOverviewWidgetsVariationMapKey = keyof typeof OverviewWidgetsVariationMap
+export type IOverviewWidgetsVariationMap =
+    (typeof OverviewWidgetsVariationMap)[keyof typeof OverviewWidgetsVariationMap]
