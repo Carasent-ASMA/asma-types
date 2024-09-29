@@ -491,6 +491,26 @@ export const Device = {
     UNTRUSTED: 'UNTRUSTED',
 }
 
+export const OverviewCalendarTaskVariations = {
+    DEFAULT: 'DEFAULT',
+    THERAPIST: 'THERAPIST',
+} as const
+
+export const OverviewCalendarEventVariations = {
+    DEFAULT: 'DEFAULT',
+    THERAPIST: 'THERAPIST',
+} as const
+
+export const OverviewWidgetsVariationMap = {
+    CALENDAR_EVENT: OverviewCalendarEventVariations,
+    CALENDAR_TASK: OverviewCalendarTaskVariations,
+} as const
+
 export type IDevice = (typeof Device)[keyof typeof Device]
 
 export type IUserContext = (typeof UserContext)[keyof typeof UserContext]
+
+export type IOverviewCalendarTaskVariations =
+    (typeof OverviewCalendarTaskVariations)[keyof typeof OverviewCalendarTaskVariations]
+export type IOverviewCalendarEventVariations =
+    (typeof OverviewCalendarEventVariations)[keyof typeof OverviewCalendarEventVariations]
