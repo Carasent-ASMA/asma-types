@@ -306,6 +306,7 @@ export declare const ProtectedRoutesPaths: {
     readonly adjustTemplates: "settings/adjust-templates";
     readonly qnrTemplates: "settings/adjust-templates/qnr-templates";
     readonly designerOverview: "settings/designer-overview";
+    readonly privacyAndConsents: "settings/privacy-and-consents";
     readonly timeTrackingList: "reports/time-tracking-list";
     readonly reports: "reports/reports";
     readonly timeTrackingTeamLeaderList: "reports/time-tracking-team-leader-list";
