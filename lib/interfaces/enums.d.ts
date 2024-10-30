@@ -265,6 +265,7 @@ export declare const ProtectedRoutesPaths: {
     readonly myParticipantsToBeDeleted: "to-be-deleted";
     readonly myParticipantsAll: "all-participants";
     readonly smsPainter: "sms-painter";
+    readonly organizations: "organizations";
     readonly plans: "plans";
     readonly qnrModule: "qnr-module";
     readonly allQnrs: "all-qnrs";
