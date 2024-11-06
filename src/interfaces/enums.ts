@@ -360,6 +360,8 @@ export const ProtectedRoutesPaths = {
     myParticipantsAll: 'all-participants',
     smsPainter: 'sms-painter',
     organizations: 'organizations',
+    organizationsNew: 'organizations/new',
+    organizationsEdit: 'organizations/edit',
     //
     plans: 'plans',
     qnrModule: 'qnr-module',
