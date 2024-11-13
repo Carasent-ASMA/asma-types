@@ -174,6 +174,7 @@ export enum DROPDOWN {
     Ordinary = 'ORDINARY',
     PostCodeWithCity = 'REGION_POST_CODE',
     Country = 'COUNTRY',
+    Organization = 'ORGANIZATION',
 }
 
 export enum NumberTypes {
