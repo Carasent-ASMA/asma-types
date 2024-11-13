@@ -117,7 +117,8 @@ export declare enum QuestionStateTypes {
 export declare enum DROPDOWN {
     Ordinary = "ORDINARY",
     PostCodeWithCity = "REGION_POST_CODE",
-    Country = "COUNTRY"
+    Country = "COUNTRY",
+    Organization = "ORGANIZATION"
 }
 export declare enum NumberTypes {
     PersonalNumber = "PERSONAL_NUMBER",
