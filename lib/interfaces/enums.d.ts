@@ -276,6 +276,7 @@ export declare const ProtectedRoutesPaths: {
     readonly inboxOutbox: "qnrs/inbox-outbox";
     readonly inbox: "qnrs/inbox";
     readonly outbox: "qnrs/outbox";
+    readonly outboxGroups: "qnrs/outbox-groups";
     readonly qnrTemplatesList: "all-qnrs/qnr-templates-list";
     readonly allQnrsAndFiles: "all-qnrs/all-qnrs-and-files";
     readonly manageQnrs: "all-qnrs/manage-qnrs";
