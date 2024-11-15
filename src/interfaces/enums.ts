@@ -184,6 +184,7 @@ export enum NumberTypes {
     CurrencyNok = 'CURRENCY_NOK',
     Ordinary = 'ORDINARY',
     Years = 'YEARS',
+    DateOfBirth = 'DATE_OF_BIRTH',
 }
 
 /* export enum ConsentTypes {

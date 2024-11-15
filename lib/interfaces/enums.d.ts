@@ -126,7 +126,8 @@ export declare enum NumberTypes {
     Customizable = "CUSTOMIZABLE",
     CurrencyNok = "CURRENCY_NOK",
     Ordinary = "ORDINARY",
-    Years = "YEARS"
+    Years = "YEARS",
+    DateOfBirth = "DATE_OF_BIRTH"
 }
 export declare const DocStatus: {
     readonly Signed: "signed";
