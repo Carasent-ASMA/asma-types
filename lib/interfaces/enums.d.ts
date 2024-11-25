@@ -371,6 +371,11 @@ export declare const SearchParamWithValues: {
     readonly device: string;
     readonly show_highlighted_qnr: string;
     readonly group_id: string;
+    readonly status: string;
+    readonly doc_id: string;
+    readonly requestId: string;
+    readonly taskId: string;
+    readonly subdomain: string;
 };
 export type ISearchParamWithValues = (typeof SearchParamWithValues)[keyof typeof SearchParamWithValues];
 export declare const UserContext: {
