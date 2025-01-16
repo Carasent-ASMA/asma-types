@@ -357,6 +357,7 @@ export declare const SearchParams: {
     readonly TaskId: "taskId";
     readonly Subdomain: "subdomain";
     readonly code: "code";
+    readonly user_details: "user_details";
 };
 export type ISearchParams = (typeof SearchParams)[keyof typeof SearchParams];
 export declare const SearchParamWithValues: {
@@ -379,6 +380,7 @@ export declare const SearchParamWithValues: {
     readonly taskId: string;
     readonly subdomain: string;
     readonly code: string;
+    readonly user_details: string;
 };
 export type ISearchParamWithValues = (typeof SearchParamWithValues)[keyof typeof SearchParamWithValues];
 export declare const UserContext: {

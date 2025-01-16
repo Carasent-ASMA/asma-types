@@ -469,6 +469,7 @@ export const SearchParams = {
     TaskId: 'taskId',
     Subdomain: 'subdomain',
     code: 'code',
+    user_details: 'user_details',
 } as const
 export type ISearchParams = (typeof SearchParams)[keyof typeof SearchParams]
 
@@ -492,6 +493,7 @@ export const SearchParamWithValues = {
     taskId: '' as string,
     subdomain: '' as string,
     code: '' as string,
+    user_details: '' as string,
 } as const
 
 export type ISearchParamWithValues = (typeof SearchParamWithValues)[keyof typeof SearchParamWithValues]
