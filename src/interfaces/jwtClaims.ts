@@ -26,7 +26,9 @@ export interface IBaseJwtClaims<R extends string,J extends string = 'ADCURIS'|'A
     srv_urls: ISrvUrls
     customer_id: IUUID
     genesis_role?: string
+    /**@deprecated use journal_user_name instead*/
     brukerBrukerNavn?: string
+    journal_user_name?: string
     journal_user_id?: string
     vt?: number
     exp?: number
