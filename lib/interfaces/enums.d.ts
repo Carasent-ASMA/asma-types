@@ -381,6 +381,7 @@ export declare const SearchParamWithValues: {
     readonly subdomain: string;
     readonly code: string;
     readonly user_details: string;
+    readonly qnr_viewer_readonly: string;
 };
 export type ISearchParamWithValues = (typeof SearchParamWithValues)[keyof typeof SearchParamWithValues];
 export declare const UserContext: {

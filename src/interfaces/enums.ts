@@ -494,6 +494,7 @@ export const SearchParamWithValues = {
     subdomain: '' as string,
     code: '' as string,
     user_details: '' as string,
+    qnr_viewer_readonly: '' as string,
 } as const
 
 export type ISearchParamWithValues = (typeof SearchParamWithValues)[keyof typeof SearchParamWithValues]
