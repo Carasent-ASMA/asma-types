@@ -358,8 +358,17 @@ export declare const SearchParams: {
     readonly Subdomain: "subdomain";
     readonly code: "code";
     readonly user_details: "user_details";
+    readonly focus_tab: "focus_tab";
 };
 export type ISearchParams = (typeof SearchParams)[keyof typeof SearchParams];
+export declare enum SelectedTab {
+    QnrTemplates = "qnr_templates",
+    AnonymousQnrTemplates = "anonymous_qnr_templates",
+    SmsTemplates = "sms_templates",
+    TaskTemplates = "task_templates",
+    EventTemplates = "event_templates",
+    ReportPermissions = "report_permissions"
+}
 export declare const SearchParamWithValues: {
     readonly action: string;
     readonly activity_id: string;
@@ -382,6 +391,7 @@ export declare const SearchParamWithValues: {
     readonly code: string;
     readonly user_details: string;
     readonly qnr_viewer_readonly: string;
+    readonly focus_tab: SelectedTab;
 };
 export type ISearchParamWithValues = (typeof SearchParamWithValues)[keyof typeof SearchParamWithValues];
 export declare const UserContext: {

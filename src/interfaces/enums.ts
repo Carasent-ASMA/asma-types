@@ -470,8 +470,19 @@ export const SearchParams = {
     Subdomain: 'subdomain',
     code: 'code',
     user_details: 'user_details',
+    focus_tab: 'focus_tab',
 } as const
+
 export type ISearchParams = (typeof SearchParams)[keyof typeof SearchParams]
+
+export enum SelectedTab {
+    QnrTemplates = 'qnr_templates',
+    AnonymousQnrTemplates = 'anonymous_qnr_templates',
+    SmsTemplates = 'sms_templates',
+    TaskTemplates = 'task_templates',
+    EventTemplates = 'event_templates',
+    ReportPermissions = 'report_permissions',
+}
 
 export const SearchParamWithValues = {
     action: '' as string,
@@ -495,6 +506,7 @@ export const SearchParamWithValues = {
     code: '' as string,
     user_details: '' as string,
     qnr_viewer_readonly: '' as string,
+    focus_tab: SelectedTab.QnrTemplates as SelectedTab,
 } as const
 
 export type ISearchParamWithValues = (typeof SearchParamWithValues)[keyof typeof SearchParamWithValues]
