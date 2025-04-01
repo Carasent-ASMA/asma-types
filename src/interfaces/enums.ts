@@ -1,5 +1,6 @@
 // deprecated, replaced with QueriesInitiator
 
+import type { ValueOf } from '../utilities'
 import type { SelectedArtifact } from './artifactEnums'
 
 /**
@@ -548,3 +549,11 @@ export type IOverviewCalendarEventVariations =
 export type IOverviewWidgetsVariationMapKey = keyof typeof OverviewWidgetsVariationMap
 export type IOverviewWidgetsVariationMap =
     (typeof OverviewWidgetsVariationMap)[keyof typeof OverviewWidgetsVariationMap]
+
+export const mutationOperations = {
+    INSERT: 'INSERT',
+    UPDATE: 'UPDATE',
+    DELETE: 'DELETE',
+} as const
+
+export type IMutationOperation = ValueOf<typeof mutationOperations>
