@@ -271,6 +271,7 @@ export declare const ProtectedRoutesPaths: {
     readonly organizations: "organizations";
     readonly organizationsNew: "organizations/new";
     readonly organizationsEdit: "organizations/edit";
+    readonly organizationsImport: "organizations/import";
     readonly plans: "plans";
     readonly qnrModule: "qnr-module";
     readonly allQnrs: "all-qnrs";
