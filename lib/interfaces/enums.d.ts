@@ -1,3 +1,4 @@
+import type { ValueOf } from '../utilities';
 /**
  * @deprecated replaced with QueriesInitiator
  */
@@ -426,4 +427,10 @@ export type IOverviewCalendarTaskVariations = (typeof OverviewCalendarTaskVariat
 export type IOverviewCalendarEventVariations = (typeof OverviewCalendarEventVariations)[keyof typeof OverviewCalendarEventVariations];
 export type IOverviewWidgetsVariationMapKey = keyof typeof OverviewWidgetsVariationMap;
 export type IOverviewWidgetsVariationMap = (typeof OverviewWidgetsVariationMap)[keyof typeof OverviewWidgetsVariationMap];
+export declare const mutationOperations: {
+    readonly INSERT: "INSERT";
+    readonly UPDATE: "UPDATE";
+    readonly DELETE: "DELETE";
+};
+export type IMutationOperation = ValueOf<typeof mutationOperations>;
 //# sourceMappingURL=enums.d.ts.map
