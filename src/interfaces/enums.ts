@@ -408,8 +408,8 @@ export const ProtectedRoutesPaths = {
     meetingSessionRoom: 'meeting-session/:roomSession',
 
     // revman
-    features: 'revman/features',
-    multiVersion: 'revman/multiversion',
+    selectFeatures: 'revman/features',
+    selectVersions: 'revman/multiversion',
 
     // admin panel
     customers: 'admin-panel/customers',
