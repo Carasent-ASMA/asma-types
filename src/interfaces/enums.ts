@@ -407,18 +407,23 @@ export const ProtectedRoutesPaths = {
     privacyStatement: 'privacy-statement',
     meetingSessionRoom: 'meeting-session/:roomSession',
 
+    // revman
+    selectFeatures: 'revman/features',
+    selectVersions: 'revman/multiversion',
+
+    // admin panel
+    customers: 'admin-panel/customers',
+    adjustTemplates: 'admin-panel/adjust-templates',
+    qnrTemplates: 'admin-panel/adjust-templates/qnr-templates',
+    privacyAndConsents: 'admin-panel/privacy-and-consents',
+    shortcutsSettings: 'admin-panel/shortcuts-settings',
+    designerOverview: 'admin-panel/designer-overview',
+
     //settings
     settingsAdministration: 'settings/administration',
     settingsAdministrationOrganizationsNew: 'settings/administration/organizations/new',
     settingsAdministrationOrganizationsEdit: 'settings/administration/organizations/edit',
-    shortcutsSettings: 'settings/shortcuts-settings',
     consentsEditor: 'settings/consents-editor',
-    selectFeatures: 'settings/select-features',
-    selectVersions: 'settings/select-versions',
-    adjustTemplates: 'settings/adjust-templates',
-    qnrTemplates: 'settings/adjust-templates/qnr-templates',
-    designerOverview: 'settings/designer-overview',
-    privacyAndConsents: 'settings/privacy-and-consents',
 
     //reports
     timeTrackingList: 'reports/time-tracking-list',
