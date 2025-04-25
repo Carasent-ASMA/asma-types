@@ -304,8 +304,8 @@ export declare const ProtectedRoutesPaths: {
     readonly devextremeReports: "devextreme/reports";
     readonly privacyStatement: "privacy-statement";
     readonly meetingSessionRoom: "meeting-session/:roomSession";
-    readonly features: "revman/features";
-    readonly multiVersion: "revman/multiversion";
+    readonly selectFeatures: "revman/features";
+    readonly selectVersions: "revman/multiversion";
     readonly customers: "admin-panel/customers";
     readonly adjustTemplates: "admin-panel/adjust-templates";
     readonly qnrTemplates: "admin-panel/adjust-templates/qnr-templates";
