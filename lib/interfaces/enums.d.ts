@@ -312,6 +312,7 @@ export declare const ProtectedRoutesPaths: {
     readonly privacyAndConsents: "admin-panel/privacy-and-consents";
     readonly shortcutsSettings: "admin-panel/shortcuts-settings";
     readonly designerOverview: "admin-panel/designer-overview";
+    readonly aoTextTable: "admin-panel/ao-text-table";
     readonly settingsAdministration: "settings/administration";
     readonly settingsAdministrationOrganizationsNew: "settings/administration/organizations/new";
     readonly settingsAdministrationOrganizationsEdit: "settings/administration/organizations/edit";
