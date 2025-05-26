@@ -419,7 +419,6 @@ export const ProtectedRoutesPaths = {
     shortcutsSettings: 'admin-panel/shortcuts-settings',
     designerOverview: 'admin-panel/designer-overview',
     aoTextTable: 'admin-panel/ao-text-table',
-    loginReports: 'admin-panel/login-reports',
 
     //settings
     settingsAdministration: 'settings/administration',
@@ -431,7 +430,7 @@ export const ProtectedRoutesPaths = {
     timeTrackingList: 'reports/time-tracking-list',
     reports: 'reports/reports',
     timeTrackingTeamLeaderList: 'reports/time-tracking-team-leader-list',
-    // loginReports: 'reports/login-reports',
+    loginReports: 'reports/login-reports',
 } as const
 
 export type IProtectedRoutesPaths = (typeof ProtectedRoutesPaths)[keyof typeof ProtectedRoutesPaths]
