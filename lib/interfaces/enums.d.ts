@@ -371,7 +371,8 @@ export declare enum SelectedTab {
     SmsTemplates = "sms_templates",
     TaskTemplates = "task_templates",
     EventTemplates = "event_templates",
-    ReportPermissions = "report_permissions"
+    ReportPermissions = "report_permissions",
+    DocumentTemplates = "document_templates"
 }
 export declare const SearchParamWithValues: {
     readonly action: string;
