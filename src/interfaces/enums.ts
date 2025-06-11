@@ -490,7 +490,8 @@ export enum SelectedTab {
     TaskTemplates = 'task_templates',
     EventTemplates = 'event_templates',
     ReportPermissions = 'report_permissions',
-    DocumentTemplates = 'document_templates'
+    DocumentTemplates = 'document_templates',
+    TimePlanTemplates = 'time_plan_templates',
 }
 
 export const SearchParamWithValues = {
