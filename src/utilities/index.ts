@@ -1,2 +1,3 @@
-export * from './valueof.type'
-export type * from './OneOf'
+export * from './valueof.type.js'
+export type * from './OneOf.js'
+

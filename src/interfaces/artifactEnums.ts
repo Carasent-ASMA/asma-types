@@ -1,4 +1,4 @@
-import type { ValueOf } from '../utilities/valueof.type'
+import type { ValueOf } from '../utilities/valueof.type.js'
 
 export enum ArtifactPresenterTypes {
     Qnr = 'Questionnaire',
@@ -55,5 +55,5 @@ export enum AnonymousQnrInvitationTypes {
     CODE = '#CODE#',
     URL = '#URL#',
     NAME = '#NAME#',
-    ACTIVITY_ID = '#ACTIVITY_ID#'
+    ACTIVITY_ID = '#ACTIVITY_ID#',
 }

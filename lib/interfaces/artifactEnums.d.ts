@@ -1,4 +1,4 @@
-import type { ValueOf } from '../utilities/valueof.type';
+import type { ValueOf } from '../utilities/valueof.type.js';
 export declare enum ArtifactPresenterTypes {
     Qnr = "Questionnaire",
     DocumentProxy = "DocumentProxy",

@@ -1,7 +1,7 @@
 // deprecated, replaced with QueriesInitiator
 
 import type { ValueOf } from '../utilities'
-import type { SelectedArtifact } from './artifactEnums'
+import type { SelectedArtifact } from './artifactEnums.js'
 
 /**
  * @deprecated replaced with QueriesInitiator
