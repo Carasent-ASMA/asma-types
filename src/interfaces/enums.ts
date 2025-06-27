@@ -436,6 +436,11 @@ export const ProtectedRoutesPaths = {
     // time plan templates
     createTimePlanTemplate: 'time-plan-templates/create',
     timePlanTemplate: 'time-plan-templates/:templateId',
+
+    // time plans
+
+    createTimePlan: 'calendar/time-plans/create',
+    timePlan: 'calendar/time-plans/:timePlanId',
 } as const
 
 export type IProtectedRoutesPaths = (typeof ProtectedRoutesPaths)[keyof typeof ProtectedRoutesPaths]

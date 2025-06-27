@@ -324,6 +324,8 @@ export declare const ProtectedRoutesPaths: {
     readonly loginReports: "reports/login-reports";
     readonly createTimePlanTemplate: "time-plan-templates/create";
     readonly timePlanTemplate: "time-plan-templates/:templateId";
+    readonly createTimePlan: "calendar/time-plans/create";
+    readonly timePlan: "calendar/time-plans/:timePlanId";
 };
 export type IProtectedRoutesPaths = (typeof ProtectedRoutesPaths)[keyof typeof ProtectedRoutesPaths];
 export declare enum ExpressionOperators {
