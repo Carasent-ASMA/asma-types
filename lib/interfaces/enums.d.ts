@@ -309,7 +309,7 @@ export declare const ProtectedRoutesPaths: {
     readonly customers: "admin-panel/customers";
     readonly adjustTemplates: "admin-panel/adjust-templates";
     readonly qnrTemplates: "admin-panel/adjust-templates/qnr-templates";
-    readonly documentEditor: "admin-panel/adjust-templates/document-editor";
+    readonly documentEditor: "admin-panel/adjust-templates/document-editor/:doc_id";
     readonly privacyAndConsents: "admin-panel/privacy-and-consents";
     readonly shortcutsSettings: "admin-panel/shortcuts-settings";
     readonly designerOverview: "admin-panel/designer-overview";
