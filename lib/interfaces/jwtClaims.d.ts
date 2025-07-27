@@ -9,14 +9,8 @@ export interface IBaseJwtClaims<R extends string, J extends string = 'ADCURIS' |
     subdomain: string;
     genesis_set: string;
     name: string;
-    journal_role: string;
-    region: string;
     srv_urls: ISrvUrls;
     customer_id: IUUID;
-    genesis_role?: string;
-    /**@deprecated use journal_user_name instead*/
-    brukerBrukerNavn?: string;
-    journal_user_name?: string;
     journal_user_id?: string;
     vt?: number;
     exp?: number;
@@ -25,7 +19,7 @@ export interface IAdminJwtClaims<R extends string> extends ITherapistOrSuperUser
 }
 /**
  * R roles_enum
- */
+*/
 export interface IRecipientJwtClaims<R extends string> extends IBaseJwtClaims<R> {
     access_level: 1 | 2 | 3 | 4;
     related_customers: string;
@@ -34,8 +28,14 @@ export interface IRecipientJwtClaims<R extends string> extends IBaseJwtClaims<R>
 /**
  * R roles_enum
  * F feature_names_enum
- */
+*/
 export interface ITherapistOrSuperUserJwtClaims<R extends string> extends IBaseJwtClaims<R> {
+    genesis_role: string;
+    /**@deprecated use journal_user_name instead*/
+    brukerBrukerNavn: string;
+    journal_user_name: string;
+    region: string;
+    journal_role: string;
 }
 export interface IService {
     [key: string]: string[];
