@@ -57,7 +57,7 @@ export interface ISrvUrls {
     [key: string]: string
 }
 
-export interface IAiLearningJwtClaims<R extends string> extends IBaseJwtClaims<R> {
+export interface IAiLearningJwtClaims<R extends string> extends ITherapistOrSuperUserJwtClaims<R> {
 }
 /**
  *  R roles_enum 
