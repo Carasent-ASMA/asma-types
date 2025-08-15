@@ -36,6 +36,7 @@ export interface IRecipientJwtClaims<R extends string> extends IBaseJwtClaims<R>
     access_level: 1 | 2 | 3 | 4
     related_customers: string
     identity: string
+    legal_guardian?: string
 }
 /**
  * R roles_enum
