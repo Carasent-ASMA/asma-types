@@ -489,6 +489,11 @@ export const SearchParams = {
     code: 'code',
     user_details: 'user_details',
     focus_tab: 'focus_tab',
+    SignUserId: 'sign_user_id',
+    SignActivityId: 'sign_activity_id',
+    SignProvider: 'sign_provider',
+    SignatoryStatus: 'signatory_status',
+    SignatoryId: 'signatory_id',
 } as const
 
 export type ISearchParams = (typeof SearchParams)[keyof typeof SearchParams]

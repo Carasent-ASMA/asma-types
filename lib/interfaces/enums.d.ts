@@ -368,6 +368,11 @@ export declare const SearchParams: {
     readonly code: "code";
     readonly user_details: "user_details";
     readonly focus_tab: "focus_tab";
+    readonly SignUserId: "sign_user_id";
+    readonly SignActivityId: "sign_activity_id";
+    readonly SignProvider: "sign_provider";
+    readonly SignatoryStatus: "signatory_status";
+    readonly SignatoryId: "signatory_id";
 };
 export type ISearchParams = (typeof SearchParams)[keyof typeof SearchParams];
 export declare enum SelectedTab {
