@@ -409,6 +409,7 @@ export declare const SearchParamWithValues: {
     readonly user_details: string;
     readonly qnr_viewer_readonly: string;
     readonly focus_tab: SelectedTab;
+    readonly document_category: string;
 };
 export type ISearchParamWithValues = (typeof SearchParamWithValues)[keyof typeof SearchParamWithValues];
 export declare const UserContext: {

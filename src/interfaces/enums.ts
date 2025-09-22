@@ -533,6 +533,7 @@ export const SearchParamWithValues = {
     user_details: '' as string,
     qnr_viewer_readonly: '' as string,
     focus_tab: SelectedTab.QnrTemplates as SelectedTab,
+    document_category: '' as string,
 } as const
 
 export type ISearchParamWithValues = (typeof SearchParamWithValues)[keyof typeof SearchParamWithValues]
