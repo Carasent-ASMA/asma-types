@@ -494,6 +494,7 @@ export const SearchParams = {
     SignProvider: 'sign_provider',
     SignatoryStatus: 'signatory_status',
     SignatoryId: 'signatory_id',
+    DocumentCategory: 'document_category',
 } as const
 
 export type ISearchParams = (typeof SearchParams)[keyof typeof SearchParams]
