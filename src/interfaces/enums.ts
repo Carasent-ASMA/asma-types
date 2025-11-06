@@ -534,6 +534,11 @@ export const SearchParamWithValues = {
     user_details: '' as string,
     qnr_viewer_readonly: '' as string,
     focus_tab: SelectedTab.QnrTemplates as SelectedTab,
+    sign_user_id: ''as string,
+    sign_activity_id: ''as string,
+    sign_provider: ''as string,
+    signatory_status: ''as string,
+    signatory_id: ''as string,
     document_category: '' as string,
     remember_me: '' as string
 } as const

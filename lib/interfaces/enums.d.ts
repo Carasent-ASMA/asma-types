@@ -410,6 +410,11 @@ export declare const SearchParamWithValues: {
     readonly user_details: string;
     readonly qnr_viewer_readonly: string;
     readonly focus_tab: SelectedTab;
+    readonly sign_user_id: string;
+    readonly sign_activity_id: string;
+    readonly sign_provider: string;
+    readonly signatory_status: string;
+    readonly signatory_id: string;
     readonly document_category: string;
     readonly remember_me: string;
 };
