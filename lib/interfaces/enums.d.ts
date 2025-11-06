@@ -374,6 +374,7 @@ export declare const SearchParams: {
     readonly SignatoryStatus: "signatory_status";
     readonly SignatoryId: "signatory_id";
     readonly DocumentCategory: "document_category";
+    readonly RememberMe: "remember_me";
 };
 export type ISearchParams = (typeof SearchParams)[keyof typeof SearchParams];
 export declare enum SelectedTab {
@@ -410,6 +411,7 @@ export declare const SearchParamWithValues: {
     readonly qnr_viewer_readonly: string;
     readonly focus_tab: SelectedTab;
     readonly document_category: string;
+    readonly remember_me: string;
 };
 export type ISearchParamWithValues = (typeof SearchParamWithValues)[keyof typeof SearchParamWithValues];
 export declare const UserContext: {

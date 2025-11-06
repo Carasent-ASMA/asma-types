@@ -495,6 +495,7 @@ export const SearchParams = {
     SignatoryStatus: 'signatory_status',
     SignatoryId: 'signatory_id',
     DocumentCategory: 'document_category',
+    RememberMe: 'remember_me'
 } as const
 
 export type ISearchParams = (typeof SearchParams)[keyof typeof SearchParams]
@@ -534,6 +535,7 @@ export const SearchParamWithValues = {
     qnr_viewer_readonly: '' as string,
     focus_tab: SelectedTab.QnrTemplates as SelectedTab,
     document_category: '' as string,
+    remember_me: '' as string
 } as const
 
 export type ISearchParamWithValues = (typeof SearchParamWithValues)[keyof typeof SearchParamWithValues]
