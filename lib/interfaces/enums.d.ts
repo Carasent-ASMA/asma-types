@@ -320,6 +320,7 @@ export declare const ProtectedRoutesPaths: {
     readonly consentsEditor: "settings/consents-editor";
     readonly timeTrackingList: "reports/time-tracking-list";
     readonly reports: "reports/reports";
+    readonly report: "reports/reports/:id";
     readonly timeTrackingTeamLeaderList: "reports/time-tracking-team-leader-list";
     readonly loginReports: "reports/login-reports";
     readonly createTimePlanTemplate: "time-plan-templates/create";

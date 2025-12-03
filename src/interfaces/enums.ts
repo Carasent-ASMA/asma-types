@@ -430,6 +430,7 @@ export const ProtectedRoutesPaths = {
     //reports
     timeTrackingList: 'reports/time-tracking-list',
     reports: 'reports/reports',
+    report: 'reports/reports/:id',
     timeTrackingTeamLeaderList: 'reports/time-tracking-team-leader-list',
     loginReports: 'reports/login-reports',
 
@@ -495,7 +496,7 @@ export const SearchParams = {
     SignatoryStatus: 'signatory_status',
     SignatoryId: 'signatory_id',
     DocumentCategory: 'document_category',
-    RememberMe: 'remember_me'
+    RememberMe: 'remember_me',
 } as const
 
 export type ISearchParams = (typeof SearchParams)[keyof typeof SearchParams]
@@ -534,13 +535,13 @@ export const SearchParamWithValues = {
     user_details: '' as string,
     qnr_viewer_readonly: '' as string,
     focus_tab: SelectedTab.QnrTemplates as SelectedTab,
-    sign_user_id: ''as string,
-    sign_activity_id: ''as string,
-    sign_provider: ''as string,
-    signatory_status: ''as string,
-    signatory_id: ''as string,
+    sign_user_id: '' as string,
+    sign_activity_id: '' as string,
+    sign_provider: '' as string,
+    signatory_status: '' as string,
+    signatory_id: '' as string,
     document_category: '' as string,
-    remember_me: '' as string
+    remember_me: '' as string,
 } as const
 
 export type ISearchParamWithValues = (typeof SearchParamWithValues)[keyof typeof SearchParamWithValues]
