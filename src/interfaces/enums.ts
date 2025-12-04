@@ -510,7 +510,7 @@ export enum SelectedTab {
     ReportPermissions = 'report_permissions',
     DocumentTemplates = 'document_templates',
     TimePlanTemplates = 'time_plan_templates',
-}
+} 
 
 export const SearchParamWithValues = {
     action: '' as string,
@@ -554,7 +554,7 @@ export const UserContext = {
 export const Device = {
     TRUSTED: 'TRUSTED',
     UNTRUSTED: 'UNTRUSTED',
-}
+} as const 
 
 export const OverviewCalendarTaskVariations = {
     DEFAULT: 'DEFAULT',

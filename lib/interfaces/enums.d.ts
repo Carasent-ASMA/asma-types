@@ -399,7 +399,7 @@ export declare const SearchParamWithValues: {
     readonly selected_qnr_id: string;
     readonly user_context: IUserContext;
     readonly qnr_context: string;
-    readonly device: string;
+    readonly device: IDevice;
     readonly show_highlighted_qnr: string;
     readonly group_id: string;
     readonly status: string;
@@ -425,8 +425,8 @@ export declare const UserContext: {
     readonly RECIPIENT: "RECIPIENT";
 };
 export declare const Device: {
-    TRUSTED: string;
-    UNTRUSTED: string;
+    readonly TRUSTED: "TRUSTED";
+    readonly UNTRUSTED: "UNTRUSTED";
 };
 export declare const OverviewCalendarTaskVariations: {
     readonly DEFAULT: "DEFAULT";
