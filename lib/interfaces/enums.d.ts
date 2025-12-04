@@ -320,7 +320,6 @@ export declare const ProtectedRoutesPaths: {
     readonly consentsEditor: "settings/consents-editor";
     readonly timeTrackingList: "reports/time-tracking-list";
     readonly reports: "reports/reports";
-    readonly report: "reports/reports/:id";
     readonly timeTrackingTeamLeaderList: "reports/time-tracking-team-leader-list";
     readonly loginReports: "reports/login-reports";
     readonly createTimePlanTemplate: "time-plan-templates/create";
@@ -376,6 +375,7 @@ export declare const SearchParams: {
     readonly SignatoryId: "signatory_id";
     readonly DocumentCategory: "document_category";
     readonly RememberMe: "remember_me";
+    readonly ReportId: "report_id";
 };
 export type ISearchParams = (typeof SearchParams)[keyof typeof SearchParams];
 export declare enum SelectedTab {
@@ -418,6 +418,7 @@ export declare const SearchParamWithValues: {
     readonly signatory_id: string;
     readonly document_category: string;
     readonly remember_me: string;
+    readonly report_id: string;
 };
 export type ISearchParamWithValues = (typeof SearchParamWithValues)[keyof typeof SearchParamWithValues];
 export declare const UserContext: {

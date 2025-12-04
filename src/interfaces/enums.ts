@@ -430,7 +430,6 @@ export const ProtectedRoutesPaths = {
     //reports
     timeTrackingList: 'reports/time-tracking-list',
     reports: 'reports/reports',
-    report: 'reports/reports/:id',
     timeTrackingTeamLeaderList: 'reports/time-tracking-team-leader-list',
     loginReports: 'reports/login-reports',
 
@@ -497,6 +496,7 @@ export const SearchParams = {
     SignatoryId: 'signatory_id',
     DocumentCategory: 'document_category',
     RememberMe: 'remember_me',
+    ReportId: 'report_id',
 } as const
 
 export type ISearchParams = (typeof SearchParams)[keyof typeof SearchParams]
@@ -510,7 +510,7 @@ export enum SelectedTab {
     ReportPermissions = 'report_permissions',
     DocumentTemplates = 'document_templates',
     TimePlanTemplates = 'time_plan_templates',
-} 
+}
 
 export const SearchParamWithValues = {
     action: '' as string,
@@ -542,6 +542,7 @@ export const SearchParamWithValues = {
     signatory_id: '' as string,
     document_category: '' as string,
     remember_me: '' as string,
+    report_id: '' as string,
 } as const
 
 export type ISearchParamWithValues = (typeof SearchParamWithValues)[keyof typeof SearchParamWithValues]
@@ -554,7 +555,7 @@ export const UserContext = {
 export const Device = {
     TRUSTED: 'TRUSTED',
     UNTRUSTED: 'UNTRUSTED',
-} as const 
+} as const
 
 export const OverviewCalendarTaskVariations = {
     DEFAULT: 'DEFAULT',
