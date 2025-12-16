@@ -459,4 +459,10 @@ export declare const mutationOperations: {
     readonly DELETE: "DELETE";
 };
 export type IMutationOperation = ValueOf<typeof mutationOperations>;
+export declare const HelpLinkContext: {
+    readonly CARE_GIVER: "HELP_LINKS_CARE_GIVER";
+    readonly CARE_RECEIVER: "HELP_LINKS_CARE_RECEIVER";
+    readonly ADVOCA: "HELP_LINKS_ADVOCA";
+};
+export type IHelpLinkContext = (typeof HelpLinkContext)[keyof typeof HelpLinkContext];
 //# sourceMappingURL=enums.d.ts.map

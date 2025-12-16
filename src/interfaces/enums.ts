@@ -592,3 +592,11 @@ export const mutationOperations = {
 } as const
 
 export type IMutationOperation = ValueOf<typeof mutationOperations>
+
+export const HelpLinkContext = {
+    CARE_GIVER: 'HELP_LINKS_CARE_GIVER',
+    CARE_RECEIVER: 'HELP_LINKS_CARE_RECEIVER',
+    ADVOCA: 'HELP_LINKS_ADVOCA',
+} as const
+
+export type IHelpLinkContext = (typeof HelpLinkContext)[keyof typeof HelpLinkContext]
