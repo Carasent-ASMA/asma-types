@@ -418,6 +418,11 @@ export const ProtectedRoutesPaths = {
     documentEditor: 'admin-panel/adjust-templates/document-editor/:doc_id',
     privacyAndConsents: 'admin-panel/privacy-and-consents',
     shortcutsSettings: 'admin-panel/shortcuts-settings',
+    employeeLinks: 'admin-panel/shortcuts-settings/employees',
+    advocaLinks: 'admin-panel/shortcuts-settings/advoca',
+    helpLinksCareGiver: 'admin-panel/shortcut-settings/help-links/care-giver',
+    helpLinksCareReceiver: 'admin-panel/shortcut-settings/help-links/care-receiver',
+    helpLinksAdvoca: 'admin-panel/shortcut-settings/help-links/advoca',
     designerOverview: 'admin-panel/designer-overview',
     aoTextTable: 'admin-panel/ao-text-table',
 
