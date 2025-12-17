@@ -314,9 +314,9 @@ export declare const ProtectedRoutesPaths: {
     readonly shortcutsSettings: "admin-panel/shortcuts-settings";
     readonly employeeLinks: "admin-panel/shortcuts-settings/employees";
     readonly advocaLinks: "admin-panel/shortcuts-settings/advoca";
-    readonly helpLinksCareGiver: "admin-panel/shortcut-settings/help-links/care-giver";
-    readonly helpLinksCareReceiver: "admin-panel/shortcut-settings/help-links/care-receiver";
-    readonly helpLinksAdvoca: "admin-panel/shortcut-settings/help-links/advoca";
+    readonly helpLinksCareGiver: "admin-panel/shortcuts-settings/help-links/care-giver";
+    readonly helpLinksCareReceiver: "admin-panel/shortcuts-settings/help-links/care-receiver";
+    readonly helpLinksAdvoca: "admin-panel/shortcuts-settings/help-links/advoca";
     readonly designerOverview: "admin-panel/designer-overview";
     readonly aoTextTable: "admin-panel/ao-text-table";
     readonly settingsAdministration: "settings/administration";
