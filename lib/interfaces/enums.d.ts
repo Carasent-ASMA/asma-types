@@ -319,6 +319,7 @@ export declare const ProtectedRoutesPaths: {
     readonly helpLinksAdvoca: "admin-panel/shortcuts-settings/help-links/advoca";
     readonly designerOverview: "admin-panel/designer-overview";
     readonly aoTextTable: "admin-panel/ao-text-table";
+    readonly onlyOffice: "admin-panel/onlyoffice-sessions";
     readonly settingsAdministration: "settings/administration";
     readonly settingsAdministrationOrganizationsNew: "settings/administration/organizations/new";
     readonly settingsAdministrationOrganizationsEdit: "settings/administration/organizations/edit";

@@ -85,7 +85,8 @@
         "Tiltak",
         "truetype",
         "twotone",
-        "voca"
+        "voca",
+        "onlyoffice"
     ],
     "ignorePaths": [
         "package-lock.json",

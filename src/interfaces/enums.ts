@@ -425,6 +425,7 @@ export const ProtectedRoutesPaths = {
     helpLinksAdvoca: 'admin-panel/shortcuts-settings/help-links/advoca',
     designerOverview: 'admin-panel/designer-overview',
     aoTextTable: 'admin-panel/ao-text-table',
+    onlyOffice: 'admin-panel/onlyoffice-sessions',
 
     //settings
     settingsAdministration: 'settings/administration',
