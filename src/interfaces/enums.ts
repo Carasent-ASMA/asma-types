@@ -425,7 +425,6 @@ export const ProtectedRoutesPaths = {
     helpLinksAdvoca: 'admin-panel/shortcuts-settings/help-links/advoca',
     designerOverview: 'admin-panel/designer-overview',
     aoTextTable: 'admin-panel/ao-text-table',
-    onlyOffice: 'admin-panel/onlyoffice-sessions',
 
     //settings
     settingsAdministration: 'settings/administration',
@@ -438,13 +437,13 @@ export const ProtectedRoutesPaths = {
     reports: 'reports/reports',
     timeTrackingTeamLeaderList: 'reports/time-tracking-team-leader-list',
     loginReports: 'reports/login-reports',
+    onlyofficeSessions: 'reports/onlyoffice-sessions',
 
     // time plan templates
     createTimePlanTemplate: 'time-plan-templates/create',
     timePlanTemplate: 'time-plan-templates/:templateId',
 
     // time plans
-
     createTimePlan: 'calendar/time-plans/create',
     timePlan: 'calendar/time-plans/:timePlanId',
 } as const
