@@ -437,7 +437,7 @@ export const ProtectedRoutesPaths = {
     reports: 'reports/reports',
     timeTrackingTeamLeaderList: 'reports/time-tracking-team-leader-list',
     loginReports: 'reports/login-reports',
-    onlyofficeSessions: 'reports/onlyoffice-sessions',
+    onlyofficeSessionStats: 'reports/onlyoffice-session-stats',
 
     // time plan templates
     createTimePlanTemplate: 'time-plan-templates/create',

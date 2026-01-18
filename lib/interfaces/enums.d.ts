@@ -327,7 +327,7 @@ export declare const ProtectedRoutesPaths: {
     readonly reports: "reports/reports";
     readonly timeTrackingTeamLeaderList: "reports/time-tracking-team-leader-list";
     readonly loginReports: "reports/login-reports";
-    readonly onlyofficeSessions: "reports/onlyoffice-sessions";
+    readonly onlyofficeSessionStats: "reports/onlyoffice-session-stats";
     readonly createTimePlanTemplate: "time-plan-templates/create";
     readonly timePlanTemplate: "time-plan-templates/:templateId";
     readonly createTimePlan: "calendar/time-plans/create";
