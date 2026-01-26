@@ -424,7 +424,7 @@ export const ProtectedRoutesPaths = {
     helpLinksCareReceiver: 'admin-panel/shortcuts-settings/help-links/care-receiver',
     helpLinksAdvoca: 'admin-panel/shortcuts-settings/help-links/advoca',
     designerOverview: 'admin-panel/designer-overview',
-    aoTextTable: 'admin-panel/ao-text-table',
+    onlyoffice: 'admin-panel/onlyoffice',
 
     //settings
     settingsAdministration: 'settings/administration',
@@ -437,7 +437,6 @@ export const ProtectedRoutesPaths = {
     reports: 'reports/reports',
     timeTrackingTeamLeaderList: 'reports/time-tracking-team-leader-list',
     loginReports: 'reports/login-reports',
-    onlyofficeSessionStats: 'reports/onlyoffice-session-stats',
 
     // time plan templates
     createTimePlanTemplate: 'time-plan-templates/create',

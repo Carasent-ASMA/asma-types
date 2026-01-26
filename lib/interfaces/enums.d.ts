@@ -318,7 +318,7 @@ export declare const ProtectedRoutesPaths: {
     readonly helpLinksCareReceiver: "admin-panel/shortcuts-settings/help-links/care-receiver";
     readonly helpLinksAdvoca: "admin-panel/shortcuts-settings/help-links/advoca";
     readonly designerOverview: "admin-panel/designer-overview";
-    readonly aoTextTable: "admin-panel/ao-text-table";
+    readonly onlyoffice: "admin-panel/onlyoffice";
     readonly settingsAdministration: "settings/administration";
     readonly settingsAdministrationOrganizationsNew: "settings/administration/organizations/new";
     readonly settingsAdministrationOrganizationsEdit: "settings/administration/organizations/edit";
@@ -327,7 +327,6 @@ export declare const ProtectedRoutesPaths: {
     readonly reports: "reports/reports";
     readonly timeTrackingTeamLeaderList: "reports/time-tracking-team-leader-list";
     readonly loginReports: "reports/login-reports";
-    readonly onlyofficeSessionStats: "reports/onlyoffice-session-stats";
     readonly createTimePlanTemplate: "time-plan-templates/create";
     readonly timePlanTemplate: "time-plan-templates/:templateId";
     readonly createTimePlan: "calendar/time-plans/create";
