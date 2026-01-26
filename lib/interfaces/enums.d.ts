@@ -309,7 +309,6 @@ export declare const ProtectedRoutesPaths: {
     readonly customers: "admin-panel/customers";
     readonly adjustTemplates: "admin-panel/adjust-templates";
     readonly qnrTemplates: "admin-panel/adjust-templates/qnr-templates";
-    readonly documentEditor: "admin-panel/adjust-templates/document-editor/:doc_id";
     readonly privacyAndConsents: "admin-panel/privacy-and-consents";
     readonly shortcutsSettings: "admin-panel/shortcuts-settings";
     readonly employeeLinks: "admin-panel/shortcuts-settings/employees";
@@ -319,6 +318,7 @@ export declare const ProtectedRoutesPaths: {
     readonly helpLinksAdvoca: "admin-panel/shortcuts-settings/help-links/advoca";
     readonly designerOverview: "admin-panel/designer-overview";
     readonly onlyoffice: "admin-panel/onlyoffice";
+    readonly documentEditor: "admin-panel/onlyoffice/document-editor/:doc_id";
     readonly settingsAdministration: "settings/administration";
     readonly settingsAdministrationOrganizationsNew: "settings/administration/organizations/new";
     readonly settingsAdministrationOrganizationsEdit: "settings/administration/organizations/edit";
