@@ -319,6 +319,7 @@ export declare const ProtectedRoutesPaths: {
     readonly designerOverview: "admin-panel/designer-overview";
     readonly onlyoffice: "admin-panel/onlyoffice";
     readonly documentEditor: "admin-panel/onlyoffice/document-editor/:doc_id";
+    readonly chatInfoLine: "admin-panel/chat-info-line";
     readonly settingsAdministration: "settings/administration";
     readonly settingsAdministrationOrganizationsNew: "settings/administration/organizations/new";
     readonly settingsAdministrationOrganizationsEdit: "settings/administration/organizations/edit";

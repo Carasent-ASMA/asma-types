@@ -425,6 +425,7 @@ export const ProtectedRoutesPaths = {
     designerOverview: 'admin-panel/designer-overview',
     onlyoffice: 'admin-panel/onlyoffice',
     documentEditor: 'admin-panel/onlyoffice/document-editor/:doc_id',
+    chatInfoLine: 'admin-panel/chat-info-line',
 
     //settings
     settingsAdministration: 'settings/administration',
