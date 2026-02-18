@@ -53,7 +53,8 @@ export declare enum QuestionTypes {
     ExpressionQuestion = "ExpressionQuestion",
     Chart = "Chart",
     Widget = "Widget",
-    Space = "Space"
+    Space = "Space",
+    Title = "Title"
 }
 export declare enum ActorTypes {
     Mappable = "mappable",
