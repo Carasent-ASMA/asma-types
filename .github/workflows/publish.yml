@@ -1,0 +1,12 @@
+name: Build and Publish
+
+on:
+    push:
+        branches:
+            - master
+
+jobs:
+    publish:
+    uses: Carasent-ASMA/asma-modules/.github/workflows/reusable-publish.yml@master
+            package_name: "asma-types"
+        secrets: inherit
