@@ -299,6 +299,7 @@ export declare const ProtectedRoutesPaths: {
     readonly portalMicrosoftOffice: "microsoft-office/onedrive";
     readonly portalDesigner: "designer";
     readonly portalDashboard: "dashboard/services";
+    readonly legacyShowQuery: "legacy-show-query/:id";
     readonly anonymousSchema: "anonymous-schema";
     readonly devextreme: "devextreme";
     readonly devextremeRichEdit: "devextreme/rich-edit";
