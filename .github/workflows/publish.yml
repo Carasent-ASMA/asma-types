@@ -7,6 +7,8 @@ on:
 
 jobs:
     publish:
-    uses: Carasent-ASMA/asma-modules/.github/workflows/reusable-publish.yml@master
+        uses: Carasent-ASMA/asma-modules/.github/workflows/reusable-publish.yml@master
+        with:
+            publish_npm: false
             package_name: "asma-types"
         secrets: inherit
