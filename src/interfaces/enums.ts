@@ -399,7 +399,7 @@ export const ProtectedRoutesPaths = {
     portalDesigner: 'designer',
     portalDashboard: 'dashboard/services',
     //
-    legacyShowQuery: 'legacy-show-query/:id',
+    legacyShowQuery: 'show-query-legacy/:id',
     anonymousSchema: 'anonymous-schema',
 
     //devextreme
