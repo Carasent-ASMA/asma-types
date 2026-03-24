@@ -1,5 +1,5 @@
 # Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project
 
 **Test note**: Testing parallel AI commit generation and push with 20 workers. ⚡
 
