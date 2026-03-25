@@ -318,6 +318,9 @@ export declare const ProtectedRoutesPaths: {
     readonly helpLinksCareGiver: "admin-panel/shortcuts-settings/help-links/care-giver";
     readonly helpLinksCareReceiver: "admin-panel/shortcuts-settings/help-links/care-receiver";
     readonly helpLinksAdvoca: "admin-panel/shortcuts-settings/help-links/advoca";
+    readonly helpLinksCareGiverMenu: "admin-panel/help-links/care-giver";
+    readonly helpLinksCareReceiverMenu: "admin-panel/help-links/care-receiver";
+    readonly helpLinksAdvocaMenu: "admin-panel/help-links/advoca";
     readonly designerOverview: "admin-panel/designer-overview";
     readonly onlyoffice: "admin-panel/onlyoffice";
     readonly documentEditor: "admin-panel/onlyoffice/document-editor/:doc_id";
