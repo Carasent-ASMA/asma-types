@@ -122,6 +122,10 @@ export declare enum DROPDOWN {
     Country = "COUNTRY",
     Organization = "ORGANIZATION"
 }
+export declare enum TextShortTypes {
+    Ordinary = "ORDINARY",
+    Email = "EMAIL"
+}
 export declare enum NumberTypes {
     PersonalNumber = "PERSONAL_NUMBER",
     NorwegianPhoneNr = "NORWEGIAN_PHONE_NR",
