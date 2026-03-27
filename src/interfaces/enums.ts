@@ -179,6 +179,11 @@ export enum DROPDOWN {
     Organization = 'ORGANIZATION',
 }
 
+export enum TextShortTypes {
+    Ordinary = 'ORDINARY',
+    Email = 'EMAIL',
+}
+
 export enum NumberTypes {
     PersonalNumber = 'PERSONAL_NUMBER',
     NorwegianPhoneNr = 'NORWEGIAN_PHONE_NR',
