@@ -380,6 +380,7 @@ export declare const SearchParams: {
     readonly RequestId: "requestId";
     readonly TaskId: "taskId";
     readonly Subdomain: "subdomain";
+    readonly SelectedTherapistActno: "selected_therapist_actno";
     readonly code: "code";
     readonly user_details: "user_details";
     readonly focus_tab: "focus_tab";
@@ -421,6 +422,7 @@ export declare const SearchParamWithValues: {
     readonly requestId: string;
     readonly taskId: string;
     readonly subdomain: string;
+    readonly selected_therapist_actno: string;
     readonly code: string;
     readonly user_details: string;
     readonly qnr_viewer_readonly: string;
