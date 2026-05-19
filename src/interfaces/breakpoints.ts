@@ -23,20 +23,23 @@
 /**
  * Numeric breakpoint values.
  *
- * @property mobileMax - Maximum width for mobile view.
- * @property tabletMin - Minimum width for tablet view.
- * @property tabletMax - Maximum width for tablet view.
- * @property tabletDesktopMin - Minimum width for tablet-desktop view.
- * @property tabletDesktopMax - Maximum width for tablet-desktop view.
- * @property desktopMin - Minimum width for desktop view.
+ * @property tablet - Minimum width for tablet view.
+ * @property tabletDesktop - Minimum width for tablet-desktop view.
+ * @property desktop - Minimum width for desktop view.
  */
 export const breakpoints = {
-    mobileMax: 743,
-    tabletMin: 744,
-    tabletMax: 1023,
-    tabletDesktopMin: 1024,
-    tabletDesktopMax: 1279,
-    desktopMin: 1280,
+    tablet: 744,
+    tabletDesktop: 1024,
+    desktop: 1280,
+} as const
+
+/**
+ * Derived ceiling values for max-width checks.
+ */
+const ceilings = {
+    mobile: breakpoints.tablet - 1,
+    tablet: breakpoints.tabletDesktop - 1,
+    tabletDesktop: breakpoints.desktop - 1,
 } as const
 
 /**
@@ -47,13 +50,13 @@ export const breakpoints = {
  */
 export const twScreens = {
     // min-width (mobile-first)
-    tablet: `${breakpoints.tabletMin}px`,
-    'tablet-desktop': `${breakpoints.tabletDesktopMin}px`,
-    desktop: `${breakpoints.desktopMin}px`,
+    tablet: `${breakpoints.tablet}px`,
+    'tablet-desktop': `${breakpoints.tabletDesktop}px`,
+    desktop: `${breakpoints.desktop}px`,
     // max-width (targeting mobile / compact)
-    'max-mobile': { max: `${breakpoints.mobileMax}px` },
-    'max-tablet': { max: `${breakpoints.tabletMax}px` },
-    'max-tablet-desktop': { max: `${breakpoints.tabletDesktopMax}px` },
+    'max-mobile': { max: `${ceilings.mobile}px` },
+    'max-tablet': { max: `${ceilings.tablet}px` },
+    'max-tablet-desktop': { max: `${ceilings.tabletDesktop}px` },
 } as const
 
 /**
@@ -63,8 +66,8 @@ export const twScreens = {
  * Passed directly into `useMediaQuery()` implementations.
  */
 export const mediaQueries = {
-    mobile: `(max-width: ${breakpoints.mobileMax}px)`,
-    tablet: `(min-width: ${breakpoints.tabletMin}px) and (max-width: ${breakpoints.tabletMax}px)`,
-    tabletDesktop: `(min-width: ${breakpoints.tabletDesktopMin}px) and (max-width: ${breakpoints.tabletDesktopMax}px)`,
-    desktop: `(min-width: ${breakpoints.desktopMin}px)`,
+    mobile: `(max-width: ${ceilings.mobile}px)`,
+    tablet: `(min-width: ${breakpoints.tablet}px) and (max-width: ${ceilings.tablet}px)`,
+    tabletDesktop: `(min-width: ${breakpoints.tabletDesktop}px) and (max-width: ${ceilings.tabletDesktop}px)`,
+    desktop: `(min-width: ${breakpoints.desktop}px)`,
 } as const
