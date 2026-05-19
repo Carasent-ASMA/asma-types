@@ -26,20 +26,21 @@
  * @property tablet - Minimum width for tablet view.
  * @property tabletDesktop - Minimum width for tablet-desktop view.
  * @property desktop - Minimum width for desktop view.
+ * @property mobileMax - Maximum width for mobile view.
+ * @property tabletMax - Maximum width for tablet view.
+ * @property tabletDesktopMax - Maximum width for tablet-desktop view.
  */
-export const breakpoints = {
-    tablet: 744,
-    tabletDesktop: 1024,
-    desktop: 1280,
-} as const
+const tablet = 744
+const tabletDesktop = 1024
+const desktop = 1280
 
-/**
- * Derived ceiling values for max-width checks.
- */
-const ceilings = {
-    mobile: breakpoints.tablet - 1,
-    tablet: breakpoints.tabletDesktop - 1,
-    tabletDesktop: breakpoints.desktop - 1,
+export const breakpoints = {
+    tablet,
+    tabletDesktop,
+    desktop,
+    mobileMax: tablet - 1,
+    tabletMax: tabletDesktop - 1,
+    tabletDesktopMax: desktop - 1,
 } as const
 
 /**
@@ -54,9 +55,9 @@ export const twScreens = {
     'tablet-desktop': `${breakpoints.tabletDesktop}px`,
     desktop: `${breakpoints.desktop}px`,
     // max-width (targeting mobile / compact)
-    'max-mobile': { max: `${ceilings.mobile}px` },
-    'max-tablet': { max: `${ceilings.tablet}px` },
-    'max-tablet-desktop': { max: `${ceilings.tabletDesktop}px` },
+    'max-mobile': { max: `${breakpoints.mobileMax}px` },
+    'max-tablet': { max: `${breakpoints.tabletMax}px` },
+    'max-tablet-desktop': { max: `${breakpoints.tabletDesktopMax}px` },
 } as const
 
 /**
@@ -66,8 +67,8 @@ export const twScreens = {
  * Passed directly into `useMediaQuery()` implementations.
  */
 export const mediaQueries = {
-    mobile: `(max-width: ${ceilings.mobile}px)`,
-    tablet: `(min-width: ${breakpoints.tablet}px) and (max-width: ${ceilings.tablet}px)`,
-    tabletDesktop: `(min-width: ${breakpoints.tabletDesktop}px) and (max-width: ${ceilings.tabletDesktop}px)`,
+    mobile: `(max-width: ${breakpoints.mobileMax}px)`,
+    tablet: `(min-width: ${breakpoints.tablet}px) and (max-width: ${breakpoints.tabletMax}px)`,
+    tabletDesktop: `(min-width: ${breakpoints.tabletDesktop}px) and (max-width: ${breakpoints.tabletDesktopMax}px)`,
     desktop: `(min-width: ${breakpoints.desktop}px)`,
 } as const
