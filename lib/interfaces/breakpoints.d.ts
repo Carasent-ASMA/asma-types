@@ -19,6 +19,16 @@
  *
  * @see asma-ui-core/src/styles/_breakpoints.scss
  */
+/**
+ * Numeric breakpoint values.
+ *
+ * @property tablet - Minimum width for tablet view.
+ * @property tabletDesktop - Minimum width for tablet-desktop view.
+ * @property desktop - Minimum width for desktop view.
+ * @property mobileMax - Maximum width for mobile view.
+ * @property tabletMax - Maximum width for tablet view.
+ * @property tabletDesktopMax - Maximum width for tablet-desktop view.
+ */
 export declare const breakpoints: {
     readonly tablet: 744;
     readonly tabletDesktop: 1024;
