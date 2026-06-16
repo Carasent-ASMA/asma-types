@@ -312,6 +312,10 @@ export declare const ProtectedRoutesPaths: {
     readonly meetingSessionRoom: "meeting-session/:roomSession";
     readonly selectFeatures: "revman/features";
     readonly selectVersions: "revman/multiversion";
+    readonly pathwayTemplates: "admin-panel/pathway-templates";
+    readonly pathwayTemplatesNew: "admin-panel/pathway-templates/new";
+    readonly pathwayTemplate: "admin-panel/pathway-templates/:templateId";
+    readonly moduleTemplates: "admin-panel/module-templates";
     readonly customers: "admin-panel/customers";
     readonly adjustTemplates: "admin-panel/adjust-templates";
     readonly qnrTemplates: "admin-panel/adjust-templates/qnr-templates";

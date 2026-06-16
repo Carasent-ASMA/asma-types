@@ -419,6 +419,10 @@ export const ProtectedRoutesPaths = {
     selectVersions: 'revman/multiversion',
 
     // admin panel
+    pathwayTemplates: 'admin-panel/pathway-templates',
+    pathwayTemplatesNew: 'admin-panel/pathway-templates/new',
+    pathwayTemplate: 'admin-panel/pathway-templates/:templateId',
+    moduleTemplates: 'admin-panel/module-templates',
     customers: 'admin-panel/customers',
     adjustTemplates: 'admin-panel/adjust-templates',
     qnrTemplates: 'admin-panel/adjust-templates/qnr-templates',
