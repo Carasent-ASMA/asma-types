@@ -423,6 +423,8 @@ export const ProtectedRoutesPaths = {
     pathwayTemplatesNew: 'admin-panel/pathway-templates/new',
     pathwayTemplate: 'admin-panel/pathway-templates/:templateId',
     moduleTemplates: 'admin-panel/module-templates',
+    pathwayCategories: 'admin-panel/pathway-categories',
+    pathwayAnchors: 'admin-panel/pathway-anchors',
     customers: 'admin-panel/customers',
     adjustTemplates: 'admin-panel/adjust-templates',
     qnrTemplates: 'admin-panel/adjust-templates/qnr-templates',

@@ -316,6 +316,8 @@ export declare const ProtectedRoutesPaths: {
     readonly pathwayTemplatesNew: "admin-panel/pathway-templates/new";
     readonly pathwayTemplate: "admin-panel/pathway-templates/:templateId";
     readonly moduleTemplates: "admin-panel/module-templates";
+    readonly pathwayCategories: "admin-panel/pathway-categories";
+    readonly pathwayAnchors: "admin-panel/pathway-anchors";
     readonly customers: "admin-panel/customers";
     readonly adjustTemplates: "admin-panel/adjust-templates";
     readonly qnrTemplates: "admin-panel/adjust-templates/qnr-templates";
