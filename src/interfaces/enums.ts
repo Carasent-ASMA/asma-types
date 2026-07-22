@@ -519,6 +519,8 @@ export const SearchParams = {
     DocumentCategory: 'document_category',
     RememberMe: 'remember_me',
     ReportId: 'report_id',
+    SelectedCustomerId: 'selected_customer_id',
+    TekstGrpNr: 'tekst_grp_nr',
 } as const
 
 export type ISearchParams = (typeof SearchParams)[keyof typeof SearchParams]
@@ -565,6 +567,8 @@ export const SearchParamWithValues = {
     document_category: '' as string,
     remember_me: '' as string,
     report_id: '' as string,
+    selected_customer_id: '' as string,
+    tekst_grp_nr: '' as string,
 } as const
 
 export type ISearchParamWithValues = (typeof SearchParamWithValues)[keyof typeof SearchParamWithValues]
