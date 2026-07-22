@@ -1,4 +1,5 @@
 import type { ValueOf } from '../utilities';
+import type { SelectedArtifact } from './artifactEnums.js';
 /**
  * @deprecated replaced with QueriesInitiator
  */
@@ -398,6 +399,8 @@ export declare const SearchParams: {
     readonly DocumentCategory: "document_category";
     readonly RememberMe: "remember_me";
     readonly ReportId: "report_id";
+    readonly SelectedCustomerId: "selected_customer_id";
+    readonly TekstGrpNr: "tekst_grp_nr";
 };
 export type ISearchParams = (typeof SearchParams)[keyof typeof SearchParams];
 export declare enum SelectedTab {
@@ -414,7 +417,7 @@ export declare const SearchParamWithValues: {
     readonly activity_id: string;
     readonly hide: string[];
     readonly qnr_version: string;
-    readonly selected_artifact: `id:${string}.type:doc.patient_id:${string}` | `id:${string}.type:doc_connector.patient_id:${string}` | `id:${string}.type:qnr.patient_id:${string}`;
+    readonly selected_artifact: SelectedArtifact;
     readonly selected_patient_id: string;
     readonly selected_group_id: string;
     readonly selected_qnr_id: string;
@@ -441,6 +444,8 @@ export declare const SearchParamWithValues: {
     readonly document_category: string;
     readonly remember_me: string;
     readonly report_id: string;
+    readonly selected_customer_id: string;
+    readonly tekst_grp_nr: string;
 };
 export type ISearchParamWithValues = (typeof SearchParamWithValues)[keyof typeof SearchParamWithValues];
 export declare const UserContext: {
