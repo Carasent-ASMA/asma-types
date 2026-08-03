@@ -30,16 +30,16 @@ export declare enum FileExtension {
     UNKNOWN = "unknown"
 }
 export declare const ScheduleFormat: {
-    readonly ONE_TIME: "one_time";
-    readonly DAILY: "daily";
-    readonly WEEKLY: "weekly";
-    readonly MONTHLY: "monthly";
+    readonly ONE_TIME: 'one_time';
+    readonly DAILY: 'daily';
+    readonly WEEKLY: 'weekly';
+    readonly MONTHLY: 'monthly';
 };
 export type ScheduleFormatType = ValueOf<typeof ScheduleFormat>;
 export declare const ArtifactPackageStatus: {
-    readonly ACTIVE: "active";
-    readonly CANCELED: "canceled";
-    readonly FINISHED: "finished";
+    readonly ACTIVE: 'active';
+    readonly CANCELED: 'canceled';
+    readonly FINISHED: 'finished';
 };
 export type IArtifactPackageStatus = ValueOf<typeof ArtifactPackageStatus>;
 export type SelectedArtifact = `id:${string}.type:${'doc' | 'doc_connector' | 'qnr'}.patient_id:${string}`;
