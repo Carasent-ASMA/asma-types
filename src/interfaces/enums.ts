@@ -374,6 +374,7 @@ export const ProtectedRoutesPaths = {
     organizationsImport: 'organizations/import',
     //
     plans: 'plans',
+    pathways: 'pathways',
     qnrModule: 'qnr-module',
     allQnrs: 'all-qnrs',
     summary: 'summary',
