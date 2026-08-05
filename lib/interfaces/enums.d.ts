@@ -280,6 +280,7 @@ export declare const ProtectedRoutesPaths: {
     readonly organizationsImport: 'organizations/import';
     readonly plans: 'plans';
     readonly pathways: 'pathways';
+    readonly pathwayInstanceEdit: 'pathways/:pathwayId/edit';
     readonly qnrModule: 'qnr-module';
     readonly allQnrs: 'all-qnrs';
     readonly summary: 'summary';

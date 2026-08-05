@@ -375,6 +375,7 @@ export const ProtectedRoutesPaths = {
     //
     plans: 'plans',
     pathways: 'pathways',
+    pathwayInstanceEdit: 'pathways/:pathwayId/edit',
     qnrModule: 'qnr-module',
     allQnrs: 'all-qnrs',
     summary: 'summary',
