@@ -416,6 +416,7 @@ export const ProtectedRoutesPaths = {
 
     // admin panel
     customers: 'admin-panel/customers',
+    adminReleasePackages: 'admin-panel/release-packages',
     adjustTemplates: 'admin-panel/adjust-templates',
     qnrTemplates: 'admin-panel/adjust-templates/qnr-templates',
     privacyAndConsents: 'admin-panel/privacy-and-consents',
