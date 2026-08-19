@@ -64,6 +64,7 @@ export enum QuestionTypes {
     Widget = 'Widget',
     Space = 'Space',
     Title = 'Title',
+    NextPage = 'NextPage',
 }
 
 export enum ActorTypes {

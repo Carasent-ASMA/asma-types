@@ -55,7 +55,8 @@ export declare enum QuestionTypes {
     Chart = "Chart",
     Widget = "Widget",
     Space = "Space",
-    Title = "Title"
+    Title = "Title",
+    NextPage = "NextPage"
 }
 export declare enum ActorTypes {
     Mappable = "mappable",
@@ -323,6 +324,7 @@ export declare const ProtectedRoutesPaths: {
     readonly pathwayCategories: 'admin-panel/pathway-categories';
     readonly pathwayAnchors: 'admin-panel/pathway-anchors';
     readonly customers: 'admin-panel/customers';
+    readonly adminReleasePackages: 'admin-panel/release-packages';
     readonly adjustTemplates: 'admin-panel/adjust-templates';
     readonly qnrTemplates: 'admin-panel/adjust-templates/qnr-templates';
     readonly privacyAndConsents: 'admin-panel/privacy-and-consents';
