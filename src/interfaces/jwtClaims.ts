@@ -1,15 +1,3 @@
-//import type { roles_enum, feature_names_enum } from "asma-genql-directory/lib"
-
-//type roles_enum = 'RECIPIENT' | 'SUPER_USER' | 'THERAPIST' | 'USER'
-// type feature_names_enum =
-//     | 'autoImportableQnr'
-//     | 'dashboardTraceability'
-//     | 'ordersOverviewOnSelectedRecipientsForQnr'
-//     | 'predefinedUserForQnr'
-//     | 'rejectableQnr'
-//     | 'signByTherapistDocument'
-//     | 'test'
-//
 /**
  * R roles_enum
  */
