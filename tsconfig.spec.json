@@ -1,0 +1,10 @@
+{
+    /* Type-checks the test files, which tsconfig.json excludes so they stay out of the published lib. */
+    "extends": "./tsconfig.json",
+    "compilerOptions": {
+        "noEmit": true,
+        "types": ["node"]
+    },
+    "include": ["src"],
+    "exclude": ["node_modules", "lib"]
+}

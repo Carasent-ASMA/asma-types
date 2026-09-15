@@ -78,5 +78,5 @@
         "useUnknownInCatchVariables": false
     },
     "include": ["src", "lib/interfaces"],
-    "exclude": ["node_modules", "lib"]
+    "exclude": ["node_modules", "lib", "src/**/*.test.ts"]
 }

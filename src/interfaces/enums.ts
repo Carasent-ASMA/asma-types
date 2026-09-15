@@ -217,6 +217,31 @@ export const DocStatus = {
 
 export type DocStatusTypes = (typeof DocStatus)[keyof typeof DocStatus]
 
+/**
+ * The shape `getDocStatus` reads from — a `document_patient` row, or anything carrying the same two
+ * signing columns. Both are optional because the row may be absent and `signicat_status` is nullable
+ * in the database.
+ */
+export interface DocStatusSource {
+    for_signing?: boolean | null
+    signicat_status?: string | null
+}
+
+/**
+ * The single rule for deriving a document's status from its signing columns.
+ *
+ * Every surface that shows a document status (list rows, viewer headers) must use this helper, so a
+ * document can never read as one status in one place and another status elsewhere. In particular a
+ * `for_signing` row with a NULL `signicat_status` is `waiting_for_signing`, not `only_for_view`.
+ */
+export const getDocStatus = ({ for_signing, signicat_status }: DocStatusSource): DocStatusTypes => {
+    if (!for_signing) return DocStatus.OnlyForView
+    if (signicat_status === DocSignicatSignStatusTypes.Completed) return DocStatus.Signed
+    if (signicat_status === DocSignicatSignStatusTypes.Rejected) return DocStatus.Rejected
+
+    return DocStatus.WaitingForSigning
+}
+
 export enum DocPickerTypes {
     dokkladd = 'Dokkladd',
     postJournal = 'PostJournal',
