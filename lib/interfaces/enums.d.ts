@@ -246,6 +246,7 @@ export declare const ProtectedRoutesPaths: {
     readonly login: 'login';
     readonly homeIndex: '/';
     readonly home: 'home';
+    readonly menu: 'menu';
     readonly customer: 'customer';
     readonly documents: 'customer/documents';
     readonly documentsGenerate: 'customer/documents/generate';
