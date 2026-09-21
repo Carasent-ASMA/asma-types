@@ -340,6 +340,7 @@ export const ProtectedRoutesPaths = {
     login: 'login',
     homeIndex: '/',
     home: 'home',
+    menu: 'menu',
     customer: 'customer',
     documents: 'customer/documents',
     documentsGenerate: 'customer/documents/generate',
