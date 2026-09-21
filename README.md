@@ -1,6 +1,8 @@
 # Introduction 
 TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project
 
+Releases are cut by conventional-commit subjects on master (`feat:` minor, `fix:`/`chore:` patch); Jira-only subjects do not publish.
+
 **Test note**: Testing parallel AI commit generation and push with 20 workers. ⚡
 
 **Update 2**: All fixes applied - ready for full parallel test! 🎯
