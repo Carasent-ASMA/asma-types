@@ -7,8 +7,9 @@
  * without a second lookup table.
  *
  * Two TabBar slots are fixed and are therefore deliberately absent from the tuple: `home` is always
- * the first slot and `menu` is always the last. Dynamic, tenant-forked destinations (context groups)
- * are never promotable and are absent as well — they stay reachable from the routed Menu page.
+ * the first slot and `menu` is always the last. `workspaces` promotes the platform-default
+ * `WORKSPACES` context group (route `qnr-module/workspaces`); extra tenant-forked context groups
+ * remain non-promotable and stay reachable from the routed Menu page.
  *
  * Consumers:
  * - Ad Voca derives its TabBar candidate list from this tuple;
@@ -36,12 +37,34 @@ export const AdvocaNavigationDestinationIds = [
     'tiltak',
     'documents',
     'qnrCompleted',
+    'workspaces',
     'calendar',
     'chat',
 ] as const
 
 /** A single promotable Ad Voca TabBar destination. */
 export type AdvocaNavigationDestinationId = (typeof AdvocaNavigationDestinationIds)[number]
+
+/**
+ * The feature flags a customer must have enabled for each destination to exist in Ad Voca's menu.
+ *
+ * @remarks
+ * This is the FEATURE-FLAG component of eligibility only, shared so the Directory settings widget
+ * offers exactly the destinations the customer's recipients can see. Structural checks (Fretex
+ * exclusion, journal-user relation, per-recipient feature overrides) stay consumer-side in Ad Voca —
+ * they are per user, not per customer. The names are `feature_names_enum` values; asma-types has no
+ * generated Hasura enum, so they are typed as strings and each consumer narrows against its own
+ * generated enum (Ad Voca pins parity in its candidate tests).
+ */
+export const advocaNavigationRequiredFeatures: Record<AdvocaNavigationDestinationId, readonly string[]> = {
+    calendar: ['calendar'],
+    candidateProfile: ['directory_AdvocaCandidatProfile'],
+    chat: ['chat_ShowChat', 'chat_asyncChat'],
+    documents: ['artifact_ShowDocuments'],
+    qnrCompleted: [],
+    tiltak: ['directory_AdvocaInvormationOnTiltak'],
+    workspaces: ['sideMenu_AdvocaMirrorWorkSpaces'],
+}
 
 /**
  * Per-customer TabBar configuration, delivered additively on the authenticated token metadata.

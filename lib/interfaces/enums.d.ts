@@ -284,6 +284,7 @@ export declare const ProtectedRoutesPaths: {
     readonly pathways: 'pathways';
     readonly pathwayInstanceEdit: 'pathways/:pathwayId/edit';
     readonly qnrModule: 'qnr-module';
+    readonly workspaces: 'qnr-module/workspaces';
     readonly allQnrs: 'all-qnrs';
     readonly summary: 'summary';
     readonly inboxOutbox: 'qnrs/inbox-outbox';
