@@ -324,7 +324,6 @@ export declare const ProtectedRoutesPaths: {
     readonly pathwayTemplate: 'admin-panel/pathway-templates/:templateId';
     readonly moduleTemplates: 'admin-panel/module-templates';
     readonly pathwayCategories: 'admin-panel/pathway-categories';
-    readonly pathwayAnchors: 'admin-panel/pathway-anchors';
     readonly customers: 'admin-panel/customers';
     readonly adminReleasePackages: 'admin-panel/release-packages';
     readonly adjustTemplates: 'admin-panel/adjust-templates';
