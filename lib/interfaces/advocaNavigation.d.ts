@@ -31,7 +31,7 @@
  * The order is part of the contract: it is the tie-break for computed promotion and the order in
  * which the Directory settings widget lists the available choices.
  */
-export declare const AdvocaNavigationDestinationIds: readonly ['candidateProfile', 'tiltak', 'documents', 'qnrCompleted', 'workspaces', 'calendar', 'chat'];
+export declare const AdvocaNavigationDestinationIds: readonly ['myPlan', 'candidateProfile', 'tiltak', 'documents', 'qnrCompleted', 'workspaces', 'calendar', 'chat'];
 /** A single promotable Ad Voca TabBar destination. */
 export type AdvocaNavigationDestinationId = (typeof AdvocaNavigationDestinationIds)[number];
 /**

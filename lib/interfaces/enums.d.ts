@@ -264,6 +264,7 @@ export declare const ProtectedRoutesPaths: {
     readonly tasks: 'tasks';
     readonly calendar: 'calendar';
     readonly overview: 'overview';
+    readonly myPlan: 'my-plan';
     readonly tiltak: 'information-on-tiltak';
     readonly candidateProfile: 'candidate-profile';
     readonly jobSearch: 'job-search';

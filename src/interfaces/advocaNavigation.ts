@@ -33,6 +33,7 @@
  * which the Directory settings widget lists the available choices.
  */
 export const AdvocaNavigationDestinationIds = [
+    'myPlan',
     'candidateProfile',
     'tiltak',
     'documents',
@@ -61,6 +62,7 @@ export const advocaNavigationRequiredFeatures: Record<AdvocaNavigationDestinatio
     candidateProfile: ['directory_AdvocaCandidatProfile'],
     chat: ['chat_ShowChat', 'chat_asyncChat'],
     documents: ['artifact_ShowDocuments'],
+    myPlan: ['shell_EnableEditorPathways'],
     qnrCompleted: [],
     tiltak: ['directory_AdvocaInvormationOnTiltak'],
     workspaces: ['sideMenu_AdvocaMirrorWorkSpaces'],

@@ -358,6 +358,8 @@ export const ProtectedRoutesPaths = {
     tasks: 'tasks',
     calendar: 'calendar',
     overview: 'overview',
+    /** Ad Voca's patient view of their modular-rehabilitation plan (ASMA-8780). */
+    myPlan: 'my-plan',
     tiltak: 'information-on-tiltak',
     candidateProfile: 'candidate-profile',
     jobSearch: 'job-search',
